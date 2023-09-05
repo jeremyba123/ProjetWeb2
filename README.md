@@ -118,9 +118,9 @@ JavaScript est essentiel pour fournir une expérience utilisateur immersive et r
 
 
 ### Apport de Chaque Membre de l'Équipe
-- Amic Roy : Responsable de [Tâches assignées et délais]
-- Jeremy Buttet-Allard : Responsable de [Tâches assignées et délais]
-- Yanik Lemieux: Responsable de [Tâches assignées et délais]
+- Amic Roy : Responsable du frontend et un peu backend mais gere surtout l'integration du site 
+- Jeremy Buttet-Allard : Responsable du backend et un peu frontend et aussi la planification du projet 
+- Yanik Lemieux: Responsable du backend ( fonctionnalite ++ a implenter) et design frontend de base 
 
 ### Rétroaction sur le Travail d'Équipe
 **Motivation :** Notre équipe est hautement motivée et déterminée à réussir ce projet. Chacun de nous est passionné par la création de l'image de marque et du site Web du festival, et nous partageons une vision commune de son succès. Cette motivation se traduit par un engagement total envers le projet et une volonté de relever tous les défis qui se présentent.
