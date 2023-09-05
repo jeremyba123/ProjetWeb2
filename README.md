@@ -84,8 +84,6 @@ JavaScript joue un rôle essentiel dans le développement de notre projet, en pa
 
 - **Interopérabilité :** JavaScript est largement pris en charge par tous les principaux navigateurs, ce qui garantit une compatibilité élevée avec les plateformes de nos utilisateurs. Cela permet une expérience utilisateur homogène.
 
-- **Librairies et Frameworks :** Nous utilisons des bibliothèques et des frameworks JavaScript, tels que jQuery et React, pour simplifier le développement et améliorer la réactivité du site Web.
-
 - **Traitement Côté Client :** JavaScript permet de décharger le traitement du serveur vers le côté client, ce qui peut améliorer les performances en réduisant la charge sur le serveur.
 
 - **APIs Externes :** JavaScript facilite l'intégration d'APIs externes, ce qui nous permet de mettre en œuvre des fonctionnalités telles que la gestion des actualités via des services tiers.
