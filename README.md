@@ -76,10 +76,6 @@ JavaScript joue un rôle essentiel dans le développement de notre projet, en pa
 
 - **Front-End Dynamique :** Nous utilisons JavaScript pour ajouter de l'interactivité aux pages du site Web, y compris la réservation de forfaits, les listes d'activités, et les formulaires.
 
-- **Ajax :** Nous utiliserons des requêtes AJAX pour les interactions en temps réel, telles que la mise à jour de la liste des activités sans rechargement de la page.
-
-- **Bibliothèques :** Nous faisons appel à des bibliothèques JavaScript, telles que jQuery, pour simplifier le code et accélérer le développement.
-
 **Avantages :**
 
 - **Interopérabilité :** JavaScript est largement pris en charge par tous les principaux navigateurs, ce qui garantit une compatibilité élevée avec les plateformes de nos utilisateurs. Cela permet une expérience utilisateur homogène.
