@@ -1,4 +1,4 @@
-# Planification du Travail Synthèse - [Nom du Festival]
+# Planification du Travail Synthèse - Metalfest
 
 ## 1. Analyse des Besoins
 
@@ -20,7 +20,7 @@ Le public cible du festival est principalement composé de passionnés de musiqu
 ## 2. Présentation du Concept
 
 ### Nom du Festival et Thématique
-- Nom du Festival : [ A TROUVER ]
+- Nom du Festival : Metalfest
 - Thématique : Metal/Rock
 
 ### Images d'Inspiration
@@ -30,9 +30,9 @@ Le public cible du festival est principalement composé de passionnés de musiqu
 
 
 ### Identité Visuelle
-- Logo : [Insérer le logo ici]
-- Couleurs : [Couleurs principales et leurs codes hexadécimaux]
-- Typographies : [Nom des polices utilisées]
+- Logo : [MicrosoftTeams-image](https://github.com/jeremyba123/ProjetWeb2/assets/116196369/f61ba64f-5c3d-4603-b42b-e479fb9c7812)
+- Couleurs : #000000 #FFFFFF #8B00FF
+- Typographies : source sans 3 devils haircuts / adobe fonts
 
 ## 3. Choix Technologiques
 
