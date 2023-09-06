@@ -33,7 +33,7 @@ Le public cible du festival est principalement composé de passionnés de musiqu
 
 ### Identité Visuelle
 - Logo : ![MicrosoftTeams-image](https://github.com/jeremyba123/ProjetWeb2/assets/116196369/46d1166a-6af6-414e-9996-5f4650cafe0b)
-- Couleurs : #000000 #FFFFFF #8B00FF
+- Couleurs : #000000 #FFFFFF #8B00FF%64
 - Typographies : source sans 3 devils haircuts / adobe fonts
 
 
