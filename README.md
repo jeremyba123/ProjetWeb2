@@ -27,12 +27,15 @@ Le public cible du festival est principalement composé de passionnés de musiqu
 
 ![photo projet web2](https://github.com/jeremyba123/ProjetWeb2/assets/116196369/d8be8f77-4469-4eae-ab96-608ce515db21)
 ![projet web2 1](https://github.com/jeremyba123/ProjetWeb2/assets/116196369/b9824a9b-e60e-44ac-a667-cb61ba133b49)
+![image](https://github.com/jeremyba123/ProjetWeb2/assets/116196369/4a5ce4db-e6e2-4f70-91f8-4ddf059d7551)
+
 
 
 ### Identité Visuelle
-- Logo : [MicrosoftTeams-image](https://github.com/jeremyba123/ProjetWeb2/assets/116196369/f61ba64f-5c3d-4603-b42b-e479fb9c7812)
+- Logo : ![MicrosoftTeams-image](https://github.com/jeremyba123/ProjetWeb2/assets/116196369/46d1166a-6af6-414e-9996-5f4650cafe0b)
 - Couleurs : #000000 #FFFFFF #8B00FF
 - Typographies : source sans 3 devils haircuts / adobe fonts
+
 
 ## 3. Choix Technologiques
 
