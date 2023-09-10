@@ -1,3 +1,11 @@
+body {
+    margin: 0px;
+    background-color: black;
+    color: white;
+
+}
+
+/* ***********************************************   Nav  ************************************************** */
 span.material-symbols-outlined {
     color: #8041ffa6;
     width: 24px;
@@ -8,7 +16,6 @@ span.material-symbols-outlined {
     position: relative;
     display: flex;
     transition: 2s ease-in-out;
-
 }
 
 .dropdown:hover {
@@ -44,8 +51,8 @@ span.material-symbols-outlined {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
     padding-top: 20px;
 }
 
@@ -57,6 +64,7 @@ a.btn.btn-light {
     padding-bottom: 13px;
     padding-right: 0px;
     transition: 0.2s ease-in-out;
+    font-family: "source-sans-pro", sans-serif;
 }
 
 a.btn.btn-light:hover {
@@ -83,7 +91,7 @@ a.btn.btn-light:hover {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 17px;
-    padding: 0px 20px 1px 3px;
+    padding: 0px 40px 1px 3px;
 }
 
 p.programmation {
@@ -94,7 +102,13 @@ p.programmation {
     text-transform: uppercase;
     font-size: 17px;
     display: inline;
-    padding: 0px 20px 0px 3px;
+    padding: 0px 40px 0px 3px;
+    transition: 0.2s ease-in-out;
+}
+
+p.programmation:hover {
+    color: rgb(197, 197, 197);
+
 }
 
 .dropdown-content a {
@@ -114,4 +128,145 @@ span.home {
 .contact {
     display: flex;
     justify-content: space-around;
+}
+
+a.lien {
+    transition: 0.2s ease-in-out;
+}
+
+a.lien:hover {
+    color: rgb(197, 197, 197);
+}
+
+/* ***********************************************   video  ************************************************** */
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    /* position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1; */
+}
+
+/* *********************************************** Footer    ************************************************** */
+
+.img-footer {
+    position: relative;
+    background-image: url(../img/footer-picture.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.overlay-footer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.184);
+    z-index: 1;
+}
+
+.logo-footer {
+    position: relative;
+    z-index: 2;
+    width: 30%;
+    margin-top: 9%;
+    margin-left: 3%;
+}
+
+.info-footer {
+    background-color: #111111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 329px;
+}
+
+.info-footer .info {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin-left: 89px;
+}
+
+h4 {
+    font-family: "source-sans-pro", sans-serif;
+}
+
+.a-propos p {
+    color: #888888;
+    font-family: "source-sans-pro", sans-serif;
+}
+
+.nav-footer a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    transition: 0.2s ease-in-out;
+    font-family: "source-sans-pro", sans-serif;
+}
+
+.nav-footer a:hover {
+    color: #888888;
+}
+
+.billets-achat {
+    margin-right: 89px;
+}
+
+.billets-achat p {
+    text-align: center;
+    line-height: 35px;
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.billets-achat a.boutton {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-family: "source-sans-pro", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.copyright-reseau-sociaux {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 103px;
+    background-color: black;
+}
+
+.copyright {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.copyright p {
+    color: #888888;
+}
+
+.copyright2023 {
+    display: flex;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.copyright2023 p {
+    color: #888888;
+    margin-left: 5px;
+}
+
+.reseau-sociaux img {
+    width: 25px;
+    height: 25px;
+    margin-right: 40px;
 }

@@ -10,7 +10,7 @@ class AccueilController extends Controller
     public function index()
     {
         return view('index', [
-            "groupe" => Groupe::all()
+            "groupes" => Groupe::all()
         ]);
     }
 }
