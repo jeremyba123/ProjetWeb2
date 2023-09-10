@@ -11,7 +11,7 @@
                     home
                 </span>
             </div>
-            <a href="#">
+            <a class="lien" href="#">
                 Accueil
             </a>
         </div>
@@ -34,7 +34,7 @@
             <span class="material-symbols-outlined">
                 phone_in_talk
             </span>
-            <a href="#">
+            <a class="lien" href="#">
                 Contact
             </a>
         </div>
