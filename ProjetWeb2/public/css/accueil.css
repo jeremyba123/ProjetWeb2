@@ -225,6 +225,7 @@ h4 {
     font-family: "source-sans-pro", sans-serif;
     font-weight: bold;
     font-size: 36px;
+    color: white;
 }
 
 .billets-achat a.boutton {
@@ -269,4 +270,8 @@ h4 {
     width: 25px;
     height: 25px;
     margin-right: 40px;
+}
+
+h4 {
+    color: white;
 }

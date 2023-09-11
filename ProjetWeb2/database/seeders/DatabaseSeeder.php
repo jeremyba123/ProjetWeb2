@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        $this->call(CaracteristiqueSeeder::class);
         $this->call(ForfaitsTableSeeder::class);
         $this->call(GroupesTableSeeder::class);
         $this->call(HorairesTableSeeder::class);

@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Forfait extends Model
 {
     use HasFactory;
+    public function caracteristiques()
+    {
+        return $this->belongsToMany(Caracteristique::class);
+    }
 }

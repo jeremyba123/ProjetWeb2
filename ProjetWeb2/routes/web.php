@@ -2,6 +2,11 @@
 
 use App\Http\Controllers\AccueilController;
 use App\Http\Controllers\ConnexionController;
+<<<<<<< HEAD
+use App\Http\Controllers\ForfaitController;
+use App\Http\Controllers\GroupeController;
+=======
+>>>>>>> 2dccf8a6fedb0bbd564db971c2bd28f59c192b4a
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ClientController;
@@ -16,6 +21,18 @@ use App\Http\Middleware\Auth;
 Route::get('/', [AccueilController::class, 'index'])
     ->name('accueil');
 
+<<<<<<< HEAD
+/*****************
+ * FORFAIT
+ */
+Route::get('/forfaits', [ForfaitController::class, 'index'])
+    ->name('forfaits');
+/*****************
+ * FORFAIT
+ */
+Route::get('/groupes', [GroupeController::class, 'index'])
+    ->name('groupes');
+=======
 
 /******
  * CONNEXION ET ENREGISTREMENT
@@ -57,3 +74,4 @@ Route::post("/enregistrement", [EnregistrementController::class, 'store'])
 
 
 
+>>>>>>> 2dccf8a6fedb0bbd564db971c2bd28f59c192b4a
