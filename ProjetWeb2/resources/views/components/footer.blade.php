@@ -25,9 +25,10 @@
 
             <div class="nav-footer">
                 <h4>Navigation</h4>
-                <a href="">Accueil</a>
-                <a href="">Programmation</a>
-                <a href="">Contact</a>
+                <a href="#">Accueil</a>
+                <a href="#">Horaire</a>
+                <a href="#">Groupes</a>
+                <a href="#">Contact</a>
             </div>
         </div>
 

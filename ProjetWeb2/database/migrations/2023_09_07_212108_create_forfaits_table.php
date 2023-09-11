@@ -21,7 +21,6 @@ class CreateForfaitsTable extends Migration
             $table->date('date_depart');
             $table->timestamps();
         });
-
     }
 
     /**
