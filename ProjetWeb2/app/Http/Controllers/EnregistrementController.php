@@ -22,30 +22,24 @@ class EnregistrementController extends Controller
     public function store(Request $request) {
         // Valider les données du formulaire
         $validated = $request->validate([
-            "name" => "required",
+            "nom" => "required", // Modifiez "name" en "nom"
+            "prenom" => "required", // Ajoutez "prenom" pour stocker le prénom
             "email" => "required|email|unique:users,email",
             "password" => "required|min:8",
-            "avatar" => "nullable|mimes:png,jpg,jpeg",
             "confirmation_password" => "required|same:password",
-            "account_type" => "required|in:admin,client,employee", // Ajoutez cette validation
+            "account_type" => "required|in:admin,client,employee",
         ], [
             // Messages de validation personnalisés
         ]);
 
         // Créer un nouvel utilisateur
         $user = new User();
-        $user->name = $validated["name"];
+        $user->nom = $validated["nom"];
+        $user->prenom = $validated["prenom"];
         $user->email = $validated["email"];
         $user->password = Hash::make($validated["password"]);
-        $user->account_type = $validated["account_type"]; // Enregistrez le type de compte
+        $user->account_type = $validated["account_type"];
 
-        // Traiter le téléversement de l'avatar
-        if ($request->hasFile('avatar')) {
-            // Déplacer l'avatar vers le stockage
-            $path = $request->file('avatar')->store('public/uploads');
-            // Sauvegarder le chemin dans la base de données
-            $user->avatar = Storage::url($path);
-        }
 
         $user->save();
 
@@ -55,15 +49,16 @@ class EnregistrementController extends Controller
         // Rediriger l'utilisateur vers la page appropriée en fonction de son type de compte
         switch ($user->account_type) {
             case 'admin':
-                return redirect()->route('admin.dashboard')->with('success', 'Votre compte admin a été créé');
+                return redirect()->route('admin.index')->with('success', 'Votre compte admin a été créé');
             case 'client':
                 return redirect()->route('client.index')->with('success', 'Votre compte client a été créé');
             case 'employee':
-                return redirect()->route('employee.dashboard')->with('success', 'Votre compte employé a été créé');
+                return redirect()->route('employee.index')->with('success', 'Votre compte employé a été créé');
             default:
                 return redirect()->route('accueil')->with('success', 'Votre compte a été créé');
         }
     }
+
 
 }
 

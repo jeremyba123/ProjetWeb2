@@ -28,7 +28,7 @@ Route::get('/', [AccueilController::class, 'index'])
 Route::get('/forfaits', [ForfaitController::class, 'index'])
     ->name('forfaits');
 /*****************
- * FORFAIT
+ * Groupe
  */
 Route::get('/groupes', [GroupeController::class, 'index'])
     ->name('groupes');
@@ -55,17 +55,22 @@ Route::post("/enregistrement", [EnregistrementController::class, 'store'])
  ->name('enregistrement.store');
 
 
-
-
+/*****************
+ * Client
+ */
 Route::get('/client', [ClientController::class, 'index'])
 ->name('client.index')
 ->middleware("client");
 
-
- Route::get('/admin', [AdminController::class, 'index'])
+/*****************
+ * Admin
+ */
+Route::get('/admin', [AdminController::class, 'index'])
  ->name('admin.index')
  ->middleware("admin");
-
+/*****************
+ * Employee
+ */
  Route::get('/employee', [EmployeeController::class, 'index'])
  ->name('employee.index')
  ->middleware("employee");

@@ -15,84 +15,54 @@
                 @csrf
 
                 {{-- PRÉNOM --}}
-                <!-- ... (votre code existant) ... -->
                 <div>
-                    <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Prenom</label>
+                    <label for="prenom" class="block text-sm font-medium leading-6 text-gray-900">Prénom</label>
                     <div class="mt-2">
-                        <input id="name" name="name" type="text" value="{{ old('name') }}"
+                        <input id="prenom" name="prenom" type="text" value="{{ old('prenom') }}"
                             class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-
-
                     </div>
                 </div>
-
 
                 {{-- NOM --}}
-                <!-- ... (votre code existant) ... -->
                 <div>
-                    <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Nom</label>
+                    <label for="nom" class="block text-sm font-medium leading-6 text-gray-900">Nom</label>
                     <div class="mt-2">
-                        <input id="name" name="name" type="text" value="{{ old('name') }}"
+                        <input id="nom" name="nom" type="text" value="{{ old('nom') }}"
                             class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-
-
                     </div>
                 </div>
-
 
                 {{-- EMAIL --}}
-                <!-- ... (votre code existant) ... -->
                 <div>
-                    <label for="Email" class="block text-sm font-medium leading-6 text-gray-900">Email</label>
+                    <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email</label>
                     <div class="mt-2">
-                        <input id="email" name="email" type="text" value="{{ old('name') }}"
+                        <input id="email" name="email" type="email" value="{{ old('email') }}"
                             class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-
-
                     </div>
                 </div>
 
-
+                {{-- MOT DE PASSE --}}
                 <div>
-                    <label for="Email" class="block text-sm font-medium leading-6 text-gray-900">Mots de passe</label>
+                    <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Mot de passe</label>
                     <div class="mt-2">
-                        <input id="email" name="email" type="text" value="{{ old('name') }}"
+                        <input id="password" name="password" type="password"
                             class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-
-
                     </div>
                 </div>
 
                 {{-- CONFIRMATION DU MOT DE PASSE --}}
-                <!-- ... (votre code existant) ... -->
                 <div>
-                    <label for="Email" class="block text-sm font-medium leading-6 text-gray-900">Confirmation de mots de passe</label>
+                    <label for="confirmation_password" class="block text-sm font-medium leading-6 text-gray-900">Confirmation du mot de passe</label>
                     <div class="mt-2">
-                        <input id="email" name="email" type="text" value="{{ old('name') }}"
+                        <input id="confirmation_password" name="confirmation_password" type="password"
                             class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-
-
-                    </div>
-                </div>
-
-                {{-- TYPE DE COMPTE (account_type) --}}
-                <div>
-                    <label for="account_type" class="block text-sm font-medium leading-6 text-gray-900">Type de compte</label>
-                    <div class="mt-2">
-                        <select id="account_type" name="account_type"
-                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-
-                            <option value="client">Client</option>
-
-                        </select>
-
-
                     </div>
                 </div>
 
 
 
-
+                {{-- TYPE DE COMPTE (account_type) cacher dans la vue   --}}
+                <input type="hidden" id="account_type" name="account_type" value="client">
 
                 <div>
                     <button type="submit"
@@ -110,4 +80,5 @@
         </div>
     </div>
 </x-layout>
+
 
