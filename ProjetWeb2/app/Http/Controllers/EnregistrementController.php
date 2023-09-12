@@ -15,11 +15,13 @@ class EnregistrementController extends Controller
      *
      * @return View
      */
-    public function create() {
+    public function create()
+    {
         return view('auth.enregistrement.create');
     }
 
-    public function store(Request $request) {
+    public function store(Request $request)
+    {
         // Valider les données du formulaire
         $validated = $request->validate([
             "nom" => "required", // Modifiez "name" en "nom"
@@ -58,7 +60,9 @@ class EnregistrementController extends Controller
                 return redirect()->route('accueil')->with('success', 'Votre compte a été créé');
         }
     }
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> ee4903211b52abd2d280c2f2202275413e9c736c
 }
-
