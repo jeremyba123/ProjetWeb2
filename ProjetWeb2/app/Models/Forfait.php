@@ -11,8 +11,8 @@ class Forfait extends Model
     public function caracteristiques()
     {
 
-        return $this->belongsToMany(Caracteristique::class)
-        ->withPivot('date_depart');
+        return $this->belongsToMany(Caracteristique::class);
+
     }
 
 
