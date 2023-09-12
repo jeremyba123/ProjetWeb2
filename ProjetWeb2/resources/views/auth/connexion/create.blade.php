@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 
-=======
 <x-layout titre="Connexion" css="{{ asset('css/accueil.css') }}">
     <x-nav.nav></x-nav>
 
@@ -65,4 +63,4 @@
     </footer>
 
 </x-layout>
->>>>>>> 2dccf8a6fedb0bbd564db971c2bd28f59c192b4a
+
