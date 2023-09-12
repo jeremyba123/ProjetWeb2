@@ -16,7 +16,8 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->enum('account_type', ['client', 'employee', 'admin']);
             $table->timestamps();
-            $table->string('remember_token');
+            $table->string('remember_token')->nullable()->default(null);
+;
         });
     }
 
