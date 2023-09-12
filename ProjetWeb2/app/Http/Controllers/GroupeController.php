@@ -2,16 +2,16 @@
 
 namespace App\Http\Controllers;
 
-
 use App\Models\Groupe;
 use Illuminate\Http\Request;
 
-class AccueilController extends Controller
+class GroupeController extends Controller
 {
     public function index()
     {
-        return view('index', [
-            "groupes" => Groupe::all()
+        return view("groupes", [
+
+            "groupes" => Groupe::all(),
         ]);
     }
 }

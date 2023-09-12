@@ -2,11 +2,14 @@
 
 use App\Http\Controllers\AccueilController;
 use App\Http\Controllers\ConnexionController;
+use App\Http\Controllers\ForfaitController;
+use App\Http\Controllers\GroupeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Middleware\Auth;
+use App\Http\Controllers\EnregistrementController;
 
 
 /****** ROUTE LIBRE ACCES */
@@ -16,6 +19,16 @@ use App\Http\Middleware\Auth;
 Route::get('/', [AccueilController::class, 'index'])
     ->name('accueil');
 
+/*****************
+ * FORFAIT
+ */
+Route::get('/forfaits', [ForfaitController::class, 'index'])
+    ->name('forfaits');
+/*****************
+ * FORFAIT
+ */
+Route::get('/groupes', [GroupeController::class, 'index'])
+    ->name('groupes');
 
 /******
  * CONNEXION ET ENREGISTREMENT
@@ -38,12 +51,11 @@ Route::post("/enregistrement", [EnregistrementController::class, 'store'])
  ->name('enregistrement.store');
 
 
- Route::middleware(['client'])->group(function () {
-    Route::get('/client', [ClientController::class, 'index'])->name('client.index');
-    // Autres routes nécessitant le middleware "client"
-});
 
 
+Route::get('/client', [ClientController::class, 'index'])
+->name('client.index')
+->middleware("client");
 
 
  Route::get('/admin', [AdminController::class, 'index'])
