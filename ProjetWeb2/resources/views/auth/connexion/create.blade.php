@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> ee4903211b52abd2d280c2f2202275413e9c736c
 <x-layout titre="Connexion" css="{{ asset('css/accueil.css') }}">
     <x-nav.nav></x-nav>
 
@@ -66,3 +70,7 @@
         </footer>
 
 </x-layout>
+<<<<<<< HEAD
+=======
+
+>>>>>>> ee4903211b52abd2d280c2f2202275413e9c736c
