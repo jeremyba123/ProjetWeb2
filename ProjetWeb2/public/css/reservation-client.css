@@ -1,0 +1,151 @@
+/* ***********************************************   Nav  ************************************************** */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 20px;
+    position: relative;
+    z-index: 2;
+
+}
+
+a.btn.btn-light {
+    background-color: #8041ff5e;
+    border: none;
+    width: 210px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 0px;
+    transition: 0.2s ease-in-out;
+    font-family: "source-sans-pro", sans-serif;
+}
+
+a.btn.btn-light:hover {
+    background-color: #8041ffbf;
+    color: white;
+}
+
+.liens-nav {
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.home {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.liens-nav a {
+    color: rgb(255, 255, 255);
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding: 0px 40px 1px 3px;
+}
+
+p.programmation {
+    color: rgb(255, 255, 255);
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    display: inline;
+    padding: 0px 40px 0px 3px;
+    transition: 0.2s ease-in-out;
+}
+
+p.programmation:hover {
+    color: rgb(197, 197, 197);
+
+}
+
+.dropdown-content a {
+    padding: none;
+}
+
+.span-home {
+    position: relative;
+}
+
+span.home {
+    position: absolute;
+    bottom: 5px;
+    right: -3px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+}
+
+a.lien {
+    transition: 0.2s ease-in-out;
+}
+
+a.lien:hover {
+    color: rgb(197, 197, 197);
+}
+
+/* *********************************************** header   ************************************************** */
+
+
+
+
+.img {
+    position: relative;
+    background-image: url(../img/pexels-pixabay-164693.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 404px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.682);
+    z-index: 1;
+}
+
+.h1 {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.h1 img:last-child {
+    transform: scaleX(-1);
+}
+
+h1 {
+    color: white;
+    font-family: "devils-haircut", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 99px;
+}
+
+h2 {
+    position: relative;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    z-index: 6;
+    width: fit-content;
+    color: white;
+}
+
+/* *********************************************** Main ************************************************** */

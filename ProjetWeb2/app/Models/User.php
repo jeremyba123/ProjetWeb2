@@ -43,9 +43,9 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function forfaits()
-    {
-        return $this->belongsToMany(Forfait::class, 'forfait_user');
-    }
+    public function forfait()
+{
+    return $this->belongsTo(Forfait::class);
+}
 
 }
