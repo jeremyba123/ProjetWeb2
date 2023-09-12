@@ -10,7 +10,7 @@ searchInput.addEventListener('input', () => {
     groupes.forEach((groupe) => {
         const nom = groupe.querySelector('.nom').textContent.toLowerCase()
         if (nom.includes(searchTerm)) {
-            groupe.style.display = 'flex'
+            groupe.style.display = 'block'
         } else {
             groupe.style.display = 'none'
         }

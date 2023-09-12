@@ -11,8 +11,7 @@
 
         <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
             {{-- FORMULAIRE D'ENREGISTREMENT --}}
-            <form class="space-y-6" action="{{ route('enregistrement.store') }}" method="POST"
-                enctype="multipart/form-data">
+            <form class="space-y-6" action="{{ route('enregistrement.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
 
                 {{-- PRÉNOM --}}
@@ -35,40 +34,13 @@
 
                 {{-- EMAIL --}}
                 <div>
-<<<<<<< HEAD
-                    <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Nom
-                        d'utilisateur</label>
-=======
                     <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email</label>
->>>>>>> ee4903211b52abd2d280c2f2202275413e9c736c
                     <div class="mt-2">
                         <input id="email" name="email" type="email" value="{{ old('email') }}"
                             class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                     </div>
                 </div>
 
-<<<<<<< HEAD
-                {{-- TYPE DE COMPTE (account_type) --}}
-                <div>
-                    <label for="account_type" class="block text-sm font-medium leading-6 text-gray-900">Type de
-                        compte</label>
-                    <div class="mt-2">
-                        <select id="account_type" name="account_type"
-                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                            <option value="admin">Admin</option>
-                            <option value="client">Client</option>
-                            <option value="employee">Employee</option>
-                        </select>
-
-                        <x-forms.erreur champ="account_type" />
-                    </div>
-                </div>
-
-                {{-- AVATAR --}}
-                <!-- ... (votre code existant) ... -->
-
-=======
->>>>>>> ee4903211b52abd2d280c2f2202275413e9c736c
                 {{-- MOT DE PASSE --}}
                 <div>
                     <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Mot de passe</label>
@@ -108,8 +80,5 @@
         </div>
     </div>
 </x-layout>
-<<<<<<< HEAD
-=======
 
 
->>>>>>> ee4903211b52abd2d280c2f2202275413e9c736c
