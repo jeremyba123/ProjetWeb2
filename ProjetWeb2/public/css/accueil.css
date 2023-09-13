@@ -170,7 +170,7 @@ div.appel-action {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 219px;
+    margin-top: 258px;
 }
 
 .horraire {
@@ -224,20 +224,76 @@ span.white {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 72px;
 }
 
 .bas-page img {
-    width: 34%;
+    width: 400px;
     height: auto;
 }
 
-span.arrow {
+
+
+a.fleche {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    color: white;
-    transform: rotate(90deg);
+    color: #ffffff;
     top: 90%;
+    border-radius: 50%;
+
+}
+
+a.fleche img {
+    width: 50px;
+    height: 50px;
+}
+
+.lieux-date {
+    background-color: #8041ffb2;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    width: 529px;
+    border-radius: 10px;
+    margin-right: 34px;
+    margin-top: 203px;
+}
+
+.lieux-date p {
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.lieux {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.date {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bordure {
+    border-right: 2px solid white;
+    height: 75px;
+    margin-top: 12px;
+
+}
+
+span.date {
+    color: white;
+}
+
+span.lieux {
+    color: white;
 }
 
 /* *********************************************** Footer    ************************************************** */

@@ -24,14 +24,17 @@
                     </a>
                 </div>
 
-                <span class="material-symbols-outlined arrow">
-                    arrow_forward_ios
-                </span>
+                <a class="fleche" href="#">
+                    <img src="img/arrow-down-sign-to-navigate.png" alt="fleche">
+                    {{-- <span class="material-symbols-outlined arrow">
+                        arrow_forward_ios
+                    </span> --}}
+                </a>
                 <div class="bas-page">
                     <img src="img/zombie-5.png" alt="zombie">
                     <div class="lieux-date">
-                        <div>
-                            <span class="material-symbols-outlined">
+                        <div class="lieux">
+                            <span class="material-symbols-outlined lieux">
                                 distance
                             </span>
                             <div>
@@ -39,11 +42,14 @@
                                 <p>Parc Jean-drapeau</p>
                             </div>
                         </div>
-                        <div>
-                            <span class="material-symbols-outlined">
+
+                        <div class="bordure"></div>
+
+                        <div class="date">
+                            <span class="material-symbols-outlined date">
                                 calendar_month
                             </span>
-                            <p>Montréal,QC</p>
+                            <p>Mai 21-31, 2023</p>
                         </div>
                     </div>
                 </div>
