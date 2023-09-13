@@ -1,26 +1,10 @@
 <x-layout titre="Groupes" css="{{ asset('css/groupes.css') }}">
-    <header>
-        <div class="img">
-            <div class="overlay"></div>
 
-            <x-nav.nav />
-
-            <div class="h1">
-
-                <img src="img/image-from-rawpixel-id-2394252-modifier2.png" width="118" height="118" alt="rock-n-roll">
-
-                <h1>Groupes</h1>
-
-                <img src="img/image-from-rawpixel-id-2394252-modifier2.png" width="118" height="118"
-                    alt="rock-n-roll">
-
-            </div>
-            <form id="search-form">
-                <input type="text" id="search-input" placeholder="Rechercher par nom de groupe">
-
-            </form>
-        </div>
-    </header>
+    <x-header titre="groupes">
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Rechercher par nom de groupe">
+        </form>
+    </x-header>
 
     <main>
 

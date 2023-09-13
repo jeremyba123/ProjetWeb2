@@ -15,5 +15,6 @@
             <img src="img/image-from-rawpixel-id-2394252-modifier2.png" width="118" height="118" alt="rock-n-roll">
 
         </div>
+        {{ $slot }}
     </div>
 </header>

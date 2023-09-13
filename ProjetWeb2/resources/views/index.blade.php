@@ -2,44 +2,51 @@
 
     <header>
 
-        <x-nav.nav />
+        <div class="hero">
+            <video id="background-video" autoplay loop muted>
+                <source src="video/pexels-alena-darmel-7722231 (2160p)_1.mp4" type="video/mp4">
+            </video>
+            <div class="hero-content">
 
-        <video id="background-video" autoplay loop muted>
-            <source src="video/pexels-alena-darmel-7722231 (2160p)_1.mp4" type="video/mp4">
-        </video>
-        <img src="img/Logo_logo-200-blanc.png" alt="Logo 200px">
-        <a href="#">
-            <div class="horraire">
-                <div class="calendrier">
-                    <span class="material-symbols-outlined">
-                        calendar_today
-                    </span>
-                    Horaire
+                <x-nav.nav />
+
+                <div class="appel-action">
+                    <img src="img/Logo_logo-200-blanc.png" alt="Logo 200px">
+                    <a class="horraire" href="#">
+                        <div class="horraire">
+                            <div class="calendrier">
+                                <span class="material-symbols-outlined white">
+                                    calendar_today
+                                </span>
+                                <p> Voir l'Horaire</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </div>
-        </a>
 
-        <img src="img/zombie-5.png" alt="zombie">
-
-        <span class="material-symbols-outlined">
-            arrow_forward_ios
-        </span>
-
-        <div class="lieux-date">
-            <div>
-                <span class="material-symbols-outlined">
-                    distance
+                <span class="material-symbols-outlined arrow">
+                    arrow_forward_ios
                 </span>
-                <div>
-                    <p>Montréal,QC</p>
-                    <p>Parc Jean-drapeau</p>
+                <div class="bas-page">
+                    <img src="img/zombie-5.png" alt="zombie">
+                    <div class="lieux-date">
+                        <div>
+                            <span class="material-symbols-outlined">
+                                distance
+                            </span>
+                            <div>
+                                <p>Montréal,QC</p>
+                                <p>Parc Jean-drapeau</p>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="material-symbols-outlined">
+                                calendar_month
+                            </span>
+                            <p>Montréal,QC</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <span class="material-symbols-outlined">
-                    calendar_month
-                </span>
-                <p>Montréal,QC</p>
             </div>
         </div>
     </header>

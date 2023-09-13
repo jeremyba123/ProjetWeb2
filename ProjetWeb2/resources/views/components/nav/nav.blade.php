@@ -11,7 +11,7 @@
                     home
                 </span>
             </div>
-            <a class="lien" href="#">
+            <a class="lien" href="{{ route('accueil') }}">
                 Accueil
             </a>
         </div>
@@ -24,7 +24,7 @@
                 <p class="programmation">Programmation</p>
                 <div class="dropdown-content">
                     <a href="#">Horaire</a>
-                    <a href="#">Groupes</a>
+                    <a href="{{ route('groupes') }}">Groupes</a>
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@
             </a>
         </div>
 
-        <a class="btn btn-light " href="#">
+        <a class="btn btn-light " href="{{ route('forfaits') }}">
             Billets
         </a>
     </div>

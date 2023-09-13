@@ -133,10 +133,10 @@ a.lien:hover {
 
 h1 {
     color: white;
-    font-family: "devils-haircut", sans-serif;
-    font-weight: 400;
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: bold;
     font-style: normal;
-    font-size: 99px;
+    font-size: 88px;
 }
 
 h2 {
@@ -146,6 +146,300 @@ h2 {
     z-index: 6;
     width: fit-content;
     color: white;
+    font-size: 68px;
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+
 }
 
 /* *********************************************** Main ************************************************** */
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main p.admission {
+    text-align: center;
+    font-size: 20px;
+    font-family: "source-sans-pro", sans-serif;
+    line-height: 13px;
+    font-style: normal;
+}
+
+main p.admission2 {
+    text-align: center;
+    font-size: 20px;
+    font-family: "source-sans-pro", sans-serif;
+    line-height: 13px;
+    font-style: normal;
+    color: #888888;
+}
+
+.conteneur-forfait-reservation {
+    display: flex;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 55%;
+    margin-top: 62px;
+
+}
+
+.forfaits {
+    width: 550px;
+    height: 320px;
+    margin-right: 25px;
+    background-color: #292929;
+    color: white;
+    border-radius: 10px;
+
+}
+
+.info-conteneur {
+    width: 200px;
+    height: 120px;
+    background-color: grey;
+}
+
+
+
+.forfaits .info {
+    display: flex;
+    justify-content: space-around;
+    background-color: #8041ff;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 150;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.forfaits .info p {
+    margin-bottom: 0px;
+
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.forfaits .info p.nom {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.forfaits .info p.prix {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.forfaits .info p:first-child {
+    margin-top: 25px;
+
+}
+
+.forfaits .info p:last-child {
+    margin-bottom: 25px;
+
+}
+
+.forfaits .contenue {
+    display: flex;
+    justify-content: space-around;
+    background-color: #292929;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.forfaits .contenue p {
+    margin-bottom: 0px;
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+.forfaits .contenue p:first-child {
+    margin-top: 25px;
+
+}
+
+.forfaits .contenue p:last-child {
+
+    margin-bottom: 25px;
+}
+
+.forfaits .contenue:last-child {
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+h4.forfait {
+    color: black;
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form form * {
+    margin-bottom: 15px;
+}
+
+.submit {
+    width: 200px;
+    height: 50px;
+    background-color: #8041ff;
+    color: white;
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    border: none;
+    border-radius: 4px;
+    transition: 0.2s ease-in-out;
+    font-size: 18px;
+}
+
+.submit:hover {
+
+    background-color: #292929;
+
+}
+
+
+
+/* ************************************ date picker********************************** */
+
+/* Style du conteneur du date picker */
+input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 200px;
+
+}
+
+/* Style de la flèche de défilement */
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-outer-spin-button {
+    appearance: none;
+    display: none;
+}
+
+/* Style du calendrier popup (uniquement pour les navigateurs WebKit comme Chrome) */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: #ffffff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 2px;
+}
+
+/* Style du texte à l'intérieur du date picker */
+input[type="date"]::placeholder {
+    color: #999;
+}
+
+/* *****************************************************************************8 */
+
+table {
+    width: 100% !important;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.table {
+
+    width: 55%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 100px;
+    height: 200px;
+    max-height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+
+    /* Personnalisation de la barre de défilement */
+    scrollbar-width: thin;
+    /* Utilisé pour Firefox */
+    scrollbar-color: transparent transparent;
+    /* Utilisé pour Firefox */
+
+    &::-webkit-scrollbar {
+        width: 8px;
+        /* Largeur de la barre de défilement */
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+        /* Couleur de fond de la piste */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: transparent;
+        /* Couleur du "thumb" (poignée) */
+        border-radius: 4px;
+        /* Coins arrondis du thumb */
+    }
+
+    &:hover::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.3);
+        /* Couleur du thumb lors du survol */
+    }
+}
+
+h2.liste-reservation {
+    font-size: 40px;
+
+    text-align: center;
+    color: #000000;
+    margin-top: 100px;
+
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+
+button.btn.btn-light {
+    background-color: #8041ff;
+    color: white;
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    transition: 0.2s ease-in-out;
+}
+
+button.btn.btn-light:hover {
+    background-color: #292929;
+
+}

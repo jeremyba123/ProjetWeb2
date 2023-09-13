@@ -14,49 +14,36 @@ class ClientController extends Controller
      *
      * @return View
      */
-    public function create()
+    public function index()
     {
-        return view('client.create', [
+        return view('client.index', [
             "forfaits" => Forfait::all(),
             "caracteristiques" => Caracteristique::all()
 
         ]);
     }
 
-    public function store(Request $request)
-    {
-        // Valider
-        $valides = $request->validate([
-            "forfait_id" => "required",
-            "date" => "required"
-        ], [
-            "date.required" => "La date est obligatoire",
-            "forfait_id.required" => "Le forfait est obligatoire",
+    //     public function store(Request $request)
+    //     {
+    //         // Valider
+    //         $valides = $request->validate([
+    //             "forfait_id" => "required",
+    //             "date_darriver" => "required"
+    //         ], [
+    //             "date_darriver.required" => "La date est obligatoire",
+    //             "forfait_id.required" => "Le forfait est obligatoire",
+    //         ]);
 
-        ]);
-    }
+    //         // Ajouter à la BDD
+    //         $forfait_User = new ForfaitUser; // $Forfait_User contient un objet "vide" du modèle (équivalent à une nouvelle entrée dans la table)
+    //         $forfait_User->forfait_id = $valides["forfait_id"];
+    //         $forfait_User->date_darriver = $valides["date_darriver"];
+    //         $forfait_User->user_id = auth()->user()->id;
+    //         $forfait_User->save();
 
-
-
-
-
-    // use App\Models\ForfaitUser;
-
- // public function store(Request $request)
- //{
-    // Validez les données du formulaire ici
-
-    // Récupérez l'utilisateur connecté (vous pouvez utiliser l'authentification Laravel)
-    // $user = auth()->user();
-
-    // Récupérez les données du formulaire
-   // $forfaitId = $request->input('forfait');
-   // $dateDepart = $request->input('date_depart');
-
-    // Enregistrez la réservation dans la table pivot
-  //  $user->forfaits()->attach($forfaitId, ['date_depart' => $dateDepart]);
-
-    // Redirigez l'utilisateur vers une page de confirmation ou de remerciement
-//}
-
+    //         // Rediriger
+    //         return redirect()
+    //             ->route('client.create')
+    //             ->with('succes', "Réservation réussi!");
+    //     }
 }
