@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\EmployeeController;
-use App\Http\Controllers\EnregistrementController;
 use App\Http\Middleware\Auth;
 
 
@@ -34,21 +33,21 @@ Route::get('/groupes', [GroupeController::class, 'index'])
  * CONNEXION ET ENREGISTREMENT
  */
 
-Route::get("/connexion", [ConnexionController::class, 'create'])
-    ->name('connexion.create')
-    ->middleware("guest");
+ Route::get("/connexion", [ConnexionController::class, 'create'])
+ ->name('connexion.create')
+ ->middleware("guest");
 
 Route::post("/connexion", [ConnexionController::class, 'authentifier'])
-    ->name('connexion.authentifier');
+ ->name('connexion.authentifier');
 
-Route::get("/deconnexion", [ConnexionController::class, 'deconnecter'])
-    ->name('deconnexion');
+Route::post("/deconnexion", [ConnexionController::class, 'deconnecter'])
+ ->name('deconnexion');
 
-Route::get("/enregistrement", [EnregistrementController::class, 'create'])
-    ->name('enregistrement.create');
+Route::get("/enregistrement",[EnregistrementController::class, 'create'])
+ ->name('enregistrement.create');
 
 Route::post("/enregistrement", [EnregistrementController::class, 'store'])
-    ->name('enregistrement.store');
+ ->name('enregistrement.store');
 
 
 /******
@@ -67,9 +66,6 @@ Route::post('/client', [ClientController::class, 'store'])
 
 
 
-Route::get('/admin', [AdminController::class, 'index'])
-    ->name('admin.index')
-    ->middleware("admin");
 
 Route::get('/employee', [EmployeeController::class, 'index'])
     ->name('employee.index')
