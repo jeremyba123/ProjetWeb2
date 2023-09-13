@@ -2,16 +2,13 @@
 
 use App\Http\Controllers\AccueilController;
 use App\Http\Controllers\ConnexionController;
-
 use App\Http\Controllers\ForfaitController;
 use App\Http\Controllers\GroupeController;
-
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Middleware\Auth;
-use App\Http\Controllers\EnregistrementController;
 
 
 /****** ROUTE LIBRE ACCES */
@@ -21,18 +18,16 @@ use App\Http\Controllers\EnregistrementController;
 Route::get('/', [AccueilController::class, 'index'])
     ->name('accueil');
 
-
 /*****************
  * FORFAIT
  */
 Route::get('/forfaits', [ForfaitController::class, 'index'])
     ->name('forfaits');
 /*****************
- * Groupe
+ *  GROUPES
  */
 Route::get('/groupes', [GroupeController::class, 'index'])
     ->name('groupes');
-
 
 /******
  * CONNEXION ET ENREGISTREMENT
@@ -55,26 +50,23 @@ Route::post("/enregistrement", [EnregistrementController::class, 'store'])
  ->name('enregistrement.store');
 
 
-/*****************
- * Client
+/******
+ * RESERVATION CLIENT
  */
 Route::get('/client', [ClientController::class, 'index'])
-->name('client.index')
-->middleware("client");
+    ->name('client.index')
+    ->middleware("client");
 
-/*****************
- * Admin
- */
-Route::get('/admin', [AdminController::class, 'index'])
- ->name('admin.index')
- ->middleware("admin");
-/*****************
- * Employee
- */
- Route::get('/employee', [EmployeeController::class, 'index'])
- ->name('employee.index')
- ->middleware("employee");
+Route::post('/client', [ClientController::class, 'store'])
+    ->name('client.store')
+    ->middleware("client");
 
 
 
 
+
+
+
+Route::get('/employee', [EmployeeController::class, 'index'])
+    ->name('employee.index')
+    ->middleware("employee");
