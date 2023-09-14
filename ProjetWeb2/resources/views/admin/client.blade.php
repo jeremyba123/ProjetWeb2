@@ -11,7 +11,7 @@
 
         <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
             {{-- FORMULAIRE D'ENREGISTREMENT --}}
-            <form class="space-y-6" action="{{ route('enregistrement.store') }}" method="POST" enctype="multipart/form-data">
+            <form class="space-y-6" action="{{ route('admin.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
 
                 {{-- PRÉNOM --}}
@@ -62,7 +62,7 @@
 
 
                 {{-- TYPE DE COMPTE (account_type) cacher dans la vue   --}}
-                <input type="hidden" id="account_type" name="account_type" value="client">
+                <input type="hidden" id="account_type" name="account_type" value="employee">
 
                 <div>
                     <button type="submit"
@@ -72,13 +72,7 @@
                 </div>
             </form>
 
-            <p class="mt-10 text-center text-sm text-gray-500">
-                <a href="{{ route('connexion.create') }}" class="hover:text-indigo-600">
-                    Déjà un membre?
-                </a>
-            </p>
+
         </div>
     </div>
 </x-layout>
-
-

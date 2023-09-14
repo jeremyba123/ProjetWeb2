@@ -12,4 +12,12 @@ class Forfait extends Model
     {
         return $this->belongsToMany(Caracteristique::class);
     }
+
+    public function users()
+    {
+        return $this->belongsToMany(User::class, 'forfait_user');
+
+        return $this->belongsToMany(Caracteristique::class);
+
+    }
 }
