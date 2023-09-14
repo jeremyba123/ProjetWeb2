@@ -26,9 +26,7 @@
 
                 <a class="fleche" href="#">
                     <img src="img/arrow-down-sign-to-navigate.png" alt="fleche">
-                    {{-- <span class="material-symbols-outlined arrow">
-                        arrow_forward_ios
-                    </span> --}}
+
                 </a>
                 <div class="bas-page">
                     <img src="img/zombie-5.png" alt="zombie">
@@ -38,8 +36,8 @@
                                 distance
                             </span>
                             <div>
-                                <p>Montréal,QC</p>
-                                <p>Parc Jean-drapeau</p>
+                                <p class="lieux">Montréal,QC</p>
+                                <p class="lieux2">Parc Jean-drapeau</p>
                             </div>
                         </div>
 
@@ -58,42 +56,51 @@
     </header>
 
     <main>
-        {{-- background --}}
+
         <div class="background">
 
             <div class="overlay"></div>
-            {{-- titre --}}
-            <img src="img/image-from-rawpixel-id-2394252-modifier2.png" width="118" height="118" alt="rock-n-roll">
-            <h1>Têtes d'affiches</h1>
-            <img src="img/image-from-rawpixel-id-2394252-modifier2.png" width="118" height="118" alt="rock-n-roll">
+
+            <div class="h1">
+                <img src="img/image-from-rawpixel-id-2394252-modifier2.png" width="118" height="118"
+                    alt="rock-n-roll">
+
+                <h1>Têtes d'affiches</h1>
+
+                <img src="img/image-from-rawpixel-id-2394252-modifier2.png" width="118" height="118"
+                    alt="rock-n-roll">
+            </div>
 
             {{-- image groupe --}}
-            @foreach ($groupes as $groupe)
-                <div class="conteneur-groupe">
-                    <img src="{{ $groupe->image_url }}" width="301" height="189" alt="groupe musique image">
-                    <p>{{ $groupe->nom }}</p>
-                    <p>{{ $groupe->ville }}</p>
-                </div>
-            @endforeach
-
-            <a href="#">
-                <div class="appel-action">
-                    <p>Voir la liste complète</p>
-                </div>
+            <div class="conteneur-groupe">
+                @foreach ($groupes as $groupe)
+                    <div class="groupe">
+                        <img src="{{ $groupe->image_url }}" width="301" height="189" alt="groupe musique image">
+                        <p class="nom">{{ $groupe->nom }}</p>
+                        <p class="ville">{{ $groupe->ville }}</p>
+                    </div>
+                @endforeach
+            </div>
+            <a class="lien-groupe" href="{{ route('groupes') }}">
+                Voir la liste complète des groupes
             </a>
 
         </div>
 
         {{-- conteneur laissez-passer --}}
         <div class="conteneur-laisser-passer">
-            <div>
-                <p>Un seul festival metal</p>
-                <p>Une experience unique</p>
-                <p>Du son plein les oreilles</p>
-                <p>Artiste à couper le souffle</p>
+            <div class="conteneur-quote">
+                <div class="overlay-image">
+                    <img src="" alt="">
+                </div>
+                {{-- <div class="quote">
+                    <video id="quote" autoplay loop muted>
+                        <source src="video/pexels-alena-darmel-7722231 (2160p)_1.mp4" type="video/mp4">
+                    </video>
+                </div> --}}
             </div>
 
-            <div>
+            <div class="acheter">
                 <p>Laissez-passer 2023</p>
 
                 <p>La prévente des laissez-passer 3-jours est maintenant débutée. Les passes
@@ -102,9 +109,9 @@
 
                 <p>Plus tu l’achètes tôt, plus t’économises!</p>
 
-                <div>
-                    <p>Acheter maintenant</p>
-                </div>
+
+
+                <a href="#">Acheter maintenant</a>
 
             </div>
         </div>

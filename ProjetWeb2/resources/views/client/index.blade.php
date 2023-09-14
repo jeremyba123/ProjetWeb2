@@ -20,7 +20,7 @@
                 <img src="img/image-from-rawpixel-id-2394252-modifier2.png" width="118" height="118"
                     alt="rock-n-roll">
 
-                <h1>{{ auth()->user()->name }}</h1>
+                <h1>{{ auth()->user()->prenom }} {{ auth()->user()->nom }}</h1>
                 <img src="img/image-from-rawpixel-id-2394252-modifier2.png" width="118" height="118"
                     alt="rock-n-roll">
             </div>

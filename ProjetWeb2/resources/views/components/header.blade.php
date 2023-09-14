@@ -1,4 +1,4 @@
-@props(['titre']);
+@props(['titre'])
 
 <header>
     <div class="img">

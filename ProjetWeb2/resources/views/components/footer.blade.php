@@ -25,9 +25,9 @@
 
             <div class="nav-footer">
                 <h4>Navigation</h4>
-                <a href="#">Accueil</a>
+                <a href="{{ route('accueil') }}">Accueil</a>
                 <a href="#">Horaire</a>
-                <a href="#">Groupes</a>
+                <a href="{{ route('groupes') }}">Groupes</a>
                 <a href="#">Contact</a>
             </div>
         </div>
@@ -55,11 +55,11 @@
 
 
         <div class="reseau-sociaux">
-            <a href="#"><img src="img/Instagram_Glyph_White.png" width="50" height="50"
+            <a href="https://www.instagram.com/"><img src="img/Instagram_Glyph_White.png" width="50" height="50"
                     alt="logo instagram"></a>
-            <a href="#"><img src="img/f_logo_RGB-White_58.png" width="50" height="50"
+            <a href="https://www.facebook.com/"><img src="img/f_logo_RGB-White_58.png" width="50" height="50"
                     alt="Logo facebook"></a>
-            <a href="#"><img src="img/2021-Twitter-logo-white.png" width="50" height="50"
+            <a href="https://twitter.com/"><img src="img/2021-Twitter-logo-white.png" width="50" height="50"
                     alt="logo twitter"></a>
         </div>
     </div>
