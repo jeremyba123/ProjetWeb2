@@ -296,6 +296,19 @@ span.lieux {
     color: white;
 }
 
+
+
+/* *********************************************** MAIN    ************************************************** */
+
+div.background {
+    background-image: url(../img/pexels-michael-brennan-14591832.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 1080px;
+    background-size: cover;
+    background-position: center;
+}
+
 /* *********************************************** Footer    ************************************************** */
 
 .img-footer {

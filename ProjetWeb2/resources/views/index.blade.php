@@ -26,9 +26,7 @@
 
                 <a class="fleche" href="#">
                     <img src="img/arrow-down-sign-to-navigate.png" alt="fleche">
-                    {{-- <span class="material-symbols-outlined arrow">
-                        arrow_forward_ios
-                    </span> --}}
+
                 </a>
                 <div class="bas-page">
                     <img src="img/zombie-5.png" alt="zombie">
@@ -38,8 +36,8 @@
                                 distance
                             </span>
                             <div>
-                                <p>Montréal,QC</p>
-                                <p>Parc Jean-drapeau</p>
+                                <p class="lieux">Montréal,QC</p>
+                                <p class="lieux">Parc Jean-drapeau</p>
                             </div>
                         </div>
 
