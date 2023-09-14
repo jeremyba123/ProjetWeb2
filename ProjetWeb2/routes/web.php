@@ -40,7 +40,7 @@ Route::get('/groupes', [GroupeController::class, 'index'])
 Route::post("/connexion", [ConnexionController::class, 'authentifier'])
  ->name('connexion.authentifier');
 
-Route::post("/deconnexion", [ConnexionController::class, 'deconnecter'])
+Route::get("/deconnexion", [ConnexionController::class, 'deconnecter'])
  ->name('deconnexion');
 
 Route::get("/enregistrement",[EnregistrementController::class, 'create'])
@@ -95,7 +95,9 @@ Route::get('/admin/user/{id}', [AdminController::class, 'destroy'])
 
 
 
-
+/*****************
+ * Employe
+ */
 
 Route::get('/employee', [EmployeeController::class, 'index'])
     ->name('employee.index')
