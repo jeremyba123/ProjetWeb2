@@ -12,11 +12,13 @@ class ConnexionController extends Controller
      *
      * @return View
      */
-    public function create() {
+    public function create()
+    {
         return view('auth.connexion.create');
     }
 
-    public function authentifier(Request $request) {
+    public function authentifier(Request $request)
+    {
         // Valider
         $valides = $request->validate([
             "email" => "required|email",
@@ -38,7 +40,7 @@ class ConnexionController extends Controller
                     ->with('succes', 'Vous êtes connecté en tant qu\'administrateur!');
             } elseif ($user->account_type === 'client') {
                 return redirect()
-                    ->intended(route('client.index'))
+                    ->intended(route('client.create'))
                     ->with('succes', 'Vous êtes connecté en tant que client!');
             } elseif ($user->account_type === 'employee') {
                 return redirect()
@@ -61,15 +63,15 @@ class ConnexionController extends Controller
      * @param Request $request
      * @return RedirectResponse
      */
-    public function deconnecter(Request $request) {
+    public function deconnecter(Request $request)
+    {
         Auth::logout();
 
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
         return redirect()
-                ->route('accueil')
-                ->with('succes', "Vous êtes déconnectés!");
-
+            ->route('accueil')
+            ->with('succes', "Vous êtes déconnectés!");
     }
 }

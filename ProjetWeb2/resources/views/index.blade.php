@@ -90,18 +90,18 @@
         {{-- conteneur laissez-passer --}}
         <div class="conteneur-laisser-passer">
             <div class="conteneur-quote">
-                <div class="overlay-image">
-                    <img src="" alt="">
-                </div>
-                {{-- <div class="quote">
+                <div class="quote">
                     <video id="quote" autoplay loop muted>
                         <source src="video/pexels-alena-darmel-7722231 (2160p)_1.mp4" type="video/mp4">
                     </video>
-                </div> --}}
+                </div>
+                <div class="overlay-image">
+                    <img class="image-quote" src="img/thumbnail_video.png" alt="">
+                </div>
             </div>
 
             <div class="acheter">
-                <p>Laissez-passer 2023</p>
+                <h4 class="">Laissez-passer 2023</h4>
 
                 <p>La prévente des laissez-passer 3-jours est maintenant débutée. Les passes
                     donnent accès à toutes les salles présentant des spectacles de la programmation
@@ -111,7 +111,7 @@
 
 
 
-                <a href="#">Acheter maintenant</a>
+                <a class="achat" href="{{ route('forfaits') }}">Réserver maintenant</a>
 
             </div>
         </div>

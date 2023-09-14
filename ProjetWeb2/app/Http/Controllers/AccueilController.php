@@ -11,7 +11,7 @@ class AccueilController extends Controller
     public function index()
     {
         return view('index', [
-            "groupes" => Groupe::all()
+            "groupes" => Groupe::limit(8)->get()
         ]);
     }
 }

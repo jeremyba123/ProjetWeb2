@@ -12,7 +12,7 @@
 
 }
 
-a.btn.btn-light {
+a.btn.btn-light.deconnexion {
     background-color: #8041ff5e;
     border: none;
     width: 210px;
@@ -328,6 +328,8 @@ h4.forfait {
 
 
 
+
+
 /* ************************************ date picker********************************** */
 
 /* Style du conteneur du date picker */
@@ -362,7 +364,7 @@ input[type="date"]::placeholder {
     color: #999;
 }
 
-/* *****************************************************************************8 */
+/* ***************************************************************************** */
 
 table {
     width: 100% !important;
@@ -377,7 +379,6 @@ table {
     margin-left: 50%;
     transform: translateX(-50%);
     margin-bottom: 100px;
-    height: 200px;
     max-height: 200px;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -430,16 +431,17 @@ td {
 }
 
 
-button.btn.btn-light {
+a.btn.btn-light.supprimer {
     background-color: #8041ff;
     color: white;
     font-family: "source-sans-pro", sans-serif;
     font-weight: bold;
     font-style: normal;
     transition: 0.2s ease-in-out;
+
 }
 
-button.btn.btn-light:hover {
+a.btn.btn-light.supprimer:hover {
     background-color: #292929;
 
 }

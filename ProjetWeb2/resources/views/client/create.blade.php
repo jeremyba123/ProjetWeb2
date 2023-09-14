@@ -11,7 +11,7 @@
                 </div>
 
                 <div class="liens-nav">
-                    <a class="btn btn-light" href="{{ route('deconnexion') }}">Déconnexion</a>
+                    <a class="btn btn-light deconnexion" href="{{ route('deconnexion') }}">Déconnexion</a>
                 </div>
             </div>
 
@@ -58,6 +58,7 @@
             <div class="form">
 
                 <h4 class="forfait">RÉSERVATION</h4>
+
                 {{-- formulaire --}}
                 <form action="{{ route('client.store') }}" method="post">
                     @csrf
@@ -71,8 +72,8 @@
                     <input id="datepicker" type="date" name="date_darriver" min="2023-05-21" max="2023-05-31">
                     <input class="submit" type="submit" value="Réserver">
                 </form>
-            </div>
 
+            </div>
         </div>
 
         <h2 class="liste-reservation">Liste des réservations</h2>
@@ -86,26 +87,47 @@
                         <th scope="col">Supprimer</th>
                     </tr>
                 </thead>
-                <tbody class="scroll">
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td><button class="btn btn-light">Supprimer</button></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td><button class="btn btn-light">Supprimer</button></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td><button class="btn btn-light">Supprimer</button></td>
-                    </tr>
-                </tbody>
+
+                @foreach ($forfaits_client as $un_forfait)
+                    <tbody class="scroll">
+                        <tr>
+                            <th scope="row">{{ $un_forfait->forfait_id }}</th>
+                            <td>{{ $un_forfait->date_darriver }}</td>
+                            <td class="date-depart">
+                                @if ($un_forfait->forfait_id === 1)
+                                    @php
+                                        $dateDepart = Carbon\Carbon::parse($un_forfait->date_darriver)->addDays(2);
+                                        if ($dateDepart->greaterThan('2023-05-31')) {
+                                            $dateDepart = Carbon\Carbon::create(2023, 5, 31);
+                                        }
+                                    @endphp
+                                    <p>{{ $dateDepart->format('Y-m-d') }}</p>
+                                @elseif ($un_forfait->forfait_id === 2)
+                                    @php
+                                        $dateDepart = Carbon\Carbon::parse($un_forfait->date_darriver)->addDays(5);
+                                        if ($dateDepart->greaterThan('2023-05-31')) {
+                                            $dateDepart = Carbon\Carbon::create(2023, 5, 31);
+                                        }
+                                    @endphp
+                                    <p>{{ $dateDepart->format('Y-m-d') }}</p>
+                                @elseif ($un_forfait->forfait_id === 3)
+                                    @php
+                                        $dateDepart = Carbon\Carbon::parse($un_forfait->date_darriver)->addDays(10);
+                                        if ($dateDepart->greaterThan('2023-05-31')) {
+                                            $dateDepart = Carbon\Carbon::create(2023, 5, 31);
+                                        }
+                                    @endphp
+                                    <p>{{ $dateDepart->format('Y-m-d') }}</p>
+                                @endif
+                            </td>
+                            <td>
+                                <a href="{{ route('reservation.destroy', ['id' => $un_forfait->id]) }}"
+                                    class="btn btn-light supprimer">Supprimer</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                @endforeach
+
             </table>
         </div>
 
