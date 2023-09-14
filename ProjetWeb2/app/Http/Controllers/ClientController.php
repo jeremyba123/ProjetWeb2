@@ -1,15 +1,14 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Models\Caracteristique;
-use App\Models\Forfait;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+use App\Models\Forfait;
+use App\Models\Caracteristique;
 
 class ClientController extends Controller
 {
-    /**
+     /**
      * Affiche la liste des notes de cours
      *
      * @return View

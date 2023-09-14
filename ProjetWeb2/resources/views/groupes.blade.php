@@ -8,6 +8,10 @@
 
     <main>
 
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Rechercher par nom de groupe">
+
+        </form>
         <div class="conteneur-groupe">
             @foreach ($groupes as $groupe)
                 <div class="groupe">

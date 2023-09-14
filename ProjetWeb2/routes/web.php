@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\EmployeeController;
-use App\Http\Controllers\EnregistrementController;
 use App\Http\Middleware\Auth;
 
 
@@ -34,21 +33,21 @@ Route::get('/groupes', [GroupeController::class, 'index'])
  * CONNEXION ET ENREGISTREMENT
  */
 
-Route::get("/connexion", [ConnexionController::class, 'create'])
-    ->name('connexion.create')
-    ->middleware("guest");
+ Route::get("/connexion", [ConnexionController::class, 'create'])
+ ->name('connexion.create')
+ ->middleware("guest");
 
 Route::post("/connexion", [ConnexionController::class, 'authentifier'])
-    ->name('connexion.authentifier');
+ ->name('connexion.authentifier');
 
 Route::get("/deconnexion", [ConnexionController::class, 'deconnecter'])
-    ->name('deconnexion');
+ ->name('deconnexion');
 
-Route::get("/enregistrement", [EnregistrementController::class, 'create'])
-    ->name('enregistrement.create');
+Route::get("/enregistrement",[EnregistrementController::class, 'create'])
+ ->name('enregistrement.create');
 
 Route::post("/enregistrement", [EnregistrementController::class, 'store'])
-    ->name('enregistrement.store');
+ ->name('enregistrement.store');
 
 
 /******
@@ -62,14 +61,43 @@ Route::post('/client', [ClientController::class, 'store'])
     ->name('client.store')
     ->middleware("client");
 
-
-
-
-
-
+/*****************
+ * Admin
+ */
 Route::get('/admin', [AdminController::class, 'index'])
-    ->name('admin.index')
+ ->name('admin.index')
+ ->middleware("admin");
+
+ Route::get('/admin/employe', [AdminController::class, 'create'])
+ ->name('admin.create')
+ ->middleware("admin");
+
+ Route::get('/admin/client', [AdminController::class, 'ajout'])
+ ->name('admin.ajout')
+ ->middleware("admin");
+
+Route::post("/admin", [AdminController::class, 'store'])
+ ->name('admin.store')
+ ->middleware("admin");
+
+Route::get('/admin/user/{id}/edit', [AdminController::class, 'edit'])
+ ->name('admin.edit')
+ ->middleware("admin");
+
+Route::put('/admin/user/{id}', [AdminController::class, 'update'])
+ ->name('admin.update')
+ ->middleware("admin");
+
+Route::get('/admin/user/{id}', [AdminController::class, 'destroy'])
+    ->name('admin.destroy')
     ->middleware("admin");
+
+
+
+
+/*****************
+ * Employe
+ */
 
 Route::get('/employee', [EmployeeController::class, 'index'])
     ->name('employee.index')
