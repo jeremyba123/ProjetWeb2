@@ -61,6 +61,36 @@ Route::post('/client', [ClientController::class, 'store'])
     ->name('client.store')
     ->middleware("client");
 
+/*****************
+ * Admin
+ */
+Route::get('/admin', [AdminController::class, 'index'])
+ ->name('admin.index')
+ ->middleware("admin");
+
+ Route::get('/admin/employe', [AdminController::class, 'create'])
+ ->name('admin.create')
+ ->middleware("admin");
+
+ Route::get('/admin/client', [AdminController::class, 'ajout'])
+ ->name('admin.ajout')
+ ->middleware("admin");
+
+Route::post("/admin", [AdminController::class, 'store'])
+ ->name('admin.store')
+ ->middleware("admin");
+
+Route::get('/admin/user/{id}/edit', [AdminController::class, 'edit'])
+ ->name('admin.edit')
+ ->middleware("admin");
+
+Route::put('/admin/user/{id}', [AdminController::class, 'update'])
+ ->name('admin.update')
+ ->middleware("admin");
+
+Route::get('/admin/user/{id}', [AdminController::class, 'destroy'])
+    ->name('admin.destroy')
+    ->middleware("admin");
 
 
 
