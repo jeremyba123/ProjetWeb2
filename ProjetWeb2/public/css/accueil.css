@@ -170,7 +170,10 @@ div.appel-action {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 258px;
+    margin-top: 15%;
+    position: absolute;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 .horraire {
@@ -221,13 +224,17 @@ span.white {
 }
 
 .bas-page {
+
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 72px;
+    position: absolute;
+    bottom: 0px;
 }
 
+/* zombie */
 .bas-page img {
+    margin-bottom: 23px;
     width: 400px;
     height: auto;
 }
@@ -253,7 +260,7 @@ a.fleche img {
     background-color: #8041ffb2;
     display: flex;
     justify-content: space-evenly;
-    height: 100px;
+    height: 87px;
     width: 529px;
     border-radius: 10px;
     margin-right: 34px;
@@ -267,6 +274,8 @@ a.fleche img {
     font-family: "source-sans-pro", sans-serif;
     font-weight: bold;
     font-size: 18px;
+    line-height: 20px;
+    margin-left: 5px;
 }
 
 .lieux {
@@ -283,8 +292,8 @@ a.fleche img {
 
 .bordure {
     border-right: 2px solid white;
-    height: 75px;
-    margin-top: 12px;
+    height: 72px;
+    margin-top: 8px;
 
 }
 
@@ -299,15 +308,202 @@ span.lieux {
 
 
 /* *********************************************** MAIN    ************************************************** */
+main {
+    position: relative;
+}
 
 div.background {
     background-image: url(../img/pexels-michael-brennan-14591832.jpg);
     background-repeat: no-repeat;
     width: 100vw;
-    height: 1080px;
+    height: auto;
     background-size: cover;
     background-position: center;
+    position: relative;
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.53);
+    z-index: 1;
+}
+
+.h1 {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4%;
+}
+
+.h1 img:last-child {
+    transform: scaleX(-1);
+}
+
+h1 {
+    color: #8041ff;
+    font-family: "devils-haircut", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 99px;
+}
+
+.conteneur-groupe {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 0px;
+    margin-top: 4%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+
+}
+
+.groupe img {
+    position: relative;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.589);
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+
+}
+
+.groupe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 75%;
+    position: relative;
+    z-index: 10;
+
+}
+
+p.nom {
+    font-family: "source-sans-pro", sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    line-height: 10px;
+
+}
+
+p.ville {
+    font-family: "source-sans-pro", sans-serif;
+    font-size: 20px;
+    color: #8041ff;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 40px;
+}
+
+a.lien-groupe {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    z-index: 7;
+    font-family: "source-sans-pro", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #8041ff;
+    width: fit-content;
+    padding: 10px 200px;
+    margin-bottom: 20px;
+    border-radius: 10px 10px 0px 0px;
+    transition: 0.2s ease-in-out;
+}
+
+a.lien-groupe:hover {
+    background-color: #292929;
+}
+
+.conteneur-laisser-passer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteneur-quote {
+    border: 1px solid yellow;
+    position: relative;
+    width: 50%;
+    height: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* .overlay-image {
+    border: 1px solid red;
+    width: 100%;
+    min-height: 500px;
+}
+
+.overlay-image img {
+    width: 100%;
+    height: auto;
+}
+
+.quote {
+    border: 1px solid blue;
+
+
+}
+
+
+div.quote {}
+
+
+
+
+#quote {
+    border: 1px solid lime;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.acheter {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: start;
+}
+
+div.acheter p {
+    text-align: center;
+}
+
+
 
 /* *********************************************** Footer    ************************************************** */
 
