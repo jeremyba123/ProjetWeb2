@@ -8,6 +8,7 @@
             <p class="admission">Admission générale</p>
             <p class="admission2">3 blocs de billets sont disponibles. Plus vous achetez tôt, plus vous économisez!</p>
             <div class="conteneur-forfait-reservation">
+
                 @foreach ($forfaits as $forfait)
                     <div class="forfaits">
                         <div class="info">

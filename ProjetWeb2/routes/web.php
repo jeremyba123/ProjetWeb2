@@ -33,60 +33,65 @@ Route::get('/groupes', [GroupeController::class, 'index'])
  * CONNEXION ET ENREGISTREMENT
  */
 
- Route::get("/connexion", [ConnexionController::class, 'create'])
- ->name('connexion.create')
- ->middleware("guest");
+Route::get("/connexion", [ConnexionController::class, 'create'])
+    ->name('connexion.create')
+    ->middleware("guest");
 
 Route::post("/connexion", [ConnexionController::class, 'authentifier'])
- ->name('connexion.authentifier');
+    ->name('connexion.authentifier');
 
 Route::get("/deconnexion", [ConnexionController::class, 'deconnecter'])
- ->name('deconnexion');
+    ->name('deconnexion');
 
-Route::get("/enregistrement",[EnregistrementController::class, 'create'])
- ->name('enregistrement.create');
+Route::get("/enregistrement", [EnregistrementController::class, 'create'])
+    ->name('enregistrement.create');
 
 Route::post("/enregistrement", [EnregistrementController::class, 'store'])
- ->name('enregistrement.store');
+    ->name('enregistrement.store');
 
 
 /******
- * RESERVATION CLIENT
+ * RESERVATION CLIENT / SUPPRESSION
  */
-Route::get('/client', [ClientController::class, 'index'])
-    ->name('client.index')
+Route::get('/client', [ClientController::class, 'create'])
+    ->name('client.create')
     ->middleware("client");
 
 Route::post('/client', [ClientController::class, 'store'])
     ->name('client.store')
     ->middleware("client");
 
+Route::get('/reservation/{id}', [ClientController::class, 'destroy'])
+    ->name('reservation.destroy')
+    ->middleware("client");
+
+
 /*****************
  * Admin
  */
 Route::get('/admin', [AdminController::class, 'index'])
- ->name('admin.index')
- ->middleware("admin");
+    ->name('admin.index')
+    ->middleware("admin");
 
- Route::get('/admin/employe', [AdminController::class, 'create'])
- ->name('admin.create')
- ->middleware("admin");
+Route::get('/admin/employe', [AdminController::class, 'create'])
+    ->name('admin.create')
+    ->middleware("admin");
 
- Route::get('/admin/client', [AdminController::class, 'ajout'])
- ->name('admin.ajout')
- ->middleware("admin");
+Route::get('/admin/client', [AdminController::class, 'ajout'])
+    ->name('admin.ajout')
+    ->middleware("admin");
 
 Route::post("/admin", [AdminController::class, 'store'])
- ->name('admin.store')
- ->middleware("admin");
+    ->name('admin.store')
+    ->middleware("admin");
 
 Route::get('/admin/user/{id}/edit', [AdminController::class, 'edit'])
- ->name('admin.edit')
- ->middleware("admin");
+    ->name('admin.edit')
+    ->middleware("admin");
 
 Route::put('/admin/user/{id}', [AdminController::class, 'update'])
- ->name('admin.update')
- ->middleware("admin");
+    ->name('admin.update')
+    ->middleware("admin");
 
 Route::get('/admin/user/{id}', [AdminController::class, 'destroy'])
     ->name('admin.destroy')

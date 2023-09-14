@@ -4,6 +4,7 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use \App\Models\Groupe;
+
 class GroupeFactory extends Factory
 {
     protected $model = Groupe::class;
@@ -15,6 +16,11 @@ class GroupeFactory extends Factory
             'Pantera', 'Judas Priest', 'Motorhead', 'Dio', 'Anthrax',
             'Tool', 'Opeth', 'Mastodon', 'Meshuggah', 'Lamb of God',
             'Nightwish', 'Epica', 'Arch Enemy', 'Within Temptation', 'Kreator',
+            'Cannibal Corpse', 'Behemoth', 'Dimmu Borgir', 'Children of Bodom', 'Amon Amarth',
+            'In Flames', 'Testament', 'Exodus', 'Sepultura', 'Gojira',
+            'Sabaton', 'Symphony X', 'Amorphis', 'Kamelot', 'Dark Tranquillity',
+            'Cradle of Filth', 'Moonspell', 'Wintersun', 'Sons of Apollo', 'Rammstein',
+            'DevilDriver', 'Fear Factory', 'Machine Head', 'Trivium', 'The Agonist',
         ];
 
         return [
