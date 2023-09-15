@@ -7,7 +7,6 @@
     </x-header>
 
     <main>
-
         <div class="conteneur-groupe">
             @foreach ($groupes as $groupe)
                 <div class="groupe">
@@ -17,10 +16,7 @@
                 </div>
             @endforeach
         </div>
-
     </main>
-
-
     <footer>
         <x-footer />
     </footer>

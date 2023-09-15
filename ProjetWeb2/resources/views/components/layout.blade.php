@@ -1,6 +1,5 @@
 @props(['titre', 'css'])
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,9 +17,7 @@
 </head>
 
 <body>
-
     {{ $slot }}
-
 </body>
 
 </html>

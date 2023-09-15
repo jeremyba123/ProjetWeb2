@@ -4,7 +4,6 @@
     </div>
 
     <div class="liens-nav">
-
         <div class="home">
             <div class="span-home">
                 <span class="material-symbols-outlined home">
@@ -28,7 +27,6 @@
                 </div>
             </div>
         </div>
-
 
         <div class="contact">
             <span class="material-symbols-outlined">

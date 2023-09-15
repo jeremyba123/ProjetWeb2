@@ -1,11 +1,8 @@
 <x-layout titre="Réservation de {{ auth()->user()->name }}" css="{{ asset('css/reservation-client.css') }}">
     <header>
         <div class="img">
-
             <div class="overlay"></div>
-
             <div class="nav">
-
                 <div class="logo">
                     <a href="#"><img src="img/Logo_logo-140-blanc.png" width="133" alt="Logo"></a>
                 </div>
@@ -16,7 +13,6 @@
             </div>
 
             <div class="h1">
-
                 <img src="img/image-from-rawpixel-id-2394252-modifier2.png" width="118" height="118"
                     alt="rock-n-roll">
 
@@ -24,18 +20,14 @@
                 <img src="img/image-from-rawpixel-id-2394252-modifier2.png" width="118" height="118"
                     alt="rock-n-roll">
             </div>
-
             <h2>Réservation</h2>
         </div>
     </header>
 
     <main>
-
         <h3>Laissez-passer</h3>
-
         <p class="admission">Admission générale</p>
         <p class="admission2">3 blocs de billets sont disponibles. Plus vous achetez tôt, plus vous économisez!</p>
-
         <div class="conteneur-forfait-reservation">
             @foreach ($forfaits as $forfait)
                 <div class="forfaits">
@@ -56,9 +48,7 @@
             @endforeach
 
             <div class="form">
-
                 <h4 class="forfait">RÉSERVATION</h4>
-
                 {{-- formulaire --}}
                 <form action="{{ route('client.store') }}" method="post">
                     @csrf
@@ -72,7 +62,6 @@
                     <input id="datepicker" type="date" name="date_darriver" min="2023-05-21" max="2023-05-31">
                     <input class="submit" type="submit" value="Réserver">
                 </form>
-
             </div>
         </div>
 
@@ -130,11 +119,5 @@
 
             </table>
         </div>
-
-
     </main>
-
-
-
-
 </x-layout>

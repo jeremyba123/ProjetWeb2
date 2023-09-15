@@ -26,11 +26,8 @@
             </div>
 
             <a href="{{ route('connexion.create') }}" class="reservation">Réserver maintenant</a>
-
     </main>
-
     <footer>
         <x-footer />
     </footer>
-
 </x-layout>
