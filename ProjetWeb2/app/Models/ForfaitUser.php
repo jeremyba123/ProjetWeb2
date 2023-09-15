@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class ForfaitUser extends Model
 {
     use HasFactory;
-}
+
+
+    public function users()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    }
+
+
