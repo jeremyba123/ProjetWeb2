@@ -57,6 +57,8 @@
                 </div>
             </div>
 
+            <input type="hidden" id="account_type" name="account_type" value="client">
+
             <div>
                 <input class="submit" type="submit" value="Soumettre">
             </div>
