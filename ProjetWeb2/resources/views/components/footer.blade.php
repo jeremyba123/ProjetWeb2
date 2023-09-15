@@ -3,21 +3,16 @@
     <div class="img-footer">
         <div class="overlay-footer"></div>
         <img class="logo-footer" src="img/Logo_logo-640-blanc.png" width="640" alt="Logo 640">
-
     </div>
 
     <div class="info-footer">
-
         <div class="info">
             <div class="a-propos">
-
                 <h4>À propos du MetalFest</h4>
-
                 <p>Le MetalFest est un festival <br>
                     de musique Metal qui a lieu <br>
                     au centre-ville de Montréal, Québec <br>
                     du 21 au 31 mai 2023.</p>
-
                 <p>Plus de 30 groupes se produisent <br>
                     à différentes heures toutes situées <br>
                     au Parc Jean-Drapeau.</p>
@@ -36,13 +31,11 @@
             <p>"Saisissez l'opportunité,</p>
             <p>sécurisez votre billet,</p>
             <p>vivez l'expérience inoubliable maintenant!"</p>
-
             <a href="#" class="btn btn-light boutton">Billets</a>
         </div>
     </div>
 
     <div class="copyright-reseau-sociaux">
-
         <div class="copyright">
             <div class="copyright2023">
                 <span class="material-symbols-outlined">
@@ -52,7 +45,6 @@
             </div>
             <p>Site: Yanik Lemieux , Jérémy Buttet-Allard , Amic Roy</p>
         </div>
-
 
         <div class="reseau-sociaux">
             <a href="https://www.instagram.com/"><img src="img/Instagram_Glyph_White.png" width="50" height="50"

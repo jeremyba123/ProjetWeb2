@@ -1,15 +1,12 @@
 <x-layout titre="Enregistrement" css="{{ asset('css/enregistrement.css') }}">
     <x-nav.nav />
-
     <h1>
         Enregistrez-vous
     </h1>
-
     <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
         {{-- FORMULAIRE D'ENREGISTREMENT --}}
         <form action="{{ route('enregistrement.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
-
             {{-- PRÉNOM --}}
             <div>
                 <div>
@@ -18,7 +15,6 @@
                     <x-forms.erreur champ="prenom" />
                 </div>
             </div>
-
             {{-- NOM --}}
             <div>
                 <div>
@@ -27,7 +23,6 @@
                     <x-forms.erreur champ="nom" />
                 </div>
             </div>
-
             {{-- EMAIL --}}
             <div>
                 <div>
@@ -36,9 +31,6 @@
                     <x-forms.erreur champ="email" />
                 </div>
             </div>
-
-
-
             {{-- PASSWORD --}}
             <div>
                 <div>
@@ -47,7 +39,6 @@
                     <x-forms.erreur champ="password" />
                 </div>
             </div>
-
             {{-- CONFIRM PASSWORD --}}
             <div>
                 <div>
@@ -56,14 +47,11 @@
                     <x-forms.erreur champ="confirmation_password" />
                 </div>
             </div>
-
             <input type="hidden" id="account_type" name="account_type" value="client">
-
             <div>
                 <input class="submit" type="submit" value="Soumettre">
             </div>
         </form>
-
         <p>
             <a class="lien-form" href="{{ route('connexion.create') }}" class="hover:text-indigo-600">
                 Déjà un membre?

@@ -1,162 +1,143 @@
 table {
-
     width: 100% !important;
-
     margin-left: 50%;
-
     transform: translateX(-50%);
-
-
-
 }
-
-
 
 .table {
-
-
-
     width: 55%;
-
     margin-left: 50%;
-
     transform: translateX(-50%);
-
     margin-bottom: 100px;
-
-
     max-height: 500px;
-
     overflow-y: scroll;
-
     overflow-x: hidden;
-
-
-
-
-
-    /* Personnalisation de la barre de défilement */
-
     scrollbar-width: thin;
-
-    /* Utilisé pour Firefox */
-
     scrollbar-color: transparent transparent;
 
-    /* Utilisé pour Firefox */
-
-
-
     &::-webkit-scrollbar {
-
         width: 8px;
-
-        /* Largeur de la barre de défilement */
-
     }
-
-
 
     &::-webkit-scrollbar-track {
-
         background: transparent;
-
-        /* Couleur de fond de la piste */
-
     }
-
-
 
     &::-webkit-scrollbar-thumb {
-
         background: transparent;
-
-        /* Couleur du "thumb" (poignée) */
-
         border-radius: 4px;
-
-        /* Coins arrondis du thumb */
-
     }
-
-
 
     &:hover::-webkit-scrollbar-thumb {
-
         background: rgba(0, 0, 0, 0.3);
-
-        /* Couleur du thumb lors du survol */
-
     }
-
 }
 
-
+h2.ajout {
+    color: #000000;
+    margin-top: 100px;
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 0px;
+}
 
 h2.liste-reservation {
-
     font-size: 40px;
-
-
-
     text-align: center;
-
     color: #000000;
-
     margin-top: 100px;
-
-
-
-}
-
-
-
-th {
-
-    text-align: center;
-
-}
-
-
-
-td {
-
-    text-align: center;
-
-}
-
-
-
-
-
-button.btn.btn-light {
-
-    background-color: #8041ff;
-
-    color: white;
-
     font-family: "source-sans-pro", sans-serif;
-
     font-weight: bold;
 
-    font-style: normal;
-
-    transition: 0.2s ease-in-out;
-
 }
 
+th {
+    text-align: center;
+}
 
+td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+td.img {
+    width: 5%;
+    padding: 0px;
+    vertical-align: middle;
+}
+
+td.img img {
+    width: 100%;
+}
+
+button.btn.btn-light {
+    background-color: #c10000;
+    color: white;
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    transition: 0.2s ease-in-out;
+}
 
 button.btn.btn-light:hover {
-
     background-color: #292929;
-
-
-
 }
-
 
 a {
     text-decoration: none;
     color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-left {
+    font-weight: bold;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-light a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+button.btn.btn-light2 {
+    background-color: #020202;
+    color: white;
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    transition: 0.2s ease-in-out;
+}
+
+button.btn.btn-light2:hover {
+    background-color: #8041ff;
+    color: white;
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    transition: 0.2s ease-in-out;
+}
+
+.image_groupe {
+    width: 20%;
+}
+
+a {
+    color: white;
+}
+
+button.btn.btn-light.mauve {
+    background-color: #8041ff;
 }

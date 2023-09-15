@@ -1,15 +1,11 @@
 <x-layout titre="Accueil" css="{{ asset('css/accueil.css') }}">
-
     <header>
-
         <div class="hero">
             <video id="background-video" autoplay loop muted>
                 <source src="video/pexels-alena-darmel-7722231 (2160p)_1.mp4" type="video/mp4">
             </video>
             <div class="hero-content">
-
                 <x-nav.nav />
-
                 <div class="appel-action">
                     <img src="img/Logo_logo-200-blanc.png" alt="Logo 200px">
                     <a class="horraire" href="#">
@@ -56,11 +52,8 @@
     </header>
 
     <main>
-
         <div class="background">
-
             <div class="overlay"></div>
-
             <div class="h1">
                 <img src="img/image-from-rawpixel-id-2394252-modifier2.png" width="118" height="118"
                     alt="rock-n-roll">
@@ -70,7 +63,6 @@
                 <img src="img/image-from-rawpixel-id-2394252-modifier2.png" width="118" height="118"
                     alt="rock-n-roll">
             </div>
-
 
             <div class="conteneur-groupe">
                 @foreach ($groupes as $groupe)
@@ -84,9 +76,7 @@
             <a class="lien-groupe" href="{{ route('groupes') }}">
                 Voir la liste complète des groupes
             </a>
-
         </div>
-
 
         <div class="conteneur-laisser-passer">
             <div class="conteneur-quote">
@@ -102,17 +92,11 @@
 
             <div class="acheter">
                 <h4 class="laisser-passer" class="">Laissez-passer 2023</h4>
-
                 <p>La prévente des laissez-passer 3-jours est maintenant débutée. Les passes
                     donnent accès à toutes les salles présentant des spectacles de la programmation
                     du festival pour les jours choisis.</p>
-
                 <p>Plus tu l’achètes tôt, plus t’économises!</p>
-
-
-
                 <a class="achat" href="{{ route('forfaits') }}">Réserver maintenant</a>
-
             </div>
         </div>
     </main>
@@ -120,8 +104,4 @@
     <footer>
         <x-footer />
     </footer>
-
-
-
-
 </x-layout>
