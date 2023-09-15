@@ -71,7 +71,7 @@
                     alt="rock-n-roll">
             </div>
 
-            {{-- image groupe --}}
+
             <div class="conteneur-groupe">
                 @foreach ($groupes as $groupe)
                     <div class="groupe">
@@ -87,7 +87,7 @@
 
         </div>
 
-        {{-- conteneur laissez-passer --}}
+
         <div class="conteneur-laisser-passer">
             <div class="conteneur-quote">
                 <div class="quote">
@@ -101,7 +101,7 @@
             </div>
 
             <div class="acheter">
-                <h4 class="">Laissez-passer 2023</h4>
+                <h4 class="laisser-passer" class="">Laissez-passer 2023</h4>
 
                 <p>La prévente des laissez-passer 3-jours est maintenant débutée. Les passes
                     donnent accès à toutes les salles présentant des spectacles de la programmation
