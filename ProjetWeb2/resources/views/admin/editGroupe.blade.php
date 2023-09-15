@@ -1,4 +1,3 @@
-
 <x-layout titre="modification"  css="{{ asset('css/admin.css') }}">
     <div class="navbar">
         <div class="navbar-left">
@@ -21,38 +20,36 @@
         </div>
     </div>
     <div class="container">
-        <h1>Modifier l'utilisateur</h1>
-        <form action="{{ route('admin.update', ['id' => $user->id]) }}" method="POST">
+        <h1>Modifier le groupe</h1>
+        <form action="{{ route('admin.updateGroupe', ['id' => $groupe->id]) }}" method="POST" enctype="multipart/form-data">
             @csrf
             @method('PUT') {{-- Utilisez la méthode PUT pour la mise à jour --}}
 
-            {{-- Champ Nom --}}
+            {{-- Champ Nom du groupe --}}
             <div class="form-group">
-                <label for="nom">Nom</label>
-                <input type="text" name="nom" id="nom" class="form-control" value="{{ $user->nom }}" required>
+                <label for="nom">Nom du groupe</label>
+                <input type="text" name="nom" id="nom" class="form-control" value="{{ $groupe->nom }}" required>
             </div>
 
-            {{-- Champ Prénom --}}
+            {{-- Champ Ville --}}
             <div class="form-group">
-                <label for="prenom">Prénom</label>
-                <input type="text" name="prenom" id="prenom" class="form-control" value="{{ $user->prenom }}" required>
+                <label for="ville">Ville</label>
+                <input type="text" name="ville" id="ville" class="form-control" value="{{ $groupe->ville }}" required>
             </div>
 
-            {{-- Champ Email --}}
+            {{-- Champ Image du groupe --}}
             <div class="form-group">
-                <label for="email">Adresse email</label>
-                <input type="email" name="email" id="email" class="form-control" value="{{ $user->email }}" required>
+                <label for="image">Image du groupe</label>
+                <input type="file" name="image" id="image" class="form-control">
             </div>
 
-            {{-- Champ Type de compte --}}
+            {{-- Affichage de l'image actuelle --}}
+            @if ($groupe->image)
             <div class="form-group">
-                <label for="account_type">Type de compte</label>
-                <select name="account_type" id="account_type" class="form-control" required>
-                    <option value="admin" @if($user->account_type == 'admin') selected @endif>Admin</option>
-                    <option value="client" @if($user->account_type == 'client') selected @endif>Client</option>
-                    <option value="employee" @if($user->account_type == 'employee') selected @endif>Employee</option>
-                </select>
+                <label>Image actuelle du groupe</label>
+                <img src="{{ asset($groupe->image) }}" alt="Image du groupe" class="img-fluid">
             </div>
+            @endif
 
             {{-- Bouton de soumission --}}
             <div class="form-group">

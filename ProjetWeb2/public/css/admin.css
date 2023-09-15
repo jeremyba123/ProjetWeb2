@@ -160,3 +160,66 @@ a {
     text-decoration: none;
     color: white;
 }
+
+
+/* Add this to your admin.css file or your inline styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; /* Add your desired background color */
+    padding: 10px 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-left {
+    font-weight: bold;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-light a {
+    text-decoration: none;
+    color: #333; /* Change to your desired button text color */
+}
+
+
+button.btn.btn-light2 {
+
+    background-color: #020202;
+
+    color: white;
+
+    font-family: "source-sans-pro", sans-serif;
+
+    font-weight: bold;
+
+    font-style: normal;
+
+    transition: 0.2s ease-in-out;
+
+}
+
+button.btn.btn-light2:hover {
+
+    background-color: #8041ff;
+
+    color: white;
+
+    font-family: "source-sans-pro", sans-serif;
+
+    font-weight: bold;
+
+    font-style: normal;
+
+    transition: 0.2s ease-in-out;
+
+}
+
+/* Style your buttons as needed */
+.image_groupe {
+    width: 20%;
+}

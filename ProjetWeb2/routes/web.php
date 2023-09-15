@@ -71,32 +71,53 @@ Route::get('/reservation/{id}', [ClientController::class, 'destroy'])
  * Admin
  */
 Route::get('/admin', [AdminController::class, 'index'])
-    ->name('admin.index')
-    ->middleware("admin");
+ ->name('admin.index')
+ ->middleware("admin");
 
-Route::get('/admin/employe', [AdminController::class, 'create'])
-    ->name('admin.create')
-    ->middleware("admin");
+ Route::get('/admin/employe', [AdminController::class, 'create'])
+ ->name('admin.create')
+ ->middleware("admin");
 
-Route::get('/admin/client', [AdminController::class, 'ajout'])
-    ->name('admin.ajout')
-    ->middleware("admin");
+ Route::get('/admin/client', [AdminController::class, 'ajout'])
+ ->name('admin.ajout')
+ ->middleware("admin");
+
+
+ Route::get('/admin/forfait', [AdminController::class, 'forfait'])
+ ->name('admin.forfait')
+ ->middleware("admin");
+
+
+ Route::get('/admin/groupe', [AdminController::class, 'groupe'])
+ ->name('admin.groupe')
+ ->middleware("admin");
 
 Route::post("/admin", [AdminController::class, 'store'])
-    ->name('admin.store')
-    ->middleware("admin");
+ ->name('admin.store')
+ ->middleware("admin");
 
 Route::get('/admin/user/{id}/edit', [AdminController::class, 'edit'])
-    ->name('admin.edit')
-    ->middleware("admin");
+ ->name('admin.edit')
+ ->middleware("admin");
+
+ Route::get('/admin/groupe/{id}/edit', [AdminController::class, 'editGroupe'])
+ ->name('admin.editGroupe')
+ ->middleware("admin");
+
+ Route::put('/admin/groupe/{id}', [AdminController::class, 'updateGroupe'])
+ ->name('admin.updateGroupe')
+ ->middleware("admin");
 
 Route::put('/admin/user/{id}', [AdminController::class, 'update'])
-    ->name('admin.update')
-    ->middleware("admin");
+ ->name('admin.update')
+ ->middleware("admin");
 
 Route::get('/admin/user/{id}', [AdminController::class, 'destroy'])
     ->name('admin.destroy')
     ->middleware("admin");
+
+Route::get('/admin/destroyForfaitUser/{forfait_id}/{user_id}', [AdminController::class, 'destroyForfaitUser'])
+    ->name('admin.destroyForfaitUser');
 
 
 
