@@ -1,7 +1,9 @@
+
 <x-layout titre="Dashboard Admin" css="{{ asset('css/admin.css') }}">
     <div class="navbar">
         <div class="navbar-left">
             {{ $admin->prenom }} {{ $admin->nom }}
+
         </div>
         <div class="navbar-right">
             <div class="button-group">
@@ -15,6 +17,7 @@
                     <a href="{{ route('admin.groupe') }}">Liste de groupe</a>
                 </button>
             </div>
+
             <a class="btn btn-light" href="{{ route('deconnexion') }}">Déconnexion</a>
         </div>
     </div>
@@ -32,10 +35,12 @@
                 </tr>
             </thead>
 
-            <tbody class="scroll">
-                <div>
-                    @foreach ($clients as $client)
+
+                <tbody class="scroll">
+                    <div>
+                         @foreach ($clients as $client)
                         <tr>
+
                             <td>{{ $client->nom }} </td>
                             <td>{{ $client->prenom }}</td>
                             <td>{{ $client->email }}</td>
@@ -64,10 +69,12 @@
                 </tr>
             </thead>
 
-            <tbody class="scroll">
-                <div>
-                    @foreach ($employes as $employe)
+
+                <tbody class="scroll">
+                    <div>
+                         @foreach ($employes as $employe)
                         <tr>
+
                             <td>{{ $employe->nom }} </td>
                             <td>{{ $employe->prenom }}</td>
                             <td>{{ $employe->email }}</td>
@@ -97,10 +104,12 @@
                 </tr>
             </thead>
 
-            <tbody class="scroll">
-                <div>
-                    @foreach ($admins as $admin)
+
+                <tbody class="scroll">
+                    <div>
+                         @foreach ($admins as $admin)
                         <tr>
+
                             <td>{{ $admin->nom }} </td>
                             <td>{{ $admin->prenom }}</td>
                             <td>{{ $admin->email }}</td>
@@ -111,12 +120,17 @@
                                         href="{{ route('admin.destroy', ['id' => $admin->id]) }}">SUPPRIMER</a></button>
                             </td>
                         </tr>
+
                     @endforeach
-            </tbody>
+                </tbody>
+
 
         </table>
         <h2 class="ajout">AJOUT D'ADMIN</h2>
         <button class="btn btn-light mauve"><a href="{{ route('admin.ajout') }}">AJOUTER</a></button>
     </div>
 
+
 </x-layout>
+
+

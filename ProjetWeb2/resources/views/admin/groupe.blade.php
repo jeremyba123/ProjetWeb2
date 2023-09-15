@@ -1,7 +1,9 @@
+
 <x-layout titre="Dashboard Admin" css="{{ asset('css/admin.css') }}">
     <div class="navbar">
         <div class="navbar-left">
             {{ $admin->prenom }} {{ $admin->nom }}
+
         </div>
         <div class="navbar-right">
             <div class="button-group">
@@ -15,6 +17,7 @@
                     <a href="{{ route('admin.groupe') }}">Liste de groupe</a>
                 </button>
             </div>
+
             <a class="btn btn-light" href="{{ route('deconnexion') }}">Déconnexion</a>
         </div>
     </div>
@@ -48,4 +51,5 @@
             </tbody>
         </table>
     </div>
+
 </x-layout>

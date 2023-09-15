@@ -49,11 +49,12 @@ class AdminController extends Controller
         return view('admin.ajout');
     }
 
-    /**
+
      * Affiche le formulaire d'enregistrement
      *
      * @return View
      */
+
     public function forfait()
     {
         $forfaitsAvecUtilisateurs = Forfait::with('users')->get();
@@ -138,6 +139,7 @@ class AdminController extends Controller
 
 
     public function edit($id)
+
     {
         $user = User::find($id);
         $admin = Auth::user();
@@ -147,6 +149,7 @@ class AdminController extends Controller
 
         return view('admin.edit', compact('user', 'admin'));
     }
+
 
 
     public function update(Request $request, $id)
@@ -173,6 +176,7 @@ class AdminController extends Controller
 
         return redirect()->route('admin.index')->with('success', 'L\'utilisateur a été mis à jour avec succès.');
     }
+
 
 
 
@@ -234,4 +238,5 @@ class AdminController extends Controller
         // Redirigez l'utilisateur vers la page appropriée
         return redirect()->back();
     }
+
 }
