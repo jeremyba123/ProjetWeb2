@@ -25,6 +25,7 @@
     </header>
 
     <main>
+        <x-alertes.succes cle="succes" />
         <h3>Laissez-passer</h3>
         <p class="admission">Admission générale</p>
         <p class="admission2">3 blocs de billets sont disponibles. Plus vous achetez tôt, plus vous économisez!</p>

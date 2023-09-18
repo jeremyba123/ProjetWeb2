@@ -68,6 +68,6 @@ class ClientController extends Controller
         // Supprime la reservation de la base de données et redirige avec message de confirmation
 
         $reservation->delete();
-        return redirect()->route('client.create')->with('success', 'Votre réservation à été supprimé avec succès.');
+        return redirect()->route('client.create')->with('succes', 'Votre réservation à été supprimé avec succès.');
     }
 }

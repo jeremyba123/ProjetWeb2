@@ -21,7 +21,7 @@
                         </div>
                     </a>
                 </div>
-
+                <x-alertes.succes cle="succes" />
                 <a class="fleche" href="#">
                     <img src="img/arrow-down-sign-to-navigate.png" alt="fleche">
 

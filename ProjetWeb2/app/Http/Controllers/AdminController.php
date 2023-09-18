@@ -69,7 +69,7 @@ class AdminController extends Controller
 
 
     /**
-     * Affiche le formulaire de modification dun groupe
+     * Affiche le formulaire d'enregistrement
      *
      * @return view
      */
@@ -115,7 +115,7 @@ class AdminController extends Controller
         $user->save();
 
 
-        return redirect()->route('admin.index')->with('success', 'Le compte a été créé');
+        return redirect()->route('admin.index')->with('succes', 'Le compte a été ajouter');
     }
 
 
@@ -130,13 +130,13 @@ class AdminController extends Controller
         $user = User::find($id);
 
         if (!$user) {
-            return redirect()->route('admin.index')->with('error', 'Utilisateur non trouvé.');
+            return redirect()->route('admin.index')->with('erreur', 'Utilisateur non trouvé.');
         }
 
         // Supprime l'utilisateur de la base de données
         $user->delete();
 
-        return redirect()->route('admin.index')->with('success', 'L\'utilisateur a été supprimé avec succès.');
+        return redirect()->route('admin.index')->with('succes', 'L\'utilisateur a été supprimé avec succès.');
     }
 
 
@@ -146,7 +146,7 @@ class AdminController extends Controller
         $user = User::find($id);
         $admin = Auth::user();
         if (!$user) {
-            return redirect()->route('admin.index')->with('error', 'Utilisateur non trouvé.');
+            return redirect()->route('admin.index')->with('erreur', 'Utilisateur non trouvé.');
         }
 
         return view('admin.edit', compact('user', 'admin'));
@@ -159,7 +159,7 @@ class AdminController extends Controller
         $user = User::find($id);
 
         if (!$user) {
-            return redirect()->route('admin.index')->with('error', 'Utilisateur non trouvé.');
+            return redirect()->route('admin.index')->with('erreur', 'Utilisateur non trouvé.');
         }
 
         $validated = $request->validate([
@@ -176,7 +176,7 @@ class AdminController extends Controller
 
         $user->save();
 
-        return redirect()->route('admin.index')->with('success', 'L\'utilisateur a été mis à jour avec succès.');
+        return redirect()->route('admin.index')->with('succes', 'L\'utilisateur a été mis à jour avec succès.');
     }
 
 
@@ -190,7 +190,7 @@ class AdminController extends Controller
         $admin = Auth::user();
 
         if (!$groupe) {
-            return redirect()->route('admin.groupe')->with('error', 'Groupe non trouvé.');
+            return redirect()->route('admin.groupe')->with('erreur', 'Groupe non trouvé.');
         }
 
         return view('admin.editGroupe', compact('groupe', 'admin'));
@@ -202,7 +202,7 @@ class AdminController extends Controller
         $groupe = Groupe::find($id);
 
         if (!$groupe) {
-            return redirect()->route('admin.groupe')->with('error', 'Groupe non trouvé.');
+            return redirect()->route('admin.groupe')->with('succes', 'Groupe non trouvé.');
         }
 
         $validated = $request->validate([
@@ -221,7 +221,7 @@ class AdminController extends Controller
 
         $groupe->save();
 
-        return redirect()->route('admin.groupe')->with('success', 'Le groupe a été mis à jour avec succès.');
+        return redirect()->route('admin.groupe')->with('succes', 'Le groupe a été mis à jour avec succès.');
     }
 
 
@@ -238,6 +238,6 @@ class AdminController extends Controller
         }
 
         // Redirigez l'utilisateur vers la page appropriée
-        return redirect()->back();
+        return redirect()->back()->with('succes', 'La reservation a été enlever!');
     }
 }
