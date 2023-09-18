@@ -13,7 +13,7 @@
                     <div class="forfaits">
                         <div class="info">
                             <p class="nom">{{ $forfait->nom }}</p>
-                            <p class="jour"> Accès {{ $forfait->jour . ' ' . 'jours' }} </p>
+                            <p class="jour">{{ $forfait->jour . ' ' . 'jours' }} </p>
                             <p class="prix">{{ $forfait->prix }} $</p>
                         </div>
                         <div class="contenue">

@@ -10,12 +10,14 @@
                     <img src="img/Logo_logo-200-blanc.png" alt="Logo 200px">
                     <a class="horraire" href="#">
                         <div class="horraire">
+
                             <div class="calendrier">
                                 <span class="material-symbols-outlined white">
                                     calendar_today
                                 </span>
                                 <p> Voir l'Horaire</p>
                             </div>
+
                         </div>
                     </a>
                 </div>

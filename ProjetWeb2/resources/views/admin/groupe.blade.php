@@ -1,4 +1,3 @@
-
 <x-layout titre="Dashboard Admin" css="{{ asset('css/admin.css') }}">
     <div class="navbar">
         <div class="navbar-left">
@@ -21,7 +20,10 @@
             <a class="btn btn-light" href="{{ route('deconnexion') }}">Déconnexion</a>
         </div>
     </div>
-    <h2 class="liste-reservation">Liste des client</h2>
+    <div class="h2-employer">
+        <h2 class="liste-reservation-officiel">Liste des groupes</h2>
+        <div></div>
+    </div>
 
     <div class="table">
         <table class="table table-striped table-light custom-table">

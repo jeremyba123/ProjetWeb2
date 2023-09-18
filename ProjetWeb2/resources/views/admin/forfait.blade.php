@@ -1,4 +1,3 @@
-
 <x-layout titre="Dashboard Admin" css="{{ asset('css/admin.css') }}">
     <div class="navbar">
         <div class="navbar-left">
@@ -21,21 +20,25 @@
             <a class="btn btn-light" href="{{ route('deconnexion') }}">Déconnexion</a>
         </div>
     </div>
-    <h2 class="liste-reservation">Liste des réservations</h2>
+    <div class="h2-employer">
+        <h2 class="liste-reservation-officiel">Liste des réservations</h2>
+        <div></div>
+    </div>
 
     <div class="table">
         <table class="table table-striped table-light custom-table">
             <thead class="thead-dark">
                 <tr>
-                    <th scope="col">Nom</th>
+                    <th scope="col">Forfaits</th>
                     <th scope="col">Prenom</th>
-                    <th scope="col">Email</th>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Courriel</th>
+                    <th scope="col"></th>
                 </tr>
             </thead>
             <tbody class="scroll">
                 <div>
                     @foreach ($forfaits as $forfait)
-
                         @foreach ($forfait->users as $user)
                             <tr>
 
@@ -60,4 +63,3 @@
         </table>
     </div>
 </x-layout>
-

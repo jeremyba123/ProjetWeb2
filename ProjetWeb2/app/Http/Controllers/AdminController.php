@@ -69,7 +69,7 @@ class AdminController extends Controller
 
 
     /**
-     * Affiche le formulaire d'enregistrement
+     * Affiche le formulaire de modification dun groupe
      *
      * @return view
      */

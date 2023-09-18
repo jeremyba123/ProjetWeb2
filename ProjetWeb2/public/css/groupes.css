@@ -37,7 +37,7 @@ span.material-symbols-outlined {
 }
 
 .dropdown-content a:hover {
-    color: #8041ffa6;
+    color: #ff5950;
 }
 
 .nav {
@@ -103,7 +103,7 @@ p.programmation {
 }
 
 p.programmation:hover {
-    color: rgb(197, 197, 197);
+    color: #ff5950;
 
 }
 
@@ -131,7 +131,7 @@ a.lien {
 }
 
 a.lien:hover {
-    color: rgb(197, 197, 197);
+    color: #ff5950;
 }
 
 /* *********************************************** header   ************************************************** */
