@@ -50,11 +50,12 @@ class AdminController extends Controller
     }
 
 
+
+    /**
      * Affiche le formulaire d'enregistrement
      *
-     * @return View
+     * @return view
      */
-
     public function forfait()
     {
         $forfaitsAvecUtilisateurs = Forfait::with('users')->get();
@@ -66,10 +67,11 @@ class AdminController extends Controller
     }
 
 
+
     /**
      * Affiche le formulaire d'enregistrement
      *
-     * @return View
+     * @return view
      */
     public function groupe()
     {
@@ -238,5 +240,4 @@ class AdminController extends Controller
         // Redirigez l'utilisateur vers la page appropriée
         return redirect()->back();
     }
-
 }
