@@ -126,6 +126,6 @@ Route::get('/admin/destroyForfaitUser/{forfait_id}/{user_id}', [AdminController:
  * Employe
  */
 
-Route::get('/employee', [EmployeeController::class, 'index'])
-    ->name('employee.index')
-    ->middleware("employee");
+ Route::get('/employee', [EmployeeController::class, 'index'])
+ ->name('employee.index')
+ ->middleware("employee");

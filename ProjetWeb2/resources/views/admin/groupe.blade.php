@@ -24,7 +24,7 @@
         <h2 class="liste-reservation-officiel">Liste des groupes</h2>
         <div></div>
     </div>
-
+    <x-alertes.succes cle="succes" />
     <div class="table">
         <table class="table table-striped table-light custom-table">
             <thead class="thead-dark">
