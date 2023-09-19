@@ -117,9 +117,31 @@ JavaScript est essentiel pour fournir une expérience utilisateur immersive et r
 
 
 ### Apport de Chaque Membre de l'Équipe
-- Amic Roy : Responsable du frontend et un peu backend mais gere surtout l'integration du site 
-- Jeremy Buttet-Allard : Responsable du backend et un peu frontend et aussi la planification du projet 
-- Yanik Lemieux: Responsable du backend ( fonctionnalite ++ a implenter) et design frontend de base 
+Amic Roy
+
+    Responsable du Frontend : Amic est en charge du développement frontend du site Web Metalfest. Il crée l'interface utilisateur, assure une expérience utilisateur fluide et attrayante, et s'assure que le site est compatible avec divers navigateurs.
+
+    Intégration du Site : Amic s'occupe de l'intégration des pages et des fonctionnalités dans le site. Il veille à ce que tous les éléments visuels et interactifs fonctionnent correctement et correspondent à l'identité visuelle définie.
+
+    Gestion de Contenu : En plus de son rôle technique, Amic participe à la gestion du contenu du site. Il s'assure que les informations sur les artistes, les horaires des concerts, et les actualités sont régulièrement mises à jour.
+
+Jeremy Buttet-Allard
+
+    Responsable du Backend : Jeremy est le chef de file du développement backend de Metalfest. Il travaille sur la mise en place de la logique serveur, la gestion de la base de données, et l'intégration des fonctionnalités avancées.
+
+    Planification du Projet : En tant que planificateur principal, Jeremy a la responsabilité de définir les étapes du projet, d'établir les délais et de coordonner les efforts de l'équipe. Il assure également la communication avec le client.
+
+    Coordination Générale : Jeremy joue un rôle central dans la coordination générale de l'équipe. Il s'assure que les différentes parties du projet s'emboîtent harmonieusement, que les ressources sont allouées efficacement, et que les objectifs sont atteints.
+
+Yanik Lemieux
+
+    Responsable du Backend (Fonctionnalités Avancées) : Yanik se concentre sur le développement des fonctionnalités avancées du site Metalfest. Il travaille sur les aspects complexes tels que la gestion des réservations, les intégrations d'API externes, et les interactions dynamiques.
+
+    Design Frontend de Base : En plus de ses responsabilités backend, Yanik contribue au design frontend de base du site. Il s'assure que l'interface utilisateur est esthétiquement agréable et cohérente avec l'identité visuelle.
+
+    Collaboration avec le Frontend : Yanik collabore étroitement avec Amic pour garantir une intégration harmonieuse des fonctionnalités avancées dans l'interface utilisateur. Cette collaboration assure une expérience utilisateur transparente.
+
+    
 
 ### Rétroaction sur le Travail d'Équipe
 **Motivation :** Notre équipe est hautement motivée et déterminée à réussir ce projet. Chacun de nous est passionné par la création de l'image de marque et du site Web du festival, et nous partageons une vision commune de son succès. Cette motivation se traduit par un engagement total envers le projet et une volonté de relever tous les défis qui se présentent.
