@@ -107,13 +107,33 @@ JavaScript est essentiel pour fournir une expérience utilisateur immersive et r
 - Nous utilisons Github pour gérer notre projet. L'enseignant fait partie des membres de l'équipe.
 
 ### Portrait Global du Développement
-- Conception de l'identité visuelle
-  - Création du nom, de la thématique et du logo
-- Développement du Site Web
-  - Pages du site
-  - Intégration des fonctionnalités
-  - Tests et révisions
-- Mise en Ligne du Site
+- Phase de Conception et Planification
+  - Choix de l'identité du festival, de la thématique, du nom et du logo
+  - Création de la maquette initiale du site à présenter à la directrice artistique
+  - Approbation de la maquette
+  - Création restante des maquettes
+- Phase de Développement du Site
+  - Gestion Carte virtuelle de l'emplacement géographique
+  - Integration maquette html
+  - Gestion Page d'administration des réservations
+  - Gestion zone d'administration
+  - Gestion Liste de forfaits
+  - Gestion Liste de groupe
+  - Gestion Suivi des statistiques avec Google Analytics
+  - Gestion Page responsive pour appareils mobiles
+- Phase de Test et Révision
+  - Test de réactivité (responsive) sur mobile
+  - Correction de bugs et améliorations du site
+  - Tests de qualité et d'assurance
+- Phase de Lancement
+  - Mise en ligne du site
+  - Création du document de didacticiel de la zone d'administration
+- Rapports et Présentations
+  - Enregistrement de capsules vidéo individuelles expliquant le travail de chaque membre
+  - Préparation de la présentation du projet à la classe
+
+
+Chacun sous catégorie possède des taches plus précises
 
 
 ### Apport de Chaque Membre de l'Équipe
