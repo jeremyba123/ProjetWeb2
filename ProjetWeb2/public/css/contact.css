@@ -1,0 +1,159 @@
+.background-contact {
+    background-color: white;
+    padding: 50px 0px 0px 0px;
+}
+
+/* Appliquer les styles au titre h2 */
+h2 {
+    text-transform: uppercase; /* Convertir en majuscules */
+    color: white; /* Couleur blanche */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Ombre portée */
+    font-family: "source-sans-pro", sans-serif; /* Police de caractères */
+    font-size: 3.2em; /* Taille de police */
+    text-align: center;
+}
+
+/* Appliquer les styles au texte dans la classe texte-adresse */
+.texte-adresse {
+    color: black; /* Couleur du texte noire */
+    font-size: 2em; /* Taille de police de 36 pixels */
+    font-family: "source-sans-pro", sans-serif; /* Police de caractères Source Sans Pro */
+    text-align: center; /* Centrer le texte horizontalement */
+    line-height: 1; /* Réduire l'interligne (ajuster la valeur selon vos préférences) */
+}
+
+/* Style pour le conteneur bottom-adresse */
+.bottom-adresse {
+    background-color: rgba(141, 0, 255, 0.64);
+    color: white;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px 25px;
+    border-radius: 10px;
+}
+
+/* Style pour le conteneur adresse-container */
+.adresse-container {
+    display: flex;
+    align-items: center; /* Alignement vertical au centre */
+}
+
+/* Style pour le div lieu et div calendrier */
+.lieu, .calendrier {
+    display: flex; /* Pour aligner les éléments enfants côte à côte */
+    align-items: center; /* Alignement vertical au centre */
+}
+
+/* Style pour le texte dans le div lieu et div calendrier */
+.lieu p, .calendrier p {
+    margin: 0; /* Supprime la marge par défaut des paragraphes */
+    padding-left: 5px; /* Espacement à gauche pour séparer du symbole */
+}
+
+/* Style pour le bord entre lieu et calendrier */
+.lieu::after {
+    content: "";
+    border-left: 2px solid white; /* Ajouter un bord gauche */
+    margin: 0 10px; /* Espacement autour du bord */
+    height: 48px; /* Hauteur du bord (ajustez au besoin) */
+}
+
+/* Style pour le conteneur du div plan */
+.plan {
+    width: 80%;
+    padding: 20px;
+    display: flex; /* Utiliser la mise en page flexbox */
+    justify-content: space-between; /* Espacement entre les éléments à l'intérieur */
+    height: 50vh;
+    margin: auto;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.479);
+    border-radius: 25px;
+}
+
+/* Style pour le div adresse */
+.adresse {
+    flex: 1; /* Faites en sorte que l'adresse prenne autant d'espace que possible */
+    background-color: #FFFFFF; /* Couleur de fond de la partie gauche */
+    padding: 20px; /* Ajouter un espace intérieur */
+    border: none;
+    text-align: center;
+    margin: auto;
+}
+
+/* Style pour le div carte */
+.carte {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Masquer tout contenu dépassant de la carte-container */
+    background-color: #FFFFFF; /* Couleur de fond de la partie droite */
+    padding: 20px; /* Ajouter un espace intérieur */
+    border-left: none;
+}
+
+/* Styles pour les vignettes */
+.vignettes {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+/* Styles pour chaque vignette */
+.vignette {
+    flex: 1;
+    background-color: white;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3); /* Ombre portée */
+    padding: 0px;
+    text-align: center;
+    margin-right: 50px;
+    max-width: 300px;
+    min-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+/* Styles pour la partie supérieure (mauve) de chaque vignette */
+.vignette-top {
+    background-color: #8D00FF;
+    color: white; /* Texte blanc */
+    font-family: "source-sans-pro", sans-serif; /* Police Source Sans Pro */
+    font-size: 36px; /* Taille de police de 36 pixels */
+    text-align: center; /* Centrer le texte horizontalement */
+    padding: 10px; /* Espacement intérieur autour du titre */
+    border-top-left-radius: 10px; /* Bordure supérieure gauche arrondie */
+    border-top-right-radius: 10px; /* Bordure supérieure droite arrondie */
+}
+
+/* Styles pour la partie inférieure (blanche) de chaque vignette */
+.vignette-bottom {
+    font-family: "source-sans-pro", sans-serif; /* Police Source Sans Pro */
+    font-size: 18px; /* Taille de police de 36 pixels */
+    background-color: white;
+    color: black; /* Texte noir */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Styles pour les titres h3 dans la partie supérieure */
+.vignette h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Styles pour l'icône */
+.vignette-bottom .material-icons {
+    margin-right: 5px; /* Espacement à droite de l'icône */
+    vertical-align: middle; /* Alignement vertical au milieu */
+    color: #D44740;
+}
+
+/* Styles pour l'adresse e-mail */
+.email-address {
+    flex-grow: 1; /* Agrandir pour occuper tout l'espace disponible */
+    color: #D44740;
+}
+
+

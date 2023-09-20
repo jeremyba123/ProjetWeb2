@@ -22,7 +22,7 @@
             <div class="programmation-dropdown">
                 <p class="programmation">Programmation</p>
                 <div class="dropdown-content">
-                    <a href="#">Horaire</a>
+                    <a href="{{ route('horaire') }}">Horaire</a>
                     <a href="{{ route('groupes') }}">Groupes</a>
                 </div>
             </div>
@@ -32,7 +32,7 @@
             <span class="material-symbols-outlined">
                 phone_in_talk
             </span>
-            <a class="lien" href="#">
+            <a class="lien" href="{{ route('contact') }}">
                 Contact
             </a>
         </div>
