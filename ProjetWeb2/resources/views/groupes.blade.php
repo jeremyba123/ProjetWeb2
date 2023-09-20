@@ -11,8 +11,27 @@
             @foreach ($groupes as $groupe)
                 <div class="groupe">
                     <img src="{{ $groupe->image_url }}" width="668" height="444" alt="groupe musique">
-                    <p class="nom">{{ $groupe->nom }}</p>
-                    <p class="ville">{{ $groupe->ville }}</p>
+                    <div class="card">
+                        <div class="nom-ville">
+                            <div class="nv">
+                                <p class="nom">{{ $groupe->nom }}</p>
+                                <p class="ville">{{ $groupe->ville }}</p>
+                            </div>
+                            <div></div>
+                        </div>
+                        @if ($groupe->id == 2)
+                            <div class="date-heure">
+                                <div class="date">
+                                    <p>
+                                        {{ ucfirst($groupe->horaire->date->locale('fr_FR')->isoFormat('dddd D MMMM YYYY')) }}
+                                    </p>
+                                </div>
+                                <div class="heure">
+                                    <p>{{ $groupe->horaire->heure }}</p>
+                                </div>
+                            </div>
+                        @endif
+                    </div>
                 </div>
             @endforeach
         </div>

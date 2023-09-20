@@ -20,7 +20,6 @@ class CreateGroupesTable extends Migration
             $table->string('image_url')->nullable();
             $table->timestamps();
         });
-
     }
 
     /**

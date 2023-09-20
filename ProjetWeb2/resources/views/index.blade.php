@@ -22,10 +22,11 @@
                     </a>
                 </div>
                 <x-alertes.succes cle="succes" />
-                <a class="fleche" href="#">
-                    <img src="img/arrow-down-sign-to-navigate.png" alt="fleche">
 
+                <a id="divClicable" onclick="window.location.href='/#main';" class="fleche" href="/#main">
+                    <img src="img/arrow-down-sign-to-navigate.png" alt="fleche">
                 </a>
+
                 <div class="bas-page">
                     <img src="img/zombie-5.png" alt="zombie">
                     <div class="lieux-date">
@@ -56,13 +57,13 @@
     <main>
         <div class="background">
             <div class="overlay"></div>
-            <div class="h1">
+            <div id="main" class="h1">
                 <img src="img/image-from-rawpixel-id-2394252-modifier2.png" width="118" height="118"
                     alt="rock-n-roll">
 
                 <h1>Têtes d'affiches</h1>
 
-                <img src="img/image-from-rawpixel-id-2394252-modifier2.png" width="118" height="118"
+                <img src="img/image-from-rawpixel-id-2394252-modifier2-inverse.png" width="118" height="118"
                     alt="rock-n-roll">
             </div>
 
