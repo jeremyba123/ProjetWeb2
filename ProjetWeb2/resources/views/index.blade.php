@@ -8,7 +8,7 @@
                 <x-nav.nav />
                 <div class="appel-action">
                     <img src="img/Logo_logo-200-blanc.png" alt="Logo 200px">
-                    <a class="horraire" href="#">
+                    <a class="horraire" href="{{ route('horaire') }}">
                         <div class="horraire">
 
                             <div class="calendrier">
