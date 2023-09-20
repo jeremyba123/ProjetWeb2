@@ -22,7 +22,7 @@ class HoraireFactory extends Factory
 
         return [
             'date' => $date,
-            'groupe_id' => $groupeId,
+
         ];
     }
 }
