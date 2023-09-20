@@ -1,6 +1,6 @@
 /* ***********************************************   Nav  ************************************************** */
 span.material-symbols-outlined {
-    color: #8041ffa6;
+    color: #ff5950;
     width: 24px;
     height: 24px;
 }
@@ -164,8 +164,63 @@ a.lien:hover {
     margin-top: 3%;
 }
 
+.h1 img {
+    transform: rotate(-25deg);
+    animation: shake 2s infinite alternate;
+}
+
+
 .h1 img:last-child {
-    transform: scaleX(-1);
+    transform: rotate(25deg);
+    animation: shake 2s infinite alternate;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    10% {
+        transform: translate(-2px, );
+    }
+
+    20% {
+        transform: translate(2px, );
+    }
+
+    30% {
+        transform: translate(-2px, );
+    }
+
+    40% {
+        transform: translate(2px, );
+    }
+
+    50% {
+        transform: translate(-2px, );
+    }
+
+    60% {
+        transform: translate(2px, );
+    }
+
+    70% {
+        transform: translate(-2px, );
+    }
+
+    80% {
+        transform: translate(2px, );
+    }
+
+    90% {
+        transform: translate(-2px, );
+    }
+
+    100% {
+        transform: translate(0, );
+    }
+
+
 }
 
 h1 {
@@ -255,9 +310,18 @@ h3 {
 .forfaits .info p.nom {
     font-size: 25px;
     font-weight: 400;
+    color: #ffffff;
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: bold;
+
 }
 
 .forfaits .info p.prix {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.forfaits .info p.jour {
     font-size: 25px;
     font-weight: 400;
 }
@@ -336,7 +400,7 @@ a.reservation:hover {
 
 .img-footer {
     position: relative;
-    background-image: url(../img/footer-picture.png);
+    background-image: url(../img/footer-picture2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
