@@ -16,14 +16,13 @@ class HoraireFactory extends Factory
         $currentDate = now();
 
         // Generate a random date within a 10-day time period
-        $date = $this->faker->dateTimeBetween($currentDate, $currentDate->addDays(10));
-
-        // Get a random groupe_id (assuming you have groupes in the database)
-        $groupeId = \App\Models\Groupe::inRandomOrder()->first()->id;
+        $date = $this->faker->dateTimeBetween("2023-05-21", "2023-05-31");
+        $heure = $this->faker->time("H:i");
 
         return [
             'date' => $date,
-
+            'heure' => $heure,
+            'groupe_id' => Groupe::inRandomOrder()->first()->id
         ];
     }
 }

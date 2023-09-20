@@ -208,22 +208,24 @@ class AdminController extends Controller
         $validated = $request->validate([
             "nom" => "required",
             "ville" => "required",
-            "image" => "image|mimes:jpeg,png,jpg,gif|max:2048", // Assurez-vous de configurer la validation d'image selon vos besoins.
+            "image_url" => "nullable|mimes:jpeg,png,jpg,gif", // Assurez-vous de configurer la validation d'image selon vos besoins.
         ]);
 
         $groupe->nom = $validated["nom"];
         $groupe->ville = $validated["ville"];
 
-        if ($request->hasFile('image')) {
-            $imagePath = $request->file('image')->store('groupe_images'); // Assurez-vous d'avoir configuré le stockage de fichiers correctement.
-            $groupe->image = $imagePath;
+         // Traiter le téléversement
+         if($request->hasFile('image_url')){
+            // Déplacer
+            Storage::putFile("public/uploads", $request->image_url);
+            // Sauvegarder le "bon" chemin qui sera inséré dans la BDD et utilisé par le navigateur
+            $groupe->image_url = "/storage/uploads/" . $request->image_url->hashName();
         }
 
         $groupe->save();
 
         return redirect()->route('admin.groupe')->with('succes', 'Le groupe a été mis à jour avec succès.');
     }
-
 
     public function destroyForfaitUser($forfait_id, $user_id)
     {
