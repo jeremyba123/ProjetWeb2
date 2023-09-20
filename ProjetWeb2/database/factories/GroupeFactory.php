@@ -5,6 +5,7 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use \App\Models\Groupe;
 
+
 class GroupeFactory extends Factory
 {
     protected $model = Groupe::class;
@@ -22,6 +23,7 @@ class GroupeFactory extends Factory
             'Cradle of Filth', 'Moonspell', 'Wintersun', 'Sons of Apollo', 'Rammstein',
             'DevilDriver', 'Fear Factory', 'Machine Head', 'Trivium', 'The Agonist',
         ];
+
 
         return [
             'nom' => $this->faker->unique()->randomElement($metalNames),
