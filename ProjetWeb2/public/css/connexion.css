@@ -7,7 +7,7 @@ body {
 
 /* ***********************************************   Nav  ************************************************** */
 span.material-symbols-outlined {
-    color: #8041ffa6;
+    color: #ff5950;
     width: 24px;
     height: 24px;
 }
@@ -159,7 +159,7 @@ h1.titre {
     left: 50%;
     transform: translateX(-50%);
     top: 196px;
-    font-size: 80px;
+    font-size: 79px;
 }
 
 form {
@@ -189,7 +189,7 @@ input.submit {
 }
 
 input.submit:hover {
-    background-color: #ff59507a;
+    background-color: #ff5950;
     color: white;
 }
 
@@ -217,7 +217,7 @@ a.lien-form {
 
 a.lien-form:hover {
 
-    color: #ff59507a;
+    color: #ff5950;
 }
 
 p.erreur {
