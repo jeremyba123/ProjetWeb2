@@ -355,13 +355,13 @@ h3 {
 
 
 .forfaits .contenue p:first-child {
-    margin-top: 15px;
+    margin-top: 25px;
 
 }
 
 .forfaits .contenue p:last-child {
 
-    margin-bottom: 0px;
+    margin-bottom: 25px;
 }
 
 .forfaits .contenue:last-child {
@@ -480,7 +480,6 @@ h4 {
     color: white;
     text-transform: uppercase;
     font-weight: bold;
-    padding-left: 0px;
 }
 
 .copyright-reseau-sociaux {
