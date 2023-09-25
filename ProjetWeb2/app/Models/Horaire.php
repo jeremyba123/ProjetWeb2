@@ -10,4 +10,10 @@ class Horaire extends Model
     use HasFactory;
 
     protected $dates = ['date'];
+
+    // Relation vers le modèle Groupe
+    public function groupe()
+    {
+        return $this->belongsTo(Groupe::class);
+    }
 }

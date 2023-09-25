@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HoraireController;
 use App\Http\Controllers\EnregistrementController;
 use App\Http\Middleware\Auth;
 
@@ -29,6 +31,18 @@ Route::get('/forfaits', [ForfaitController::class, 'index'])
  */
 Route::get('/groupes', [GroupeController::class, 'index'])
     ->name('groupes');
+
+    /*****************
+ * CONTACT
+ */
+Route::get('/contact', [ContactController::class, 'index'])
+    ->name('contact');
+
+/*****************
+ * HORAIRE
+ */
+Route::get('/horaire', [HoraireController::class, 'index']) // Assurez-vous que le nom du contrôleur est correct
+    ->name('horaire');
 
 /******
  * CONNEXION ET ENREGISTREMENT

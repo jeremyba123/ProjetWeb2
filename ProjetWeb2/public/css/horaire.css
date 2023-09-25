@@ -1,0 +1,127 @@
+/* Style pour l'encadrement du tableau */
+.encadre-horaire {
+    background-color: #f0f0f0; /* Couleur de fond gris pâle */
+    padding: 20px; /* Espacement intérieur */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Ombre portée */
+    border-radius: 10px; /* Bordure arrondie */
+    margin: 20px auto; /* Marge autour de l'encadrement */
+    max-width: 800px; /* Largeur maximale de l'encadrement */
+}
+
+/* Style pour le titre h2 */
+.encadre-horaire h2 {
+    text-transform: uppercase; /* Convertir en majuscules */
+    color: #333; /* Couleur du texte */
+    font-family: "source-sans-pro", sans-serif; /* Police de caractères */
+    font-size: 2.5em; /* Taille de police */
+    text-align: center; /* Centrer le texte horizontalement */
+    margin-bottom: 20px; /* Marge en bas du titre */
+}
+
+/* Style pour le tableau */
+.encadre-horaire table {
+    width: 100%; /* Largeur de 100% pour occuper tout l'espace disponible */
+    border-collapse: collapse; /* Fusionner les bordures de cellules */
+}
+
+/* Style pour l'en-tête du tableau */
+.encadre-horaire th {
+    background-color: #666; /* Couleur de fond gris foncé */
+    color: white; /* Couleur du texte blanc */
+    padding: 10px; /* Espacement intérieur des cellules de l'en-tête */
+    text-align: center; /* Alignement du texte à gauche */
+    text-shadow: 2px 2px 0px #000;
+}
+
+/* Style pour les cellules du tableau */
+.encadre-horaire td {
+    padding: 10px; /* Espacement intérieur des cellules du tableau */
+    border-bottom: 1px solid #ccc; /* Bordure inférieure gris pâle */
+}
+
+/* Style pour les lignes impaires du tableau (alternance de couleurs) */
+.encadre-horaire tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Couleur de fond gris plus pâle */
+}
+
+/* Style pour les cellules de la première colonne (Nom) */
+.encadre-horaire td:first-child {
+    font-weight: bold; /* Texte en gras */
+}
+
+/* Style pour les cellules de la colonne Photo */
+.encadre-horaire td:nth-child(3) {
+    text-align: center; /* Alignement du texte au centre */
+}
+
+/* Style pour les cellules de la dernière colonne (Heure) */
+.encadre-horaire td:last-child {
+    text-align: center; /* Alignement du texte au centre */
+}
+
+/* Style pour la div qui contient le tableau */
+.table-container {
+    max-height: 400px; /* Définissez la hauteur maximale souhaitée */
+    overflow-y: auto; /* Ajoutez une barre de défilement verticale en cas de dépassement */
+}
+
+/* Style pour la rangée de titre du tableau */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #666;
+    color: white;
+    text-align: center;
+}
+
+/* Style pour le corps du tableau */
+.encadre-horaire tbody {
+    max-height: 400px; /* Hauteur maximale pour le corps du tableau */
+    overflow-y: auto; /* Barre de défilement verticale en cas de dépassement */
+    color:#333;
+}
+
+.conteneur-groupe {
+    display: flex;
+    flex-direction: column; /* Les groupes sont empilés verticalement */
+    gap: 20px; /* Espacement entre les groupes */
+}
+
+.groupe {
+    display: flex;
+    align-items: center; /* Aligner les éléments verticalement */
+    gap: 20px; /* Espacement entre l'image et les informations */
+}
+
+.img-groupe {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.informations {
+    flex: 1;
+    color: black;
+    font-family: "source sans pro";
+}
+
+/* Styles pour les éléments d'information (nom, ville, date-heure) */
+.nom, .ville, .date-heure {
+    margin: 0; /* Supprimer la marge par défaut */
+}
+
+td img {
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nom {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.date-heure {
+    font-style: italic;
+    font-size: smaller;
+}

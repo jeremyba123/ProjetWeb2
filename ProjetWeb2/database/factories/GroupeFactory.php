@@ -10,25 +10,47 @@ class GroupeFactory extends Factory
 {
     protected $model = Groupe::class;
 
+
+
+
+
+
     public function definition()
     {
         $metalNames = [
-            'Metallica', 'Iron Maiden', 'Black Sabbath', 'Slayer', 'Megadeth',
-            'Pantera', 'Judas Priest', 'Motorhead', 'Dio', 'Anthrax',
-            'Tool', 'Opeth', 'Mastodon', 'Meshuggah', 'Lamb of God',
-            'Nightwish', 'Epica', 'Arch Enemy', 'Within Temptation', 'Kreator',
-            'Cannibal Corpse', 'Behemoth', 'Dimmu Borgir', 'Children of Bodom', 'Amon Amarth',
+            'Metallica', 'Slayer', 'Megadeth',
+            'Pantera',  'Motorhead', 'Dio', 'Anthrax',
+            'Tool', 'Opeth', 'Mastodon', 'Meshuggah',
+            'Nightwish', 'Epica',   'Kreator',
+             'Behemoth', 'Dimmu Borgir',
             'In Flames', 'Testament', 'Exodus', 'Sepultura', 'Gojira',
-            'Sabaton', 'Symphony X', 'Amorphis', 'Kamelot', 'Dark Tranquillity',
-            'Cradle of Filth', 'Moonspell', 'Wintersun', 'Sons of Apollo', 'Rammstein',
-            'DevilDriver', 'Fear Factory', 'Machine Head', 'Trivium', 'The Agonist',
+            'Sabaton',  'Amorphis', 'Kamelot',
+             'Moonspell', 'Wintersun',  'Rammstein',
+            'DevilDriver',   'Trivium',
         ];
 
+
+        $imageFilenames = [
+            'aiden-marples-Udu9NgiNFk8-unsplash.jpg',
+            'antoine-j-tlVxYYPt9yg-unsplash.jpg',
+            'austin-neill-hgO1wFPXl3I-unsplash.jpg',
+            'danny-howe-gwQAhisLnRA-unsplash.jpg',
+            'hannah-gibbs-X5TMNn2ivIE-unsplash.jpg',
+            'jacek-dylag-hUHzaiAHuUc-unsplash.jpg',
+            'jesse-ramirez-R1NBUvxIdu8-unsplash.jpg',
+            'luis-reynoso-J5a0MRXVnUI-unsplash.jpg',
+            'sam-moghadam-khamseh-TmbMLAvXrZQ-unsplash.jpg',
+            'vidar-nordli-mathisen-iTOq8vZkVEY-unsplash.jpg',
+            'vishnu-r-nair-kWCHq48Xwgw-unsplash.jpg',
+            'william-white-NDGzkMIasJQ-unsplash.jpg',
+            'zachary-nelson-HPYk8X9hh34-unsplash.jpg',
+        ];
 
         return [
             'nom' => $this->faker->unique()->randomElement($metalNames),
             'ville' => $this->faker->city,
-            'image_url' => $this->faker->imageUrl(640, 480, 'music'), // Generate a random music-related image URL
+            'image_url' => 'storage/custom_images/' . $this->faker->randomElement($imageFilenames),
+
         ];
     }
 }
