@@ -4,7 +4,7 @@
     padding: 20px; /* Espacement intérieur */
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Ombre portée */
     border-radius: 10px; /* Bordure arrondie */
-    margin: 20px auto; /* Marge autour de l'encadrement */
+    margin: 20px auto 50px auto; /* Marge autour de l'encadrement */
     max-width: 800px; /* Largeur maximale de l'encadrement */
 }
 
