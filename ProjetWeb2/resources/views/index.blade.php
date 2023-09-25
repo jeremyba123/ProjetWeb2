@@ -107,4 +107,5 @@
     <footer>
         <x-footer />
     </footer>
+    <script src="js/accueil.js"></script>
 </x-layout>
