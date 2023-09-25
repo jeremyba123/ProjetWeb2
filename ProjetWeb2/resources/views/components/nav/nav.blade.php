@@ -1,6 +1,6 @@
 <div class="nav">
     <div class="logo">
-        <a href="#"><img src="img/Logo_logo-140-blanc.png" width="133" alt="Logo"></a>
+        <a href="{{ route('accueil') }}"><img src="img/Logo_logo-140-blanc.png" width="133" alt="Logo"></a>
     </div>
 
     <div class="menu-burger menu-croix">

@@ -37,7 +37,6 @@ class GroupeFactory extends Factory
             'divya-agrawal-Q2BGbiLNwDc-unsplash.jpg',
             'foule-liesse-s-amusant-au-festival-musique-dans-boite-nuit.jpg',
             'glenn-van-de-wiel-DWHSc8o8K9Y-unsplash.jpg',
-            'image-from-rawpixel-id-12231042-jpeg.jpg',
             'julian-lozano-FMZxjmeZ95o-unsplash.jpg',
             'kovid-rathee-bnzstUqRKnM-unsplash.jpg',
             'man-6507758_1280.jpg',
