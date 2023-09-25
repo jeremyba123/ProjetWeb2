@@ -1,6 +1,6 @@
 /* ***********************************************   Nav  ************************************************** */
 span.material-symbols-outlined {
-    color: #D44740;
+    color: #ff5950;
     width: 24px;
     height: 24px;
 }
@@ -37,7 +37,7 @@ span.material-symbols-outlined {
 }
 
 .dropdown-content a:hover {
-    color: #D44740;
+    color: #ff5950;
 }
 
 .nav {
@@ -103,7 +103,7 @@ p.programmation {
 }
 
 p.programmation:hover {
-    color: #D44740;
+    color: #ff5950;
 
 }
 
@@ -131,7 +131,7 @@ a.lien {
 }
 
 a.lien:hover {
-    color: #D44740;
+    color: #ff5950;
 }
 
 /* *********************************************** header   ************************************************** */
@@ -164,6 +164,8 @@ a.lien:hover {
     margin-top: 3%;
     margin-bottom: 0px;
 }
+
+
 
 .h1 img {
     transform: rotate(-25deg);
@@ -539,6 +541,7 @@ h4 {
     color: white;
     text-transform: uppercase;
     font-weight: bold;
+    padding-left: 0px;
 }
 
 .copyright-reseau-sociaux {
