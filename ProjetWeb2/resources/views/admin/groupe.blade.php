@@ -42,7 +42,7 @@
                         <tr>
                             <td>{{ $groupe->nom }} </td>
                             <td>{{ $groupe->ville }}</td>
-                            <td class="img"><img class="image_groupe" src="{{ $groupe->image_url }}" alt=""
+                            <td class="img"><img class="image_groupe" src="{{ asset($groupe->image_url) }}" alt=""
                                     srcset="">
                             </td>
                             <td><button class="btn btn-light mauve"><a
