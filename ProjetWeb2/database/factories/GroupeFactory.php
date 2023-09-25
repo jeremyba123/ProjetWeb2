@@ -31,25 +31,41 @@ class GroupeFactory extends Factory
 
 
         $imageFilenames = [
-            'aiden-marples-Udu9NgiNFk8-unsplash.jpg',
-            'antoine-j-tlVxYYPt9yg-unsplash.jpg',
-            'austin-neill-hgO1wFPXl3I-unsplash.jpg',
-            'danny-howe-gwQAhisLnRA-unsplash.jpg',
-            'hannah-gibbs-X5TMNn2ivIE-unsplash.jpg',
-            'jacek-dylag-hUHzaiAHuUc-unsplash.jpg',
-            'jesse-ramirez-R1NBUvxIdu8-unsplash.jpg',
-            'luis-reynoso-J5a0MRXVnUI-unsplash.jpg',
-            'sam-moghadam-khamseh-TmbMLAvXrZQ-unsplash.jpg',
-            'vidar-nordli-mathisen-iTOq8vZkVEY-unsplash.jpg',
-            'vishnu-r-nair-kWCHq48Xwgw-unsplash.jpg',
-            'william-white-NDGzkMIasJQ-unsplash.jpg',
-            'zachary-nelson-HPYk8X9hh34-unsplash.jpg',
+            'antonio-janeski-Cq5g8WSxSG0-unsplash.jpg',
+            'chanteur-guitariste-scene.jpg',
+            'concert-1748102_1920.jpg',
+            'divya-agrawal-Q2BGbiLNwDc-unsplash.jpg',
+            'foule-liesse-s-amusant-au-festival-musique-dans-boite-nuit.jpg',
+            'glenn-van-de-wiel-DWHSc8o8K9Y-unsplash.jpg',
+            'image-from-rawpixel-id-12231042-jpeg.jpg',
+            'julian-lozano-FMZxjmeZ95o-unsplash.jpg',
+            'kovid-rathee-bnzstUqRKnM-unsplash.jpg',
+            'man-6507758_1280.jpg',
+            'matthew-kalapuch-sqJ4tLBiurw-unsplash.jpg',
+            'music-5174230_1920.jpg',
+            'nicholas-green-rAsESO5Puqw-unsplash.jpg',
+            'pexels-andy-pinaria-10518430.jpg',
+            'pexels-connor-gardenhire-2466341.jpg',
+            'pexels-harrison-haines-3536236.jpg',
+            'pexels-johannes-havn-2417726.jpg',
+            'pexels-johannes-havn-2417730.jpg',
+            'pexels-pixabay-164693.jpg',
+            'pexels-pixabay-164758.jpg',
+            'pexels-thibault-trillet-167636.jpg',
+            'sam-moghadam-khamseh-5GEEKG5nOpA-unsplash.jpg',
+            'singer-5989931_1920.jpg',
+            'tim-toomey-N__2iP37Z04-unsplash.jpg',
+            'yohann-libot-iFjNvPQ_4Z4-unsplash.jpg',
+           'yohann-libot-UqEF_gZVddk-unsplash.jpg',
+            'yuan-thirdy-rJrgTvtHrDM-unsplash.jpg',
         ];
+
+        $uniqueImageFilename = $this->faker->unique()->randomElement($imageFilenames);
 
         return [
             'nom' => $this->faker->unique()->randomElement($metalNames),
             'ville' => $this->faker->city,
-            'image_url' => 'storage/custom_images/' . $this->faker->randomElement($imageFilenames),
+            'image_url' => 'storage/custom_images/' . $uniqueImageFilename,
 
         ];
     }
