@@ -729,9 +729,6 @@ h4 {
 
 @media screen and (max-width: 1200px) {
 
-    /* div.appel-action {
-        margin-top: 23%;
-    } */
 
     .lieux-date {
         width: 400px;
@@ -761,9 +758,10 @@ h4 {
         width: 100%;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        margin-bottom: 20px;
-        margin-top: 20px;
+        flex-direction: column-reverse;
+        height: 178px;
+        background-color: #111111;
+
     }
 
     .reseau-sociaux a img {
@@ -781,7 +779,7 @@ h4 {
         width: 25%;
         display: flex;
         justify-content: space-around;
-        padding-bottom: 10px;
+        margin-bottom: 30px;
     }
 
     .copyright {
@@ -1057,6 +1055,10 @@ h4 {
         background-color: white;
     }
 
+    p.nom {
+        color: black;
+    }
+
 }
 
 
@@ -1148,7 +1150,7 @@ h4 {
 }
 
 
-@media screen and (min-width: 320px)and (max-width: 479px) {
+@media screen and (min-width: 360px)and (max-width: 479px) {
 
 
 
@@ -1171,11 +1173,11 @@ h4 {
     }
 
     .appel-action img {
-        display: none;
+        width: 123px;
     }
 
     div.appel-action {
-        margin-top: 56%;
+        margin-top: 42%;
     }
 
     .horraire {
@@ -1305,5 +1307,176 @@ h4 {
 
     p.nom {
         color: black;
+    }
+
+    .logo img {
+        width: 113px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 320px)and (max-width: 359px) {
+
+
+
+
+    .bar::before {
+        transform: translateY(-12px);
+
+    }
+
+    .bar::after {
+        transform: translateY(12px);
+
+    }
+
+    .nav {
+        margin-right: 0px;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 8px;
+    }
+
+    .appel-action img {
+        display: none;
+    }
+
+    div.appel-action {
+        margin-top: 57%;
+    }
+
+    .horraire {
+        width: 253px;
+
+    }
+
+    a.horraire {
+        margin-top: 10px;
+    }
+
+    div.lieux-date {
+        display: none;
+    }
+
+    .liens-nav {
+        margin-top: 0px;
+        padding-right: 10px;
+    }
+
+    .liens-nav a.lien {
+        padding-right: 10px;
+        margin-bottom: 0px;
+    }
+
+    p.programmation {
+        padding-right: 10px;
+    }
+
+    .liens-nav a.btn.btn-light {
+        margin-right: 9px;
+        margin-top: 7px;
+    }
+
+    span.home {
+        bottom: 6px;
+    }
+
+    a.fleche {
+        top: 85%;
+    }
+
+    .h1 h1 {
+        font-size: 45px;
+    }
+
+    .h1 img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .conteneur-groupe {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    div.background {
+        background-image: none;
+        background-color: white;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    p.nom {
+        color: black;
+    }
+
+    a.lien-groupe {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+    .acheter p {
+        font-size: 16px;
+
+    }
+
+    .conteneur-laisser-passer .acheter {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .conteneur-laisser-passer .acheter h4 {
+        font-size: 21px;
+    }
+
+    .conteneur-laisser-passer .acheter a.achat {
+        font-size: 16px;
+        padding: 10px 34px;
+    }
+
+    .conteneur-quote {
+        display: none;
+    }
+
+    .conteneur-laisser-passer {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .conteneur-laisser-passer .acheter {
+        width: 100%;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .conteneur-laisser-passer p {
+        font-size: 16px;
+    }
+
+    .billets-achat p {
+        font-size: 20px;
+    }
+
+    .copyright p {
+        font-size: 13px;
+    }
+
+    .reseau-sociaux a {
+        margin-right: 10px;
+    }
+
+    .reseau-sociaux a:last-child {
+        margin-right: 0px;
+    }
+
+    p.nom {
+        color: black;
+    }
+
+    .logo img {
+        width: 113px;
     }
 }

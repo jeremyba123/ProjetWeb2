@@ -46,13 +46,14 @@
                 <input type="file" name="image" id="image" class="form-control img-groupe">
             </div>
 
-             {{-- Affichage de l'image actuelle --}}
-             @if ($groupe->image_url)
-             <div class="form-group">
-                 <label>Image actuelle du groupe</label><br>
-                 <img src="{{ asset($groupe->image_url) }}" alt="Image du groupe" width="250" height="250" class="img-fluid">
-             </div>
-         @endif
+            {{-- Affichage de l'image actuelle --}}
+            @if ($groupe->image_url)
+                <div class="form-group">
+                    <label>Image actuelle du groupe</label><br>
+                    <img src="{{ $groupe->image_url }}" alt="Image du groupe" width="250" height="250"
+                        class="img-fluid">
+                </div>
+            @endif
 
             {{-- Bouton de soumission --}}
             <div class="form-group">
