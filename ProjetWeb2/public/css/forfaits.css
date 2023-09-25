@@ -33,7 +33,7 @@ span.material-symbols-outlined {
 
     display: block;
     text-align: center;
-
+    transition: 0.2s ease-in-out;
 }
 
 .dropdown-content a:hover {

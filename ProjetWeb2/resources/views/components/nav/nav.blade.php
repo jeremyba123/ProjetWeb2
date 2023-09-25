@@ -3,6 +3,11 @@
         <a href="#"><img src="img/Logo_logo-140-blanc.png" width="133" alt="Logo"></a>
     </div>
 
+    <div class="menu-burger menu-croix">
+        <div class="bar"></div>
+    </div>
+
+
     <div class="liens-nav">
         <div class="home">
             <div class="span-home">

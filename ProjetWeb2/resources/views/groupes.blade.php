@@ -19,18 +19,18 @@
                             </div>
                             <div></div>
                         </div>
-                        @if ($groupe->id == 2)
-                            <div class="date-heure">
-                                <div class="date">
-                                    <p>
-                                        {{ ucfirst($groupe->horaire->date->locale('fr_FR')->isoFormat('dddd D MMMM YYYY')) }}
-                                    </p>
-                                </div>
-                                <div class="heure">
-                                    <p>{{ $groupe->horaire->heure }}</p>
-                                </div>
+
+                        <div class="date-heure">
+                            <div class="date">
+                                <p>
+                                    {{ ucfirst($groupe->horaire->date->locale('fr_FR')->isoFormat('dddd D MMMM YYYY')) }}
+                                </p>
                             </div>
-                        @endif
+                            <div class="heure">
+                                <p>{{ $groupe->horaire->heure }}</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             @endforeach
