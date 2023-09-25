@@ -1,3 +1,4 @@
+<x-splash.splash>
 <x-layout titre="Accueil" css="{{ asset('css/accueil.css') }}">
     <header>
         <div class="hero">
@@ -109,3 +110,4 @@
     </footer>
     <script src="js/accueil.js"></script>
 </x-layout>
+</x-splash.splash>
