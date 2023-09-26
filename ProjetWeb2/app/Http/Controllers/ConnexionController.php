@@ -31,7 +31,7 @@ class ConnexionController extends Controller
             "password" => "required"
         ], [
             "email.required" => "Le courriel est obligatoire",
-            "email.email" => "Le courriel doit avoir un format valide",
+            "email.email" => "Le courriel doit être valide",
             "password.required" => "Le mot de passe est requis"
         ]);
 
@@ -60,7 +60,7 @@ class ConnexionController extends Controller
         // En cas d'échec de l'authentification, retour au formulaire avec des erreurs
         return back()
             ->withErrors([
-                "email" => "Les informations fournies ne sont pas valides"
+                "email" => "Les informations non valides"
             ])
             ->onlyInput('email');
     }
