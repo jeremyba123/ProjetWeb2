@@ -22,6 +22,6 @@ class CreateForfaitUserTable extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('forfait_users');
+        Schema::dropIfExists('forfait_user');
     }
 }
