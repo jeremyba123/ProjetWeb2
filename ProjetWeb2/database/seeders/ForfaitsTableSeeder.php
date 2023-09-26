@@ -9,21 +9,21 @@ use Illuminate\Database\Seeder;
 class ForfaitsTableSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * Exécute les opérations de remplissage de la base de données pour les forfaits.
      *
      * @return void
      */
     public function run()
     {
+        // Crée trois forfaits en utilisant la factory Forfait.
         \App\Models\Forfait::factory(3)->create();
 
-        # prendre le forfait 1 et l'associer à la caractéristique "Admission"
+        // Associe le forfait 1 à la caractéristique "Admission".
         $forfait = Forfait::find(1);
         $caracteristique = Caracteristique::where('nom', '=', 'Admission')->first();
-
         $forfait->caracteristiques()->attach($caracteristique);
 
-        # prendre le forfait 2 et l'associer à la caractéristique "Admission", "Consommation", "Logement"
+        // Associe le forfait 2 à plusieurs caractéristiques.
         $forfait = Forfait::find(2);
         $caracteristique1 = Caracteristique::where('nom', '=', 'Admission')->first();
         $caracteristique2 = Caracteristique::where('nom', '=', 'Consommation')->first();
@@ -33,7 +33,7 @@ class ForfaitsTableSeeder extends Seeder
         $forfait->caracteristiques()->attach($caracteristique2);
         $forfait->caracteristiques()->attach($caracteristique3);
 
-        # prendre le forfait 3 et l'associer à la caractéristique "Admission", "Consommation", "Logement , Accès VIP , Repas complet"
+        // Associe le forfait 3 à plusieurs caractéristiques, y compris "Accès VIP" et "Repas complet".
         $forfait = Forfait::find(3);
         $caracteristique1 = Caracteristique::where('nom', '=', 'Admission')->first();
         $caracteristique2 = Caracteristique::where('nom', '=', 'Consommation')->first();

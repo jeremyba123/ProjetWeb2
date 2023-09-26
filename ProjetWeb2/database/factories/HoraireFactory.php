@@ -10,13 +10,20 @@ class HoraireFactory extends Factory
 {
     protected $model = Horaire::class;
 
+    /**
+     * Définit la structure d'une instance Horaire générée.
+     *
+     * @return array Les attributs de l'instance Horaire
+     */
     public function definition()
     {
-        // Get the current date
+        // Obtient la date actuelle
         $currentDate = now();
 
-        // Generate a random date within a 10-day time period
+        // Génère une date aléatoire dans une période de 10 jours
         $date = $this->faker->dateTimeBetween("2023-05-21", "2023-05-31");
+
+        // Génère une heure aléatoire au format "Heures:Minutes"
         $heure = $this->faker->time("H:i");
 
         return [

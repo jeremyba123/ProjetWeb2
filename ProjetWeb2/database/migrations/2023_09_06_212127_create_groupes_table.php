@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 class CreateGroupesTable extends Migration
 {
     /**
-     * Run the migrations.
+     * Exécute la migration pour créer la table "groupes".
      *
      * @return void
      */
@@ -23,7 +23,7 @@ class CreateGroupesTable extends Migration
     }
 
     /**
-     * Reverse the migrations.
+     * Revertit la migration en supprimant la table "groupes".
      *
      * @return void
      */

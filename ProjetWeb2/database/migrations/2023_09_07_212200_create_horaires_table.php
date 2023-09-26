@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 class CreateHorairesTable extends Migration
 {
     /**
-     * Run the migrations.
+     * Exécute les migrations : Crée la table 'horaires'.
      *
      * @return void
      */
@@ -23,7 +23,7 @@ class CreateHorairesTable extends Migration
     }
 
     /**
-     * Reverse the migrations.
+     * Annule les migrations : Supprime la table 'horaires'.
      *
      * @return void
      */

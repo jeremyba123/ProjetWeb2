@@ -6,6 +6,11 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateUsersTable extends Migration
 {
+    /**
+     * Exécute la migration pour créer la table des utilisateurs.
+     *
+     * @return void
+     */
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
@@ -21,6 +26,11 @@ class CreateUsersTable extends Migration
         });
     }
 
+    /**
+     * Revertit la migration en supprimant la table des utilisateurs.
+     *
+     * @return void
+     */
     public function down()
     {
         Schema::dropIfExists('users');

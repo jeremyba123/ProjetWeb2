@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 class CaracteristiqueFactory extends Factory
 {
     /**
-     * Define the model's default state.
+     * Définit les attributs par défaut du modèle.
      *
      * @return array
      */

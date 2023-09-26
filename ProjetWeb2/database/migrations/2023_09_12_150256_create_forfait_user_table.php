@@ -6,6 +6,11 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateForfaitUserTable extends Migration
 {
+    /**
+     * Exécute la migration pour créer la table pivot "forfait_user".
+     *
+     * @return void
+     */
     public function up()
     {
         Schema::create('forfait_user', function (Blueprint $table) {
@@ -20,6 +25,11 @@ class CreateForfaitUserTable extends Migration
         });
     }
 
+    /**
+     * Revertit la migration en supprimant la table pivot "forfait_user".
+     *
+     * @return void
+     */
     public function down()
     {
         Schema::dropIfExists('forfait_user');

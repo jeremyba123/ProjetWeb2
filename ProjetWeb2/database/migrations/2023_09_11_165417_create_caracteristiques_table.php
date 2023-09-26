@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 class CreateCaracteristiquesTable extends Migration
 {
     /**
-     * Run the migrations.
+     * Exécute la migration pour créer la table "caracteristiques".
      *
      * @return void
      */
@@ -21,7 +21,7 @@ class CreateCaracteristiquesTable extends Migration
     }
 
     /**
-     * Reverse the migrations.
+     * Inverse la migration pour supprimer la table "caracteristiques".
      *
      * @return void
      */

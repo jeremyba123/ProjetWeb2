@@ -5,6 +5,11 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateForfaitsTable extends Migration
 {
+    /**
+     * Exécute les opérations nécessaires pour créer la table "forfaits".
+     *
+     * @return void
+     */
     public function up()
     {
         Schema::create('forfaits', function (Blueprint $table) {
@@ -16,6 +21,11 @@ class CreateForfaitsTable extends Migration
         });
     }
 
+    /**
+     * Revertit les opérations effectuées dans la méthode "up" pour supprimer la table "forfaits".
+     *
+     * @return void
+     */
     public function down()
     {
         Schema::dropIfExists('forfaits');

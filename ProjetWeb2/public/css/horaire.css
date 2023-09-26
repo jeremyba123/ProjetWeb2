@@ -5,23 +5,25 @@
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Ombre portée */
     border-radius: 10px; /* Bordure arrondie */
     margin: 20px auto 50px auto; /* Marge autour de l'encadrement */
-    max-width: 800px; /* Largeur maximale de l'encadrement */
+    max-width: 1000px; /* Largeur maximale de l'encadrement */
 }
 
 /* Style pour le titre h2 */
 .encadre-horaire h2 {
     text-transform: uppercase; /* Convertir en majuscules */
-    color: #333; /* Couleur du texte */
+    color: #666; /* Couleur du texte */
     font-family: "source-sans-pro", sans-serif; /* Police de caractères */
     font-size: 2.5em; /* Taille de police */
     text-align: center; /* Centrer le texte horizontalement */
     margin-bottom: 20px; /* Marge en bas du titre */
+    font-weight: bold;
 }
 
 /* Style pour le tableau */
 .encadre-horaire table {
     width: 100%; /* Largeur de 100% pour occuper tout l'espace disponible */
     border-collapse: collapse; /* Fusionner les bordures de cellules */
+    background-color: white;
 }
 
 /* Style pour l'en-tête du tableau */
@@ -30,13 +32,21 @@
     color: white; /* Couleur du texte blanc */
     padding: 10px; /* Espacement intérieur des cellules de l'en-tête */
     text-align: center; /* Alignement du texte à gauche */
-    text-shadow: 2px 2px 0px #000;
+}
+
+.encadre-horaire th:first-child {
+    border-radius: 15px 0px 0px 0px;
+}
+
+.encadre-horaire th:last-child {
+    border-radius: 0px 15px 0px 0px;
 }
 
 /* Style pour les cellules du tableau */
 .encadre-horaire td {
     padding: 10px; /* Espacement intérieur des cellules du tableau */
     border-bottom: 1px solid #ccc; /* Bordure inférieure gris pâle */
+    text-align: center;
 }
 
 /* Style pour les lignes impaires du tableau (alternance de couleurs) */
@@ -61,12 +71,13 @@
 
 /* Style pour la div qui contient le tableau */
 .table-container {
-    max-height: 400px; /* Définissez la hauteur maximale souhaitée */
+    max-height: 650px; /* Définissez la hauteur maximale souhaitée */
     overflow-y: auto; /* Ajoutez une barre de défilement verticale en cas de dépassement */
+    border-radius: 15px;
 }
 
 /* Style pour la rangée de titre du tableau */
-.sticky-header {
+thead {
     position: sticky;
     top: 0;
     z-index: 2;
@@ -124,4 +135,8 @@ td img {
 .date-heure {
     font-style: italic;
     font-size: smaller;
+}
+
+.table {
+    border-radius: 15px;
 }

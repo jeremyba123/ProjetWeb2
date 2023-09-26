@@ -8,7 +8,7 @@ use Illuminate\Database\Seeder;
 class ForfaitUserTableSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * Exécute les opérations de remplissage de la base de données.
      *
      * @return void
      */
