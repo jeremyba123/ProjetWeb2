@@ -17,9 +17,15 @@ class ConnexionController extends Controller
         return view('auth.connexion.create');
     }
 
+    /**
+     * Authentifie l'utilisateur.
+     *
+     * @param Request $request
+     * @return RedirectResponse
+     */
     public function authentifier(Request $request)
     {
-        // Valider
+        // Validation des données de formulaire
         $valides = $request->validate([
             "email" => "required|email",
             "password" => "required"
@@ -29,11 +35,13 @@ class ConnexionController extends Controller
             "password.required" => "Le mot de passe est requis"
         ]);
 
+        // Tentative d'authentification de l'utilisateur
         if (Auth::attempt($valides)) {
             $request->session()->regenerate();
 
             $user = Auth::user();
 
+            // Redirection en fonction du type de compte de l'utilisateur
             if ($user->account_type === 'admin') {
                 return redirect()
                     ->intended(route('admin.index'))
@@ -49,6 +57,7 @@ class ConnexionController extends Controller
             }
         }
 
+        // En cas d'échec de l'authentification, retour au formulaire avec des erreurs
         return back()
             ->withErrors([
                 "email" => "Les informations fournies ne sont pas valides"

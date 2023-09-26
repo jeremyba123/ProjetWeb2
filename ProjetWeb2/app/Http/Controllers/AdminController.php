@@ -14,12 +14,13 @@ use Illuminate\Support\Facades\Storage;
 class AdminController extends Controller
 {
     /**
-     * Affiche la liste des notes de cours
+     * Affiche la page d'accueil de l'administration avec des statistiques.
      *
      * @return View
      */
     public function index()
     {
+        // Récupère les statistiques et affiche la page d'accueil.
         return view('admin.index', [
             "clients" => User::where('account_type', 'client')->get(),
             "employes" => User::where('account_type', 'employee')->get(),
@@ -30,34 +31,38 @@ class AdminController extends Controller
 
 
     /**
-     * Affiche le formulaire d'enregistrement
+     * Affiche le formulaire de création d'utilisateur.
      *
      * @return View
      */
     public function create()
     {
+        // Affiche le formulaire de création d'utilisateur.
         return view('admin.create');
     }
 
     /**
-     * Affiche le formulaire d'enregistrement
+     * Affiche le formulaire d'ajout d'utilisateur.
      *
      * @return View
      */
     public function ajout()
     {
+        // Affiche le formulaire d'ajout d'utilisateur.
         return view('admin.ajout');
     }
 
 
 
     /**
-     * Affiche le formulaire d'enregistrement
+     * Affiche la liste des forfaits avec leurs utilisateurs.
      *
      * @return view
      */
     public function forfait()
     {
+        // Récupère les forfaits avec les utilisateurs associés et affiche la liste.
+
         $forfaitsAvecUtilisateurs = Forfait::with('users')->get();
 
         return view('admin.forfait', [
@@ -69,23 +74,31 @@ class AdminController extends Controller
 
 
     /**
-     * Affiche le formulaire d'enregistrement
+     * Affiche la liste des groupes.
      *
      * @return view
      */
     public function groupe()
     {
+        // Récupère la liste des groupes et affiche la page.
         return view('admin.groupe', [
             "groupes" => Groupe::all(),
             "admin" => Auth::user(),
         ]);
     }
 
-
+    /**
+     * Stocke les informations d'un nouvel utilisateur dans la base de données.
+     *
+     * @param Request $request
+     * @return void
+     */
     public function store(Request $request)
     {
-        // Valider les données du formulaire
-        $validated = $request->validate([
+        // Valide les données du formulaire et crée un nouvel utilisateur.
+        // Redirige ensuite vers la page d'accueil de l'administration.
+        // Gère également les erreurs de validation.
+            $validated = $request->validate([
             "prenom" => "required",
             "nom" => "required",
             "email" => "required|email|unique:users,email",
@@ -123,10 +136,13 @@ class AdminController extends Controller
      * Supprime un utilisateur de la base de données.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return Redirect
      */
     public function destroy($id)
     {
+        // Recherche et supprime un utilisateur par ID.
+        // Redirige ensuite vers la page d'accueil de l'administration.
+        // Gère les cas où l'utilisateur n'est pas trouvé.
         $user = User::find($id);
 
         if (!$user) {
@@ -139,10 +155,16 @@ class AdminController extends Controller
         return redirect()->route('admin.index')->with('succes', 'L\'utilisateur a été supprimé avec succès.');
     }
 
-
+    /**
+     * Affiche le formulaire d'édition d'utilisateur.
+     *
+     * @param int $id
+     * @return View
+     */
     public function edit($id)
-
     {
+        // Affiche le formulaire d'édition d'utilisateur pour l'ID spécifié.
+        // Gère les cas où l'utilisateur n'est pas trouvé.
         $user = User::find($id);
         $admin = Auth::user();
         if (!$user) {
@@ -152,10 +174,18 @@ class AdminController extends Controller
         return view('admin.edit', compact('user', 'admin'));
     }
 
-
-
+    /**
+     * Met à jour les informations d'un utilisateur dans la base de données.
+     *
+     * @param Request $request
+     * @param int $id
+     * @return Redirect
+     */
     public function update(Request $request, $id)
     {
+        // Valide les données du formulaire et met à jour l'utilisateur par ID.
+        // Redirige ensuite vers la page d'accueil de l'administration.
+        // Gère les cas où l'utilisateur n'est pas trouvé.
         $user = User::find($id);
 
         if (!$user) {
@@ -179,13 +209,16 @@ class AdminController extends Controller
         return redirect()->route('admin.index')->with('succes', 'L\'utilisateur a été mis à jour avec succès.');
     }
 
-
-
-
-
-
+    /**
+     * Affiche le formulaire d'édition de groupe.
+     *
+     * @param int $id
+     * @return View
+     */
     public function editGroupe($id)
     {
+        // Affiche le formulaire d'édition de groupe pour l'ID spécifié.
+        // Gère les cas où le groupe n'est pas trouvé.
         $groupe = Groupe::find($id);
         $admin = Auth::user();
 
@@ -196,9 +229,18 @@ class AdminController extends Controller
         return view('admin.editGroupe', compact('groupe', 'admin'));
     }
 
-
+    /**
+     * Met à jour les informations d'un groupe dans la base de données.
+     *
+     * @param Request $request
+     * @param int $id
+     * @return Redirect
+     */
     public function updateGroupe(Request $request, $id)
     {
+        // Valide les données du formulaire et met à jour le groupe par ID.
+        // Redirige ensuite vers la liste des groupes.
+        // Gère les cas où le groupe n'est pas trouvé.
         $groupe = Groupe::find($id);
 
         if (!$groupe) {
@@ -227,9 +269,17 @@ class AdminController extends Controller
         return redirect()->route('admin.groupe')->with('succes', 'Le groupe a été mis à jour avec succès.');
     }
 
+    /**
+     * Supprime l'association d'un utilisateur à un forfait.
+     *
+     * @param int $forfait_id
+     * @param int $user_id
+     * @return Redirect
+     */
     public function destroyForfaitUser($forfait_id, $user_id)
     {
-        // Trouvez l'enregistrement de la table pivot correspondant
+        // Recherche et supprime l'association entre un utilisateur et un forfait.
+        // Redirige ensuite vers la page précédente.
         $forfaitUser = ForfaitUser::where('forfait_id', $forfait_id)
             ->where('user_id', $user_id)
             ->first();
