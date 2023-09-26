@@ -9,12 +9,15 @@ class ForfaitUser extends Model
 {
     use HasFactory;
 
-
+    /**
+     * Récupère l'utilisateur associé à ce forfait utilisateur.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
     public function users()
     {
         return $this->belongsTo(User::class);
     }
-
-    }
+}
 
 

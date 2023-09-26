@@ -20,6 +20,12 @@ class EnregistrementController extends Controller
         return view('auth.enregistrement.create');
     }
 
+    /**
+     * Traite le formulaire d'enregistrement
+     *
+     * @param Request $request
+     * @return RedirectResponse
+     */
     public function store(Request $request)
     {
         // Valider les données du formulaire
