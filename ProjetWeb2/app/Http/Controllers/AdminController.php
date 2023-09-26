@@ -98,7 +98,7 @@ class AdminController extends Controller
         // Valide les données du formulaire et crée un nouvel utilisateur.
         // Redirige ensuite vers la page d'accueil de l'administration.
         // Gère également les erreurs de validation.
-            $validated = $request->validate([
+        $validated = $request->validate([
             "prenom" => "required",
             "nom" => "required",
             "email" => "required|email|unique:users,email",
@@ -237,31 +237,45 @@ class AdminController extends Controller
      * @return Redirect
      */
     public function updateGroupe(Request $request, $id)
-    {
-        // Valide les données du formulaire et met à jour le groupe par ID.
-        // Redirige ensuite vers la liste des groupes.
-        // Gère les cas où le groupe n'est pas trouvé.
-        $groupe = Groupe::find($id);
 
+    {
+
+        // Valide les données du formulaire et met à jour le groupe par ID.
+
+        // Redirige ensuite vers la liste des groupes.
+
+        // Gère les cas où le groupe n'est pas trouvé.
+
+        $groupe = Groupe::find($id);
         if (!$groupe) {
+
             return redirect()->route('admin.groupe')->with('succes', 'Groupe non trouvé.');
         }
-
         $validated = $request->validate([
+
             "nom" => "required",
+
             "ville" => "required",
-            "image_url" => "nullable|mimes:jpeg,png,jpg,gif", // Assurez-vous de configurer la validation d'image selon vos besoins.
+
+            "image" => "nullable|mimes:jpeg,png,jpg,gif", // Assurez-vous de configurer la validation d'image selon vos besoins.
+
         ]);
 
         $groupe->nom = $validated["nom"];
+
         $groupe->ville = $validated["ville"];
 
-         // Traiter le téléversement
-         if($request->hasFile('image_url')){
+        // Traiter le téléversement
+
+        if ($request->hasFile('image')) {
+
             // Déplacer
-            Storage::putFile("public/uploads", $request->image_url);
+
+            Storage::putFile("public/uploads", $request->image);
+
             // Sauvegarder le "bon" chemin qui sera inséré dans la BDD et utilisé par le navigateur
-            $groupe->image_url = "/storage/uploads/" . $request->image_url->hashName();
+
+            $groupe->image_url = "/storage/uploads/" . $request->image->hashName();
         }
 
         $groupe->save();

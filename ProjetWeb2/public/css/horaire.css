@@ -1,37 +1,41 @@
-/* Style pour l'encadrement du tableau */
 .encadre-horaire {
-    background-color: #f0f0f0; /* Couleur de fond gris pâle */
-    padding: 20px; /* Espacement intérieur */
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Ombre portée */
-    border-radius: 10px; /* Bordure arrondie */
-    margin: 20px auto 50px auto; /* Marge autour de l'encadrement */
-    max-width: 1000px; /* Largeur maximale de l'encadrement */
+    background-color: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    border-radius: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
 }
 
-/* Style pour le titre h2 */
 .encadre-horaire h2 {
-    text-transform: uppercase; /* Convertir en majuscules */
-    color: #666; /* Couleur du texte */
-    font-family: "source-sans-pro", sans-serif; /* Police de caractères */
-    font-size: 2.5em; /* Taille de police */
-    text-align: center; /* Centrer le texte horizontalement */
-    margin-bottom: 20px; /* Marge en bas du titre */
+    text-transform: uppercase;
+    color: #ff5950;
+    font-family: "source-sans-pro", sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
     font-weight: bold;
+    box-shadow: 0px 3px 8px #0000001f;
+    width: 568px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
-/* Style pour le tableau */
 .encadre-horaire table {
-    width: 100%; /* Largeur de 100% pour occuper tout l'espace disponible */
-    border-collapse: collapse; /* Fusionner les bordures de cellules */
+    width: 100%;
+    border-collapse: collapse;
     background-color: white;
+    border-radius: 15px;
 }
 
-/* Style pour l'en-tête du tableau */
 .encadre-horaire th {
-    background-color: #666; /* Couleur de fond gris foncé */
-    color: white; /* Couleur du texte blanc */
-    padding: 10px; /* Espacement intérieur des cellules de l'en-tête */
-    text-align: center; /* Alignement du texte à gauche */
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
 
 .encadre-horaire th:first-child {
@@ -39,44 +43,37 @@
 }
 
 .encadre-horaire th:last-child {
-    border-radius: 0px 15px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
 }
 
-/* Style pour les cellules du tableau */
 .encadre-horaire td {
-    padding: 10px; /* Espacement intérieur des cellules du tableau */
-    border-bottom: 1px solid #ccc; /* Bordure inférieure gris pâle */
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
     text-align: center;
 }
 
-/* Style pour les lignes impaires du tableau (alternance de couleurs) */
 .encadre-horaire tr:nth-child(odd) {
-    background-color: #f9f9f9; /* Couleur de fond gris plus pâle */
+    background-color: #f9f9f9;
 }
 
-/* Style pour les cellules de la première colonne (Nom) */
 .encadre-horaire td:first-child {
-    font-weight: bold; /* Texte en gras */
+    font-weight: bold;
 }
 
-/* Style pour les cellules de la colonne Photo */
 .encadre-horaire td:nth-child(3) {
-    text-align: center; /* Alignement du texte au centre */
+    text-align: center;
 }
 
-/* Style pour les cellules de la dernière colonne (Heure) */
 .encadre-horaire td:last-child {
-    text-align: center; /* Alignement du texte au centre */
+    text-align: center;
 }
 
-/* Style pour la div qui contient le tableau */
 .table-container {
-    max-height: 650px; /* Définissez la hauteur maximale souhaitée */
-    overflow-y: auto; /* Ajoutez une barre de défilement verticale en cas de dépassement */
+    max-height: 650px;
+    overflow-y: auto;
     border-radius: 15px;
 }
 
-/* Style pour la rangée de titre du tableau */
 thead {
     position: sticky;
     top: 0;
@@ -86,23 +83,22 @@ thead {
     text-align: center;
 }
 
-/* Style pour le corps du tableau */
 .encadre-horaire tbody {
-    max-height: 400px; /* Hauteur maximale pour le corps du tableau */
-    overflow-y: auto; /* Barre de défilement verticale en cas de dépassement */
-    color:#333;
+    max-height: 400px;
+    overflow-y: auto;
+    color: #333;
 }
 
 .conteneur-groupe {
     display: flex;
-    flex-direction: column; /* Les groupes sont empilés verticalement */
-    gap: 20px; /* Espacement entre les groupes */
+    flex-direction: column;
+    gap: 20px;
 }
 
 .groupe {
     display: flex;
-    align-items: center; /* Aligner les éléments verticalement */
-    gap: 20px; /* Espacement entre l'image et les informations */
+    align-items: center;
+    gap: 20px;
 }
 
 .img-groupe {
@@ -117,14 +113,15 @@ thead {
     font-family: "source sans pro";
 }
 
-/* Styles pour les éléments d'information (nom, ville, date-heure) */
-.nom, .ville, .date-heure {
-    margin: 0; /* Supprimer la marge par défaut */
+.nom,
+.ville,
+.date-heure {
+    margin: 0;
 }
 
 td img {
     border-radius: 25px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 8px rgb(0 0 0 / 68%);
 }
 
 .nom {
@@ -139,4 +136,23 @@ td img {
 
 .table {
     border-radius: 15px;
+}
+
+.table-container::-webkit-scrollbar {
+    width: 12px;
+    background-color: transparent;
+}
+
+
+.table-container::-webkit-scrollbar-thumb {
+    background-color: #ff5950;
+    border-radius: 0px 8px 8px 0px;
+}
+
+main {
+    background-color: white;
+}
+
+body {
+    background-color: white;
 }
