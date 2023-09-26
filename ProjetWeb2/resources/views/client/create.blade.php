@@ -60,7 +60,8 @@
                             </option>
                         @endforeach
                     </select>
-                    <input id="datepicker" type="date" name="date_darriver" min="2023-05-21" max="2023-05-31">
+                    <input id="datepicker" type="date" name="date_darriver" min="2023-05-21" max="2023-05-31"
+                        value="2023-05-21">
                     <input class="submit" type="submit" value="Réserver">
                 </form>
             </div>

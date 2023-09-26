@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\ForfaitUser;
 use Illuminate\Database\Seeder;
 
 class ForfaitUserTableSeeder extends Seeder

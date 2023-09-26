@@ -22,4 +22,3 @@ class ForfaitUserTableSeeder extends Seeder
         }
     }
 }
-
