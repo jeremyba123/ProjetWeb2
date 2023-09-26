@@ -9,6 +9,11 @@ class Caracteristique extends Model
 {
     use HasFactory;
 
+    /**
+     * Renvoie les forfaits associés à cette caractéristique.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
     public function forfaits()
     {
         return $this->belongsToMany(Forfait::class);

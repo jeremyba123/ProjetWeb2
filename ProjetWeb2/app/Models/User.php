@@ -13,7 +13,7 @@ class User extends Authenticatable
     use HasApiTokens, HasFactory, Notifiable;
 
     /**
-     * The attributes that are mass assignable.
+     * Les attributs qui peuvent être massivement affectés.
      *
      * @var array<int, string>
      */
@@ -25,7 +25,7 @@ class User extends Authenticatable
     ];
 
     /**
-     * The attributes that should be hidden for serialization.
+     * Les attributs qui doivent être masqués lors de la sérialisation.
      *
      * @var array<int, string>
      */
@@ -35,7 +35,7 @@ class User extends Authenticatable
     ];
 
     /**
-     * The attributes that should be cast.
+     * Les attributs qui doivent être transformés.
      *
      * @var array<string, string>
      */
@@ -43,9 +43,13 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    /**
+     * Renvoie la relation avec le forfait associé à cet utilisateur.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
     public function forfait()
-{
-    return $this->belongsTo(Forfait::class);
-}
-
+    {
+        return $this->belongsTo(Forfait::class);
+    }
 }
