@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 class CreateFailedJobsTable extends Migration
 {
     /**
-     * Run the migrations.
+     * Exécute les migrations pour créer la table 'failed_jobs'.
      *
      * @return void
      */
@@ -25,7 +25,7 @@ class CreateFailedJobsTable extends Migration
     }
 
     /**
-     * Reverse the migrations.
+     * Annule les migrations pour supprimer la table 'failed_jobs'.
      *
      * @return void
      */

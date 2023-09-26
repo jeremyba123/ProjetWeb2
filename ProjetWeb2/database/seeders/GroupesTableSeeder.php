@@ -7,12 +7,12 @@ use Illuminate\Database\Seeder;
 class GroupesTableSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * Exécute les opérations de remplissage de la table 'groupes'.
      *
      * @return void
      */
     public function run()
     {
-        \App\Models\Groupe::factory(15)->create();
+        \App\Models\Groupe::factory(16)->create();
     }
 }

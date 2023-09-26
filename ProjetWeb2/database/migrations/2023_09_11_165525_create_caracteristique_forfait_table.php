@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 class CreateCaracteristiqueForfaitTable extends Migration
 {
     /**
-     * Run the migrations.
+     * Exécute les migrations : crée la table 'caracteristique_forfait'.
      *
      * @return void
      */
@@ -22,7 +22,7 @@ class CreateCaracteristiqueForfaitTable extends Migration
     }
 
     /**
-     * Reverse the migrations.
+     * Revertit les migrations : supprime la table 'caracteristique_forfait'.
      *
      * @return void
      */

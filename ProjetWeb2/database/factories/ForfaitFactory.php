@@ -9,6 +9,11 @@ class ForfaitFactory extends Factory
 {
     protected $model = Forfait::class;
 
+    /**
+     * Définit les attributs par défaut du modèle Forfait.
+     *
+     * @return array
+     */
     public function definition()
     {
         return [
@@ -19,6 +24,11 @@ class ForfaitFactory extends Factory
         ];
     }
 
+    /**
+     * Configure l'instance de Forfait après sa création.
+     *
+     * @return void
+     */
     public function configure()
     {
         return $this->afterCreating(function (Forfait $forfait) {

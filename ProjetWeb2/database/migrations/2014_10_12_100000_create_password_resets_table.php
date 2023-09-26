@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 class CreatePasswordResetsTable extends Migration
 {
     /**
-     * Run the migrations.
+     * Exécute la migration pour créer la table "password_resets".
      *
      * @return void
      */
@@ -21,7 +21,7 @@ class CreatePasswordResetsTable extends Migration
     }
 
     /**
-     * Reverse the migrations.
+     * Revertit la migration pour supprimer la table "password_resets".
      *
      * @return void
      */

@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 class CreatePersonalAccessTokensTable extends Migration
 {
     /**
-     * Run the migrations.
+     * Exécute les migrations pour créer la table des jetons d'accès personnels.
      *
      * @return void
      */
@@ -25,7 +25,7 @@ class CreatePersonalAccessTokensTable extends Migration
     }
 
     /**
-     * Reverse the migrations.
+     * Revertit les migrations pour supprimer la table des jetons d'accès personnels.
      *
      * @return void
      */
