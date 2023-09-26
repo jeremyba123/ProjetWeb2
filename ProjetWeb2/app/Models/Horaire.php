@@ -9,9 +9,14 @@ class Horaire extends Model
 {
     use HasFactory;
 
+    // Spécifie les colonnes qui sont des dates
     protected $dates = ['date'];
 
-    // Relation vers le modèle Groupe
+    /**
+     * Définit la relation vers le modèle Groupe.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
     public function groupe()
     {
         return $this->belongsTo(Groupe::class);

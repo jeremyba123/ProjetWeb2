@@ -7,6 +7,11 @@ use App\Models\Horaire;
 
 class HoraireController extends Controller
 {
+    /**
+     * Affiche la liste complète des horaires depuis la base de données.
+     *
+     * @return \Illuminate\View\View
+     */
     public function index()
     {
         // Récupérez les horaires depuis la base de données
