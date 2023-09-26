@@ -13,7 +13,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.5s ease-in-out; /* Add the transition effect */
+    transition: transform 0.5s ease-in-out;
+    /* Add the transition effect */
     z-index: 99;
     overflow: hidden;
 }
@@ -22,7 +23,7 @@
 .animated-text {
     font-size: 113px;
     color: transparent;
-    background-image: linear-gradient( #ffffff, #000000);
+    background-image: linear-gradient(#ffffff, #000000);
     background-clip: text;
     -webkit-background-clip: text;
     animation: textAnimation 3s linear infinite alternate;
@@ -33,21 +34,24 @@
     0% {
         filter: brightness(0);
     }
+
     25% {
         filter: brightness(1);
     }
+
     50% {
         filter: brightness(4);
     }
+
     75% {
         filter: brightness(6);
     }
+
     100% {
         filter: brightness(12);
     }
 }
 
-/* Initially hide the main content */
 .main-content {
     z-index: 2;
     display: block;
@@ -55,4 +59,18 @@
 
 .no-scroll {
     overflow: hidden;
+}
+
+@media screen and (min-width: 360px)and (max-width: 479px) {
+    .animated-text {
+        font-size: 90px;
+    }
+
+}
+
+@media screen and (min-width: 320px)and (max-width: 359px) {
+
+    .animated-text {
+        font-size: 80px;
+    }
 }

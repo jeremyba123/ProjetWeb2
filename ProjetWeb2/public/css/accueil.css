@@ -425,50 +425,55 @@ h1 {
     font-size: 99px;
 }
 
+
 .conteneur-groupe {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-auto-rows: 350px;
+    grid-row-gap: 20px;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     align-items: center;
-    gap: 0px;
+
     margin-top: 4%;
     margin-right: 5%;
     margin-left: 5%;
     margin-bottom: 5%;
-
-}
-
-.groupe img {
-    position: relative;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.589);
-    border-radius: 40px;
-    transition: 0.3s ease-in-out;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-
 }
 
 .groupe {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 75%;
-    position: relative;
+    max-height: 90%;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.763);
+    border-radius: 40px;
+    margin-bottom: 20px;
     z-index: 10;
-
+    background-color: rgb(0, 0, 0);
 }
+
+.groupe img {
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+
 
 p.nom {
     font-family: "source-sans-pro", sans-serif;
     font-size: 22px;
     text-transform: uppercase;
     margin-bottom: 0px;
-    margin-top: 10px;
+    margin-top: 22px;
     line-height: 10px;
 
 }
@@ -479,7 +484,7 @@ p.ville {
     color: #8041ff;
     font-weight: bold;
     margin-top: 3px;
-    margin-bottom: 40px;
+    margin-bottom: 22px;
 }
 
 a.lien-groupe {
@@ -1056,7 +1061,7 @@ h4 {
     }
 
     p.nom {
-        color: black;
+        color: rgb(255, 255, 255);
     }
 
 }
@@ -1145,7 +1150,7 @@ h4 {
     }
 
     p.nom {
-        color: black;
+        color: rgb(255, 255, 255);
     }
 }
 
@@ -1243,7 +1248,7 @@ h4 {
     }
 
     p.nom {
-        color: black;
+        color: rgb(255, 255, 255);
     }
 
     a.lien-groupe {
@@ -1306,7 +1311,7 @@ h4 {
     }
 
     p.nom {
-        color: black;
+        color: rgb(255, 255, 255);
     }
 
     .logo img {
@@ -1410,7 +1415,7 @@ h4 {
     }
 
     p.nom {
-        color: black;
+        color: rgb(255, 255, 255);
     }
 
     a.lien-groupe {
@@ -1473,7 +1478,7 @@ h4 {
     }
 
     p.nom {
-        color: black;
+        color: rgb(255, 255, 255);
     }
 
     .logo img {
