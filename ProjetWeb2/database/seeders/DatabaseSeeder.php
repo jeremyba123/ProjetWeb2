@@ -18,5 +18,6 @@ class DatabaseSeeder extends Seeder
         $this->call(GroupesTableSeeder::class);
         $this->call(HorairesTableSeeder::class);
         $this->call(UsersTableSeeder::class);
+        $this->call(ForfaitUserTableSeeder::class);
     }
 }
