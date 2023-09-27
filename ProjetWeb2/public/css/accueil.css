@@ -1359,6 +1359,14 @@ h4 {
 @media screen and (min-width: 320px)and (max-width: 359px) {
 
 
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
 
 
     .bar::before {
