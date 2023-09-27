@@ -1,4 +1,4 @@
-@props(["cle"])
+@props(['cle'])
 
 @if (session($cle))
     <style>
@@ -13,7 +13,7 @@
 
         .success {
             background-color: #68D391;
-            color: #065F46;
+            color: #ffffff;
         }
 
         .error {
@@ -25,6 +25,7 @@
             0% {
                 opacity: 1;
             }
+
             100% {
                 opacity: 0;
                 display: none;
@@ -37,10 +38,8 @@
     </div>
 
     <script>
-        setTimeout(function () {
+        setTimeout(function() {
             document.querySelector('.notification').style.display = 'none';
         }, 4000);
     </script>
 @endif
-
-

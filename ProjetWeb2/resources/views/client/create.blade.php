@@ -66,8 +66,12 @@
                 </form>
             </div>
         </div>
-
         <h2 class="liste-reservation">Liste des réservations</h2>
+
+        @php
+            $sousTotal = 0; // Initialisez la variable sousTotal à zéro avant la boucle
+        @endphp
+
         <div class="table">
             <table class="table table-striped table-light custom-table">
                 <thead class="thead-dark">
@@ -75,6 +79,7 @@
                         <th scope="col">Forfait</th>
                         <th scope="col">Arriver</th>
                         <th scope="col">Départ</th>
+                        <th scope="col">Prix</th>
                         <th scope="col">Supprimer</th>
                     </tr>
                 </thead>
@@ -82,7 +87,7 @@
                 @foreach ($forfaits_client as $un_forfait)
                     <tbody class="scroll">
                         <tr>
-                            <th scope="row">{{ $un_forfait->forfait_id }}</th>
+                            <th scope="row">{{ $un_forfait->forfait->nom }}</th>
                             <td>{{ $un_forfait->date_darriver }}</td>
                             <td class="date-depart">
                                 @if ($un_forfait->forfait_id === 1)
@@ -112,14 +117,29 @@
                                 @endif
                             </td>
                             <td>
+                                <p>{{ $un_forfait->forfait->prix }}</p>
+                            </td>
+                            <td>
                                 <a href="{{ route('reservation.destroy', ['id' => $un_forfait->id]) }}"
                                     class="btn btn-light supprimer">Supprimer</a>
                             </td>
+                            @php
+                                $sousTotal += $un_forfait->forfait->prix;
+                            @endphp
                         </tr>
                     </tbody>
                 @endforeach
-
             </table>
+        </div>
+        @php
+            $taxe = $sousTotal * 0.15;
+            $total = $sousTotal + $taxe;
+        @endphp
+
+        <div class="total">
+            <p class="sous-total">Sous-total : {{ $sousTotal }}$</p>
+            <p class="sous-total">Taxe (15 %) : {{ $taxe }}$</p>
+            <p class="sous-total">Total : {{ $total }}$</p>
         </div>
     </main>
 </x-layout>

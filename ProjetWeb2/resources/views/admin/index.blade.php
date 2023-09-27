@@ -2,7 +2,6 @@
     <div class="navbar">
         <div class="navbar-left">
             {{ $admin->prenom }} {{ $admin->nom }}
-
         </div>
         <div class="navbar-right">
             <div class="button-group">
@@ -39,12 +38,10 @@
                 </tr>
             </thead>
 
-
             <tbody class="scroll">
                 <div>
                     @foreach ($clients as $client)
                         <tr>
-
                             <td>{{ $client->nom }} </td>
                             <td>{{ $client->prenom }}</td>
                             <td>{{ $client->email }}</td>
@@ -82,7 +79,6 @@
                 <div>
                     @foreach ($employes as $employe)
                         <tr>
-
                             <td>{{ $employe->nom }} </td>
                             <td>{{ $employe->prenom }}</td>
                             <td>{{ $employe->email }}</td>
@@ -133,11 +129,6 @@
                         </tr>
                     @endforeach
             </tbody>
-
-
         </table>
-
     </div>
-
-
 </x-layout>
