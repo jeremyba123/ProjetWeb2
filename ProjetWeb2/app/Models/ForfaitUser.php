@@ -11,8 +11,8 @@ class ForfaitUser extends Model
 
 
     protected $table = "forfait_user";
-  
-  /**
+
+    /**
      * Récupère l'utilisateur associé à ce forfait utilisateur.
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
@@ -21,5 +21,15 @@ class ForfaitUser extends Model
     {
         return $this->belongsTo(User::class);
     }
-}
 
+
+    /**
+     * Récupère l'utilisateur associé à ce forfait utilisateur.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function forfait()
+    {
+        return $this->belongsTo(Forfait::class);
+    }
+}

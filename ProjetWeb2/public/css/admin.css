@@ -49,7 +49,7 @@ h2.liste-reservation {
     margin-top: 0px;
     font-family: "source-sans-pro", sans-serif;
     font-weight: bold;
-
+    margin-top: 40px;
 }
 
 h2.liste-reservation-officiel {
@@ -148,7 +148,7 @@ button.btn.btn-light2:hover {
 }
 
 a {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -275,4 +275,5 @@ input {
     margin-left: 50%;
     transform: translateX(-50%);
     align-items: center;
+
 }
