@@ -22,10 +22,10 @@ class GroupeFactory extends Factory
             'Pantera',  'Motorhead', 'Dio', 'Anthrax',
             'Tool', 'Opeth', 'Mastodon', 'Meshuggah',
             'Nightwish', 'Epica',   'Kreator',
-             'Behemoth', 'Dimmu Borgir',
+            'Behemoth', 'Dimmu Borgir',
             'In Flames', 'Testament', 'Exodus', 'Sepultura', 'Gojira',
             'Sabaton',  'Amorphis', 'Kamelot',
-             'Moonspell', 'Wintersun',  'Rammstein',
+            'Moonspell', 'Wintersun',  'Rammstein',
             'DevilDriver',   'Trivium',
         ];
 
@@ -59,9 +59,13 @@ class GroupeFactory extends Factory
             'yuan-thirdy-rJrgTvtHrDM-unsplash.jpg',
         ];
 
+        $villeNames = [
+            'Paris', 'Londres', 'New York', 'Berlin', 'Madrid', 'Rome', 'Tokyo', 'Sydney', 'Toronto', 'Los Angeles',
+        ];
+
         return [
             'nom' => $this->faker->unique()->randomElement($metalNames),
-            'ville' => $this->faker->city,
+            'ville' => $this->faker->randomElement($villeNames),
             'image_url' => 'storage/custom_images/' . $this->faker->unique()->randomElement($imageFilenames),
 
         ];
