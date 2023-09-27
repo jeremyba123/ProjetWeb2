@@ -15,8 +15,28 @@ class ForfaitsTableSeeder extends Seeder
      */
     public function run()
     {
-        // Crée trois forfaits en utilisant la factory Forfait.
-        \App\Models\Forfait::factory(3)->create();
+
+          // Create the first Forfait with specific attributes
+          Forfait::factory(1)->create([
+            'nom' => 'Forfait 1',
+            'prix' => 100, // Set your desired price
+            'jour' => 2,   // Set your desired number of days
+        ]);
+
+        // Create the second Forfait with specific attributes
+        Forfait::factory(1)->create([
+            'nom' => 'Forfait 2',
+            'prix' => 150, // Set your desired price
+            'jour' => 5,   // Set your desired number of days
+        ]);
+
+        // Create the third Forfait with specific attributes
+        Forfait::factory(1)->create([
+            'nom' => 'Forfait 3',
+            'prix' => 200, // Set your desired price
+            'jour' => 10,  // Set your desired number of days
+        ]);
+
 
         // Associe le forfait 1 à la caractéristique "Admission".
         $forfait = Forfait::find(1);

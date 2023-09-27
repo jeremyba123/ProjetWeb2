@@ -21,9 +21,9 @@
             <div class="nav-footer">
                 <h4>Navigation</h4>
                 <a href="{{ route('accueil') }}">Accueil</a>
-                <a href="#">Horaire</a>
+                <a href="{{ route('horaire') }}">Horaire</a>
                 <a href="{{ route('groupes') }}">Groupes</a>
-                <a href="#">Contact</a>
+                <a href="{{ route('contact') }}">Contact</a>
             </div>
         </div>
 
@@ -31,7 +31,7 @@
             <p>"Saisissez l'opportunité,</p>
             <p>sécurisez votre billet,</p>
             <p>vivez l'expérience inoubliable maintenant!"</p>
-            <a href="#" class="btn btn-light boutton">Billets</a>
+            <a href="{{ route('forfaits') }}" class="btn btn-light boutton">Billets</a>
         </div>
     </div>
 

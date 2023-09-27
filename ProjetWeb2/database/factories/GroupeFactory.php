@@ -62,7 +62,7 @@ class GroupeFactory extends Factory
         return [
             'nom' => $this->faker->unique()->randomElement($metalNames),
             'ville' => $this->faker->city,
-            'image_url' => 'storage/custom_images/' . $this->faker->randomElement($imageFilenames),
+            'image_url' => 'storage/custom_images/' . $this->faker->unique()->randomElement($imageFilenames),
 
         ];
     }
