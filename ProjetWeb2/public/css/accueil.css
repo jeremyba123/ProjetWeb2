@@ -2,7 +2,7 @@ body {
     margin: 0px;
     background-color: black;
     color: white;
-
+    overflow-x: hidden;
 }
 
 /* ***********************************************   Nav  ************************************************** */
@@ -734,6 +734,14 @@ h4 {
 
 @media screen and (max-width: 1200px) {
 
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
 
     .lieux-date {
         width: 400px;
@@ -896,6 +904,15 @@ h4 {
 
 
 @media screen and (max-width: 959px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
 
     .menu-burger {
         display: flex;
@@ -1069,6 +1086,16 @@ h4 {
 
 
 @media screen and (min-width:480px) and (max-width: 767px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
+
     .conteneur-quote {
         display: none;
     }
@@ -1157,7 +1184,14 @@ h4 {
 
 @media screen and (min-width: 360px)and (max-width: 479px) {
 
+    html,
+    body {
+        overflow-x: hidden;
+    }
 
+    body {
+        position: relative
+    }
 
 
     .bar::before {
@@ -1389,7 +1423,7 @@ h4 {
     }
 
     a.fleche {
-        top: 85%;
+        top: 84%;
     }
 
     .h1 h1 {
