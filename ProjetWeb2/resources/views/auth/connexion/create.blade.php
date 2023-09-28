@@ -27,4 +27,5 @@
             </div>
         </form>
         <a class="lien-form" href="{{ route('enregistrement.create') }}">Enregistrement!</a>
+        <script src="js/accueil.js"></script>
 </x-layout>

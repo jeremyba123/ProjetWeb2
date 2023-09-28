@@ -58,5 +58,5 @@
             </a>
         </p>
     </div>
-
+    <script src="js/accueil.js"></script>
 </x-layout>
