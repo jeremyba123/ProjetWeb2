@@ -3,6 +3,14 @@
     <x-header titre="forfaits" />
 
     <main>
+
+        <div class="h1-2">
+            <img class="image" src="img/image-from-rawpixel-id-2394252-modifier2.png" width="118" height="118"
+                alt="rock-n-roll">
+            <h1 class="titre">Forfaits</h1>
+            <img class="image" src="img/image-from-rawpixel-id-2394252-modifier2-inverse.png" width="118"
+                height="118" alt="rock-n-roll">
+        </div>
         <div class="conteneur-forfait">
             <h3>Laissez-passer</h3>
             <p class="admission">Admission générale</p>
@@ -30,4 +38,5 @@
     <footer>
         <x-footer />
     </footer>
+    <script src="js/forfaits.js"></script>
 </x-layout>

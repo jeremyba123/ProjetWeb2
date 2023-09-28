@@ -16,7 +16,7 @@
                 height="118" alt="rock-n-roll">
         </div>
         <form id="search-form2">
-            <input type="text" id="search-input2" placeholder="Rechercher par nom de groupe">
+            <input type="text" id="search-input2" placeholder="Rechercher par nom ">
         </form>
 
         <div class="conteneur-groupe">

@@ -1016,7 +1016,7 @@ h4 {
     }
 
     .h1-2 h1.titre {
-        color: black;
+        color: #8041ff;
         font-size: 95px;
     }
 
@@ -1042,7 +1042,7 @@ h4 {
     }
 
     input::placeholder {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .groupe:hover p.nom {
@@ -1106,7 +1106,8 @@ h4 {
     }
 
     .h1-2 h1.titre {
-        color: black;
+        color: #8041ff;
+
         font-size: 67px;
     }
 
@@ -1140,7 +1141,7 @@ h4 {
     }
 
     input::placeholder {
-        font-size: 16px;
+        font-size: 20px;
 
     }
 
@@ -1321,7 +1322,7 @@ h4 {
     }
 
     .h1-2 h1.titre {
-        color: black;
+        color: #8041ff;
         font-size: 67px;
     }
 
@@ -1355,7 +1356,7 @@ h4 {
     }
 
     input::placeholder {
-        font-size: 14px;
+        font-size: 20px;
 
     }
 
