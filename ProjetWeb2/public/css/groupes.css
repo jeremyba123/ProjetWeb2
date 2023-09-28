@@ -571,3 +571,857 @@ h4 {
 h4 {
     color: white;
 }
+
+#search-form2 {
+    display: none;
+}
+
+.h1-2 {
+    display: none;
+}
+
+
+
+/* ******************************************MOBILE*********************************************** */
+
+
+@media screen and (max-width: 1200px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
+
+    .lieux-date {
+        width: 400px;
+    }
+
+    a.btn.btn-light {
+        width: 132px;
+    }
+
+    .conteneur-groupe {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .billets-achat p {
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+
+    .billets-achat a.boutton {
+
+        margin-top: 10px;
+    }
+
+
+    .copyright-reseau-sociaux {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        height: 178px;
+        background-color: #111111;
+
+    }
+
+    .reseau-sociaux a img {
+        margin-right: 30px;
+    }
+
+    .reseau-sociaux a img:last-child {
+        margin-right: 0px;
+    }
+
+
+
+    .reseau-sociaux {
+
+        width: 25%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+
+    .copyright {
+        margin-left: 0%;
+        transform: translateX(0%);
+        text-align: center;
+        width: 100%;
+    }
+
+    .copyright p {
+        margin-bottom: 10px;
+    }
+
+    .copyright2023 {
+        display: flex;
+        justify-content: center;
+        margin-left: 0%;
+        transform: translateX(0%);
+        width: 100%;
+        margin-top: 10px;
+
+    }
+
+    .conteneur-laisser-passer {
+        height: 308px;
+    }
+
+    .conteneur-laisser-passer p {
+        font-size: 18px;
+    }
+
+    h4.laisser-passer {
+
+        font-size: 35px;
+
+    }
+
+    .groupe:hover .date p {
+        font-size: 20px;
+    }
+
+    .groupe:hover .heure p {
+        font-size: 30px;
+    }
+
+    .groupe:hover p.ville {
+        font-size: 29px;
+    }
+
+    .img {
+        height: 362px;
+    }
+
+
+}
+
+
+.menu-burger {
+    flex-direction: column;
+    cursor: pointer;
+    display: none;
+    transition: 0.2s ease-in-out;
+
+}
+
+.bar {
+    width: 45px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(225, 101, 47, .2);
+    transition: all .4s ease-in-out;
+}
+
+.bar::before,
+.bar::after {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    /* box-shadow: 0 2px 5px rgba(225, 101, 47, .2); */
+    transition: all .4s ease-in-out;
+}
+
+.bar::before {
+    transform: translateY(-16px);
+
+}
+
+.bar::after {
+    transform: translateY(16px);
+
+}
+
+.menu-croix.open .bar {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+    animation: fadeOut 50ms ease-in;
+}
+
+
+@keyframes fadeOut {
+    from {
+        background: white;
+    }
+
+    to {
+        background: transparent;
+    }
+}
+
+
+
+
+.menu-croix.open .bar::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-croix.open .bar::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+
+@media screen and (max-width: 959px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
+
+    .menu-burger {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+
+    }
+
+    .appel-action {
+        top: 31%;
+    }
+
+    .liens-nav {
+        display: none;
+        justify-content: flex-start;
+        align-items: flex-end;
+        flex-direction: column;
+        background-color: #00000000;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+        z-index: 30;
+    }
+
+    span.home {
+        bottom: 15px
+    }
+
+    .dropdown-content {
+        position: relative;
+    }
+
+    a.btn.btn-light {
+        margin-right: 38px;
+        order: 3;
+        margin-top: 27px;
+        width: 165px;
+
+    }
+
+    .contact,
+    .btn {
+        margin-top: 10px;
+    }
+
+    .liens-nav {
+        margin-top: 30px;
+    }
+
+    .liens-nav a {
+        color: #fff;
+        font-size: 18px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .dropdown {
+        order: 2;
+        margin-top: 10px;
+    }
+
+    .contact {
+        order: 1;
+    }
+
+    .menu-burger.open+.liens-nav {
+        display: flex;
+    }
+
+    .menu-burger.open .dropdown:hover .contact,
+    .menu-burger.open .dropdown:hover .btn {
+        margin-top: 120px;
+    }
+
+
+    .nav {
+        margin-right: 17px;
+    }
+
+
+    form input {
+        width: 48%;
+        border: 4px solid #ff5950;
+        margin-top: -15px;
+        font-size: 20px;
+
+    }
+
+    input::placeholder {
+        font-family: "source-sans-pro", sans-serif;
+        font-size: 22px;
+        color: #0000003d;
+        padding-left: 3px;
+    }
+
+
+    .h1 {
+        margin-top: 5%;
+        margin-bottom: 0px;
+    }
+
+    h1 {
+
+        font-size: 74px;
+    }
+
+    .h1 img {
+
+        width: 90px;
+        height: 90px;
+    }
+
+    .h1 img:last-child {
+
+        width: 90px;
+        height: 90px;
+    }
+
+    .info-footer {
+        flex-direction: column;
+        height: 650px;
+        justify-content: space-evenly;
+    }
+
+    .info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .info-footer .info {
+        margin-left: 0px;
+    }
+
+    .a-propos p {
+        text-align: center;
+    }
+
+    h4 {
+        text-align: center;
+    }
+
+    .nav-footer a {
+        display: block;
+        text-align: center;
+    }
+
+    .billets-achat {
+        margin: 0px;
+    }
+
+    a.lien-groupe {
+        padding: 10px 96px;
+    }
+
+    .background {
+        background-image: none;
+    }
+
+    .background .overlay {
+        background-color: white;
+    }
+
+    .conteneur-groupe {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 17px;
+        margin-top: 4%;
+
+    }
+
+    .img {
+        height: 356px;
+    }
+
+
+    #search-form {
+        display: none;
+    }
+
+    #search-form2 {
+        display: block;
+
+    }
+
+    form input {
+        width: 65%;
+        margin-top: 18px;
+        border: 5px solid #ff5950;
+    }
+
+}
+
+
+
+@media screen and (min-width:480px) and (max-width: 767px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
+
+    .h1-2 {
+        display: block;
+
+    }
+
+    .h1 {
+        display: none;
+    }
+
+    .h1-2 {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3%;
+        margin-bottom: 0px;
+    }
+
+    .h1-2 h1.titre {
+        color: black;
+        font-size: 95px;
+    }
+
+
+
+    .h1-2 img.image {
+        transform: rotate(-25deg);
+        animation: shake 2s infinite alternate;
+    }
+
+
+    .h1-2 img.image:last-child {
+        transform: rotate(25deg);
+        animation: shake 2s infinite alternate;
+    }
+
+    form input {
+        margin-top: 0px;
+    }
+
+    #search-form2 {
+        margin-top: 0px;
+    }
+
+    input::placeholder {
+        font-size: 18px;
+    }
+
+    .groupe:hover p.nom {
+
+        font-size: 42px;
+    }
+
+    .groupe:hover .date p {
+        font-size: 18px;
+    }
+
+}
+
+
+@media screen and (min-width: 360px)and (max-width: 479px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
+
+
+    .bar::before {
+        transform: translateY(-12px);
+
+    }
+
+    .bar::after {
+        transform: translateY(12px);
+
+    }
+
+    .nav {
+        margin-right: 0px;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 8px;
+    }
+
+    .h1-2 {
+        display: block;
+
+    }
+
+    .h1 {
+        display: none;
+    }
+
+    .h1-2 {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3%;
+        margin-bottom: 0px;
+    }
+
+    .h1-2 h1.titre {
+        color: black;
+        font-size: 67px;
+    }
+
+
+
+    .h1-2 img.image {
+        transform: rotate(-25deg);
+        animation: shake 2s infinite alternate;
+        width: 70px;
+        height: 70px;
+    }
+
+
+    .h1-2 img.image:last-child {
+        transform: rotate(25deg);
+        animation: shake 2s infinite alternate;
+        width: 70px;
+        height: 70px;
+    }
+
+    form input {
+        margin-top: 0px;
+        border: 2px solid #ff5950;
+        padding-left: 8px;
+
+    }
+
+    #search-form2 {
+        margin-top: 0px;
+
+    }
+
+    input::placeholder {
+        font-size: 16px;
+
+    }
+
+    .liens-nav {
+        margin-top: 0px;
+        padding-right: 10px;
+    }
+
+    .liens-nav a.lien {
+        padding-right: 10px;
+        margin-bottom: 0px;
+    }
+
+    p.programmation {
+        padding-right: 10px;
+    }
+
+    .liens-nav a.btn.btn-light {
+        margin-right: 9px;
+        margin-top: 7px;
+    }
+
+    span.home {
+        bottom: 6px;
+    }
+
+    .billets-achat p {
+        font-size: 20px;
+    }
+
+    .copyright p {
+        font-size: 13px;
+    }
+
+    .reseau-sociaux a {
+        margin-right: 10px;
+    }
+
+    .reseau-sociaux a:last-child {
+        margin-right: 0px;
+    }
+
+    .img {
+        height: 279px;
+    }
+
+    .groupe:hover p.nom {
+
+        font-size: 35px;
+    }
+
+    .groupe:hover .date p {
+        font-size: 18px;
+    }
+
+    .groupe:hover .heure p {
+        display: none;
+    }
+
+    .groupe {
+        max-height: 87%;
+        width: 89%;
+    }
+
+    .conteneur-groupe {
+        grid-row-gap: 0px;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 320px)and (max-width: 359px) {
+
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
+
+
+    .bar::before {
+        transform: translateY(-12px);
+
+    }
+
+    .bar::after {
+        transform: translateY(12px);
+
+    }
+
+    .nav {
+        margin-right: 0px;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 8px;
+    }
+
+
+
+    .liens-nav {
+        margin-top: 0px;
+        padding-right: 10px;
+    }
+
+    .liens-nav a.lien {
+        padding-right: 10px;
+        margin-bottom: 0px;
+    }
+
+    p.programmation {
+        padding-right: 10px;
+    }
+
+    .liens-nav a.btn.btn-light {
+        margin-right: 9px;
+        margin-top: 7px;
+    }
+
+    span.home {
+        bottom: 6px;
+    }
+
+    a.fleche {
+        top: 84%;
+    }
+
+
+    a.lien-groupe {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+
+    .billets-achat p {
+        font-size: 20px;
+    }
+
+    .copyright p {
+        font-size: 13px;
+    }
+
+    .reseau-sociaux a {
+        margin-right: 10px;
+    }
+
+    .reseau-sociaux a:last-child {
+        margin-right: 0px;
+    }
+
+    .logo img {
+        width: 113px;
+    }
+
+
+    .h1-2 {
+        display: block;
+
+    }
+
+    .h1 {
+        display: none;
+    }
+
+    .h1-2 {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3%;
+        margin-bottom: 0px;
+    }
+
+    .h1-2 h1.titre {
+        color: black;
+        font-size: 67px;
+    }
+
+
+
+    .h1-2 img.image {
+        transform: rotate(-25deg);
+        animation: shake 2s infinite alternate;
+        width: 70px;
+        height: 70px;
+    }
+
+
+    .h1-2 img.image:last-child {
+        transform: rotate(25deg);
+        animation: shake 2s infinite alternate;
+        width: 70px;
+        height: 70px;
+    }
+
+    form input {
+        margin-top: 0px;
+        border: 2px solid #ff5950;
+        padding-left: 8px;
+
+    }
+
+    #search-form2 {
+        margin-top: 0px;
+
+    }
+
+    input::placeholder {
+        font-size: 14px;
+
+    }
+
+    .liens-nav {
+        margin-top: 0px;
+        padding-right: 10px;
+    }
+
+    .liens-nav a.lien {
+        padding-right: 10px;
+        margin-bottom: 0px;
+    }
+
+    p.programmation {
+        padding-right: 10px;
+    }
+
+    .liens-nav a.btn.btn-light {
+        margin-right: 9px;
+        margin-top: 7px;
+    }
+
+    span.home {
+        bottom: 6px;
+    }
+
+    .billets-achat p {
+        font-size: 20px;
+    }
+
+    .copyright p {
+        font-size: 13px;
+    }
+
+    .reseau-sociaux a {
+        margin-right: 10px;
+    }
+
+    .reseau-sociaux a:last-child {
+        margin-right: 0px;
+    }
+
+    .img {
+        height: 279px;
+    }
+
+    .groupe:hover p.nom {
+
+        font-size: 35px;
+    }
+
+    .groupe:hover .date p {
+        font-size: 18px;
+    }
+
+    .groupe:hover .heure p {
+        display: none;
+    }
+
+    .groupe {
+        max-height: 87%;
+        width: 89%;
+    }
+
+    .conteneur-groupe {
+        grid-row-gap: 0px;
+    }
+
+}
