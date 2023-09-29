@@ -732,6 +732,31 @@ h4 {
     color: white;
 }
 
+
+
+span.arrow {
+    color: #ffffff;
+
+}
+
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 136px;
+    right: 12px;
+    background-color: #ff5950;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+
+
+#back-to-top.show {
+    display: block;
+}
+
 @media screen and (max-width: 1200px) {
 
     html,
@@ -1351,6 +1376,12 @@ h4 {
     .logo img {
         width: 113px;
     }
+
+    #back-to-top {
+        bottom: 14px;
+        padding: 5px 7px;
+    }
+
 }
 
 
@@ -1526,4 +1557,10 @@ h4 {
     .logo img {
         width: 113px;
     }
+
+    #back-to-top {
+        bottom: 14px;
+        padding: 5px 7px;
+    }
+
 }

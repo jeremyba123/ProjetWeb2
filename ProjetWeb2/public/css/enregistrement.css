@@ -475,10 +475,21 @@ p.erreur {
     }
 
     h1 {
-        font-size: 50px;
+        font-size: 62px;
+        position: relative;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        top: 59px;
     }
 
-
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 96px;
+    }
 }
 
 
@@ -556,12 +567,20 @@ p.erreur {
     }
 
     h1 {
-        font-size: 31px;
-        margin-top: 22px;
+        font-size: 53px;
+        position: relative;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        top: 59px;
     }
 
     form {
-        margin-top: 136px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 96px;
     }
 }
 
@@ -715,19 +734,27 @@ p.erreur {
         grid-row-gap: 0px;
     }
 
-    h1 {
-        font-size: 23px;
-        margin-top: -32px;
-    }
 
     input {
         width: 250px;
     }
 
-    form {
-        margin-top: 67px;
+    h1 {
+        font-size: 41px;
+        position: relative;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        top: 43px;
     }
 
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 80px;
+    }
 }
 
 
@@ -941,17 +968,26 @@ p.erreur {
     }
 
 
-    h1 {
-        font-size: 20px;
-        margin-top: -46px;
-    }
 
     input {
         width: 250px;
         height: 50px;
     }
 
+    h1 {
+        font-size: 37px;
+        position: relative;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        top: 20px;
+    }
+
     form {
-        margin-top: 67px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 55px;
     }
 }

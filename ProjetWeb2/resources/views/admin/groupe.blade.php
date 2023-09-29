@@ -31,6 +31,7 @@
                 <tr>
                     <th scope="col">Nom</th>
                     <th scope="col">Ville</th>
+                    <th scope="col">Lien instagram</th>
                     <th scope="col">Cover</th>
                     <th scope="col"></th>
                 </tr>
@@ -42,8 +43,9 @@
                         <tr>
                             <td>{{ $groupe->nom }} </td>
                             <td>{{ $groupe->ville }}</td>
-                            <td class="img"><img class="image_groupe" src="{{ asset($groupe->image_url) }}" alt=""
-                                    srcset="">
+                            <td>{{ $groupe->lien }}</td>
+                            <td class="img"><img class="image_groupe" src="{{ asset($groupe->image_url) }}"
+                                    alt="" srcset="">
                             </td>
                             <td><button class="btn btn-light mauve"><a
                                         href="{{ route('admin.editGroupe', ['id' => $groupe->id]) }}">Modifier</a></button>

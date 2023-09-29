@@ -5,6 +5,8 @@ span.material-symbols-outlined {
     height: 24px;
 }
 
+
+
 .dropdown {
     position: relative;
     display: flex;
@@ -267,6 +269,11 @@ h1 {
     box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.66);
     border-radius: 40px;
     margin-bottom: 20px;
+
+}
+
+.groupe.flipped {
+    transform: rotateY(180deg);
 }
 
 .groupe img {
@@ -380,6 +387,15 @@ form input {
     padding-left: 25px;
     line-height: 50px;
 
+}
+
+img.instagram {
+
+    display: none;
+}
+
+a.lien-instagram {
+    display: none;
 }
 
 input::placeholder {
@@ -570,6 +586,29 @@ h4 {
 
 h4 {
     color: white;
+}
+
+span.arrow {
+    color: #ffffff;
+
+}
+
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 136px;
+    right: 12px;
+    background-color: #ff5950;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+
+
+#back-to-top.show {
+    display: block;
 }
 
 
@@ -1229,6 +1268,11 @@ h4 {
         padding-top: 100px;
     }
 
+    #back-to-top {
+        bottom: 14px;
+        padding: 5px 7px;
+    }
+
 }
 
 
@@ -1452,6 +1496,11 @@ h4 {
         margin-top: 0px;
         padding-right: 20px;
         padding-top: 100px;
+    }
+
+    #back-to-top {
+        bottom: 14px;
+        padding: 5px 7px;
     }
 
 }

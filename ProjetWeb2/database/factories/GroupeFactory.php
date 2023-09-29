@@ -19,14 +19,11 @@ class GroupeFactory extends Factory
     {
         $metalNames = [
             'Metallica', 'Slayer', 'Megadeth',
-            'Pantera',  'Motorhead', 'Dio', 'Anthrax',
+            'Pantera',  'Motorhead', 'Rammstein', 'Anthrax',
             'Tool', 'Opeth', 'Mastodon', 'Meshuggah',
             'Nightwish', 'Epica',   'Kreator',
             'Behemoth', 'Dimmu Borgir',
-            'In Flames', 'Testament', 'Exodus', 'Sepultura', 'Gojira',
-            'Sabaton',  'Amorphis', 'Kamelot',
-            'Moonspell', 'Wintersun',  'Rammstein',
-            'DevilDriver',   'Trivium',
+
         ];
 
 
@@ -63,10 +60,30 @@ class GroupeFactory extends Factory
             'Paris', 'Londres', 'New York', 'Berlin', 'Madrid', 'Rome', 'Tokyo', 'Sydney', 'Toronto', 'Los Angeles',
         ];
 
+        $lien_instagram = [
+            'https://www.instagram.com/metallica/?hl=fr',
+            'https://www.instagram.com/slayerbandofficial/?hl=fr',
+            'https://www.instagram.com/megadeth/?hl=fr',
+            'https://www.instagram.com/panteraofficial/?hl=fr',
+            'https://www.instagram.com/officialmotorhead/?hl=fr',
+            'https://www.instagram.com/rammsteinofficial/?hl=fr',
+            'https://www.instagram.com/anthrax/?hl=fr',
+            'https://www.instagram.com/toolmusic/?hl=fr',
+            'https://www.instagram.com/officialopeth/?hl=fr',
+            'https://www.instagram.com/mastodonrocks/?hl=fr',
+            'https://www.instagram.com/meshuggah/?hl=fr',
+            'https://www.instagram.com/nightwish/?hl=fr',
+            'https://www.instagram.com/epicaofficial/?hl=fr',
+            'https://www.instagram.com/kreatorofficial/?hl=fr',
+            'https://www.instagram.com/behemothofficial/?hl=fr',
+            'https://www.instagram.com/dimmuborgir/?hl=fr',
+        ];
+
         return [
             'nom' => $this->faker->unique()->randomElement($metalNames),
             'ville' => $this->faker->randomElement($villeNames),
             'image_url' => 'storage/custom_images/' . $this->faker->unique()->randomElement($imageFilenames),
+            'lien' => $this->faker->unique()->randomElement($lien_instagram),
 
         ];
     }

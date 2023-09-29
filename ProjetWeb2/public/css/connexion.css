@@ -305,7 +305,7 @@ p.erreur {
     }
 
     h1.titre {
-        font-size: 62px;
+        font-size: 79px;
     }
 }
 
@@ -478,10 +478,7 @@ p.erreur {
         z-index: 2;
     }
 
-    h1.titre {
-        font-size: 59px;
-        margin-top: 36px;
-    }
+
 }
 
 
@@ -558,10 +555,7 @@ p.erreur {
         font-size: 18px;
     }
 
-    h1.titre {
-        font-size: 59px;
-        margin-top: 36px;
-    }
+
 }
 
 
@@ -715,8 +709,8 @@ p.erreur {
     }
 
     h1.titre {
-        font-size: 45px;
-        margin-top: -90px;
+        font-size: 55px;
+        margin-top: -104px;
     }
 
     input {
@@ -940,8 +934,8 @@ p.erreur {
     }
 
     h1.titre {
-        font-size: 45px;
-        margin-top: -90px;
+        font-size: 55px;
+        margin-top: -104px;
     }
 
     input {

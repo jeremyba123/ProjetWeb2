@@ -18,6 +18,7 @@ class CreateGroupesTable extends Migration
             $table->string('nom');
             $table->string('ville');
             $table->string('image_url')->nullable();
+            $table->string('lien');
             $table->timestamps();
         });
     }

@@ -12,6 +12,10 @@
             @foreach ($groupes as $groupe)
                 <div class="groupe">
                     <img src="{{ $groupe->image_url }}" width="668" height="444" alt="groupe musique">
+                    <a href="{{ $groupe->lien }}" class="lien-instagram">
+                        <img class="instagram" src="img/Instagram_Glyph_White.png" width="100" height="100"
+                            alt="instagram">
+                    </a>
                     <div class="card">
                         <div class="nom-ville">
                             <div class="nv">
@@ -39,6 +43,9 @@
     </main>
     <footer>
         <x-footer />
+        <a href="#" id="back-to-top"><span class="material-symbols-outlined arrow">
+                arrow_upward
+            </span></a>
     </footer>
     <script src="js/filtre.js"></script>
 

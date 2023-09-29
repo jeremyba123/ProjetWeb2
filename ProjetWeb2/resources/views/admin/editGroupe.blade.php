@@ -39,6 +39,12 @@
                 <input type="text" name="ville" id="ville" class="form-control" value="{{ $groupe->ville }}"
                     required>
             </div>
+            {{-- Champ lien --}}
+            <div class="form-group">
+                <label for="lien">Lien instagram</label>
+                <input type="text" name="lien" id="lien" class="form-control" value="{{ $groupe->lien }}"
+                    required>
+            </div>
 
             {{-- Champ Image du groupe --}}
             <div class="form-group ">
@@ -46,13 +52,14 @@
                 <input type="file" name="image" id="image" class="form-control img-groupe">
             </div>
 
-             {{-- Affichage de l'image actuelle --}}
-             @if ($groupe->image_url)
-             <div class="form-group">
-                 <label>Image actuelle du groupe</label><br>
-                 <img src="{{ asset($groupe->image_url) }}" alt="Image du groupe" width="250" height="250" class="img-fluid">
-             </div>
-         @endif
+            {{-- Affichage de l'image actuelle --}}
+            @if ($groupe->image_url)
+                <div class="form-group">
+                    <label>Image actuelle du groupe</label><br>
+                    <img src="{{ asset($groupe->image_url) }}" alt="Image du groupe" width="250" height="250"
+                        class="img-fluid">
+                </div>
+            @endif
 
             {{-- Bouton de soumission --}}
             <div class="form-group">

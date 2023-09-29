@@ -108,6 +108,9 @@
 
         <footer>
             <x-footer />
+            <a href="#" id="back-to-top"><span class="material-symbols-outlined arrow">
+                    arrow_upward
+                </span></a>
         </footer>
         <script src="js/accueil.js"></script>
     </x-layout>

@@ -12,3 +12,24 @@ menuBurger.addEventListener("click", () => {
         menuOuvert = false
     }
 })
+
+// *********************lien retour en haut*********************
+
+var backToTop = document.getElementById("back-to-top")
+
+
+window.addEventListener("scroll", function () {
+    if (window.scrollY >= window.innerHeight) {
+        backToTop.classList.add("show")
+    } else {
+        backToTop.classList.remove("show")
+    }
+})
+
+backToTop.addEventListener("click", function (e) {
+    e.preventDefault()
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+})
