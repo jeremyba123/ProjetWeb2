@@ -39,7 +39,6 @@ span.material-symbols-outlined {
 
 .dropdown-content a {
     text-decoration: none;
-
     display: block;
     text-align: center;
     transition: 0.2s ease-in-out;
@@ -47,7 +46,6 @@ span.material-symbols-outlined {
 
 .dropdown-content a:hover {
     color: #ff5950;
-
 }
 
 .nav {
@@ -114,7 +112,6 @@ p.programmation {
 
 p.programmation:hover {
     color: #ff5950;
-
 }
 
 .dropdown-content a {
@@ -190,28 +187,21 @@ div.appel-action {
     align-items: center;
     border-radius: 5px;
     transition: 0.2s ease-in-out;
-
 }
 
 .horraire:hover {
     background-color: #8041ff;
-
-
 }
-
-
 
 .calendrier {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .calendrier p {
     margin: 0px;
     margin-left: 10px;
-
 }
 
 a.horraire {
@@ -221,7 +211,6 @@ a.horraire {
     font-weight: bold;
     font-size: 20px;
     margin-top: 35px;
-
 }
 
 span.white {
@@ -229,7 +218,6 @@ span.white {
 }
 
 .bas-page {
-
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -244,8 +232,6 @@ span.white {
     height: auto;
 }
 
-
-
 a.fleche {
     position: absolute;
     left: 50%;
@@ -255,22 +241,18 @@ a.fleche {
     border-radius: 50%;
     z-index: 20;
     transition: 0.2s ease-in-out;
-
 }
 
 a.fleche img {
     width: 50px;
     height: 50px;
-
     padding: 10px;
     border-radius: 25px;
     transition: 0.2s ease-in-out;
 }
 
 a.fleche:hover img {
-
     background-color: #ff5950;
-
 }
 
 .lieux-date {
@@ -311,7 +293,6 @@ a.fleche:hover img {
     border-right: 2px solid white;
     height: 72px;
     margin-top: 8px;
-
 }
 
 span.date {
@@ -414,7 +395,6 @@ div.background {
         transform: translate(0, );
     }
 
-
 }
 
 h1 {
@@ -425,7 +405,6 @@ h1 {
     font-size: 99px;
 }
 
-
 .conteneur-groupe {
     display: grid;
     grid-auto-rows: 350px;
@@ -433,7 +412,6 @@ h1 {
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     align-items: center;
-
     margin-top: 4%;
     margin-right: 5%;
     margin-left: 5%;
@@ -466,8 +444,6 @@ h1 {
     transition: transform 0.3s ease-in-out;
 }
 
-
-
 p.nom {
     font-family: "source-sans-pro", sans-serif;
     font-size: 22px;
@@ -475,7 +451,6 @@ p.nom {
     margin-bottom: 0px;
     margin-top: 22px;
     line-height: 10px;
-
 }
 
 p.ville {
@@ -501,7 +476,6 @@ a.lien-groupe {
     background-color: #8041ff;
     width: max-content;
     padding: 10px 200px;
-
     border-radius: 10px 10px 0px 0px;
     transition: 0.2s ease-in-out;
 }
@@ -510,20 +484,16 @@ a.lien-groupe:hover {
     background-color: #ff5950;
 }
 
-
 .conteneur-laisser-passer {
     display: flex;
     justify-content: space-between;
     height: 380px;
-
 }
 
 
 .conteneur-quote {
     position: relative;
     width: 50%;
-
-
 }
 
 .video-quote {
@@ -542,14 +512,10 @@ a.lien-groupe:hover {
     border: 20px solid black;
 }
 
-
-
 .overlay-image {
     position: absolute;
     width: 100%;
     height: 100%;
-
-
 }
 
 .image-quote {
@@ -749,7 +715,7 @@ span.arrow {
     padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
-
+    z-index: 50;
 }
 
 
@@ -777,7 +743,6 @@ span.arrow {
     }
 
     .conteneur-groupe {
-
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -787,7 +752,6 @@ span.arrow {
     }
 
     .billets-achat a.boutton {
-
         margin-top: 10px;
     }
 
@@ -799,7 +763,6 @@ span.arrow {
         flex-direction: column-reverse;
         height: 178px;
         background-color: #111111;
-
     }
 
     .reseau-sociaux a img {
@@ -809,8 +772,6 @@ span.arrow {
     .reseau-sociaux a img:last-child {
         margin-right: 0px;
     }
-
-
 
     .reseau-sociaux {
 
@@ -838,7 +799,6 @@ span.arrow {
         transform: translateX(0%);
         width: 100%;
         margin-top: 10px;
-
     }
 
     .conteneur-laisser-passer {
@@ -850,21 +810,16 @@ span.arrow {
     }
 
     h4.laisser-passer {
-
         font-size: 35px;
-
     }
 
-
 }
-
 
 .menu-burger {
     flex-direction: column;
     cursor: pointer;
     display: none;
     transition: 0.2s ease-in-out;
-
 }
 
 .bar {
@@ -890,12 +845,10 @@ span.arrow {
 
 .bar::before {
     transform: translateY(-16px);
-
 }
 
 .bar::after {
     transform: translateY(16px);
-
 }
 
 .menu-croix.open .bar {
@@ -948,7 +901,6 @@ span.arrow {
         height: 60px;
         cursor: pointer;
         transition: all .5s ease-in-out;
-
     }
 
     .appel-action {
@@ -982,7 +934,6 @@ span.arrow {
         order: 3;
         margin-top: 27px;
         width: 165px;
-
     }
 
     .contact,
@@ -1046,8 +997,6 @@ span.arrow {
         display: none;
     }
 
-
-
     .date span {
         display: none;
     }
@@ -1066,7 +1015,6 @@ span.arrow {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
     }
 
     .info-footer .info {
@@ -1144,8 +1092,6 @@ span.arrow {
         width: 100px;
         height: 100px;
     }
-
-
 
     div.appel-action {
         margin-top: 52%;
@@ -1317,7 +1263,6 @@ span.arrow {
 
     .acheter p {
         font-size: 16px;
-
     }
 
     .conteneur-laisser-passer .acheter {
@@ -1389,7 +1334,6 @@ span.arrow {
 
 @media screen and (min-width: 320px)and (max-width: 359px) {
 
-
     html,
     body {
         overflow-x: hidden;
@@ -1399,15 +1343,12 @@ span.arrow {
         position: relative
     }
 
-
     .bar::before {
         transform: translateY(-12px);
-
     }
 
     .bar::after {
         transform: translateY(12px);
-
     }
 
     .nav {
@@ -1498,7 +1439,6 @@ span.arrow {
 
     .acheter p {
         font-size: 16px;
-
     }
 
     .conteneur-laisser-passer .acheter {
@@ -1562,5 +1502,4 @@ span.arrow {
         bottom: 14px;
         padding: 5px 7px;
     }
-
 }

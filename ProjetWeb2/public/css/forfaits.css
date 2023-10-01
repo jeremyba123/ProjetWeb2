@@ -30,7 +30,6 @@ span.material-symbols-outlined {
 
 .dropdown-content a {
     text-decoration: none;
-
     display: block;
     text-align: center;
     transition: 0.2s ease-in-out;
@@ -49,7 +48,6 @@ span.material-symbols-outlined {
     padding-top: 20px;
     position: relative;
     z-index: 2;
-
 }
 
 a.btn.btn-light {
@@ -267,17 +265,16 @@ h3 {
     transform: translateX(-50%);
     width: 55%;
     margin-top: 62px;
-
 }
 
 .forfaits {
     width: 550px;
     height: 320px;
     margin-right: 25px;
-    background-color: #292929;
-    color: white;
+    background-color: #ffffff;
+    color: black;
     border-radius: 10px;
-
+    box-shadow: 0px 3px 8px #0000004f;
 }
 
 .info-conteneur {
@@ -285,8 +282,6 @@ h3 {
     height: 120px;
     background-color: grey;
 }
-
-
 
 .forfaits .info {
     display: flex;
@@ -301,7 +296,7 @@ h3 {
 
 .forfaits .info p {
     margin-bottom: 0px;
-
+    color: white;
     font-family: "source-sans-pro", sans-serif;
     font-weight: bold;
     font-style: normal;
@@ -313,36 +308,34 @@ h3 {
     color: #ffffff;
     font-family: "source-sans-pro", sans-serif;
     font-weight: bold;
-
 }
 
 .forfaits .info p.prix {
-    font-size: 25px;
-    font-weight: 400;
+    font-size: 22px;
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: bold;
 }
 
 .forfaits .info p.jour {
-    font-size: 25px;
-    font-weight: 400;
+    font-size: 22px;
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: bold;
 }
 
 .forfaits .info p:first-child {
     margin-top: 25px;
-
 }
 
 .forfaits .info p:last-child {
     margin-bottom: 25px;
-
 }
 
 .forfaits .contenue {
     display: flex;
     justify-content: space-around;
-    background-color: #292929;
+    background-color: #ffffff;
     align-items: center;
     flex-direction: column;
-
 }
 
 .forfaits .contenue p {
@@ -352,15 +345,11 @@ h3 {
     font-style: normal;
 }
 
-
-
 .forfaits .contenue p:first-child {
     margin-top: 15px;
-
 }
 
 .forfaits .contenue p:last-child {
-
     margin-bottom: 0px;
 }
 
@@ -392,8 +381,6 @@ a.reservation {
 a.reservation:hover {
     background-color: #ff5950;
 }
-
-
 
 
 /* *********************************************** Footer    ************************************************** */
@@ -522,7 +509,6 @@ h4 {
     color: white;
 }
 
-
 .conteneur-forfait-reservation .forfait:last-child {
     margin-left: 0px;
 }
@@ -530,7 +516,6 @@ h4 {
 
 span.arrow {
     color: #ffffff;
-
 }
 
 #back-to-top {
@@ -543,14 +528,12 @@ span.arrow {
     padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
-
+    z-index: 50;
 }
-
 
 #back-to-top.show {
     display: block;
 }
-
 
 @media screen and (max-width: 1200px) {
 
@@ -586,7 +569,6 @@ span.arrow {
         margin-top: 10px;
     }
 
-
     .copyright-reseau-sociaux {
         width: 100%;
         justify-content: center;
@@ -594,7 +576,6 @@ span.arrow {
         flex-direction: column-reverse;
         height: 178px;
         background-color: #111111;
-
     }
 
     .reseau-sociaux a img {
@@ -605,10 +586,7 @@ span.arrow {
         margin-right: 0px;
     }
 
-
-
     .reseau-sociaux {
-
         width: 25%;
         display: flex;
         justify-content: space-around;
@@ -666,7 +644,6 @@ span.arrow {
         height: 362px;
     }
 
-
 }
 
 
@@ -703,12 +680,10 @@ span.arrow {
 
 .bar::before {
     transform: translateY(-16px);
-
 }
 
 .bar::after {
     transform: translateY(16px);
-
 }
 
 .menu-croix.open .bar {
@@ -717,7 +692,6 @@ span.arrow {
     box-shadow: none;
     animation: fadeOut 50ms ease-in;
 }
-
 
 @keyframes fadeOut {
     from {
@@ -728,8 +702,6 @@ span.arrow {
         background: transparent;
     }
 }
-
-
 
 
 .menu-croix.open .bar::before {
@@ -795,7 +767,6 @@ span.arrow {
         order: 3;
         margin-top: 27px;
         width: 165px;
-
     }
 
     .contact,
@@ -833,18 +804,15 @@ span.arrow {
         margin-top: 120px;
     }
 
-
     .nav {
         margin-right: 17px;
     }
-
 
     form input {
         width: 48%;
         border: 4px solid #ff5950;
         margin-top: -15px;
         font-size: 20px;
-
     }
 
     input::placeholder {
@@ -854,7 +822,6 @@ span.arrow {
         padding-left: 3px;
     }
 
-
     .h1 {
         margin-top: 5%;
         margin-bottom: 0px;
@@ -862,12 +829,10 @@ span.arrow {
     }
 
     h1 {
-
         font-size: 74px;
     }
 
     .h1 img {
-
         width: 90px;
         height: 90px;
     }
@@ -888,7 +853,6 @@ span.arrow {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
     }
 
     .info-footer .info {
@@ -986,7 +950,6 @@ span.arrow {
 }
 
 
-
 @media screen and (min-width:480px) and (max-width: 767px) {
 
     html,
@@ -997,8 +960,6 @@ span.arrow {
     body {
         position: relative
     }
-
-
 
     .groupe:hover p.nom {
 
@@ -1020,8 +981,8 @@ span.arrow {
         width: 273px;
         height: 313px;
         margin-right: 0px;
-        background-color: #292929;
-        color: white;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
         border-radius: 10px;
         margin-top: 32px;
     }
@@ -1078,7 +1039,6 @@ span.arrow {
         z-index: 1;
     }
 
-
 }
 
 
@@ -1110,7 +1070,6 @@ span.arrow {
         padding-left: 15px;
         padding-top: 8px;
     }
-
 
     .liens-nav {
         margin-top: 0px;
@@ -1188,8 +1147,8 @@ span.arrow {
         width: 273px;
         height: 313px;
         margin-right: 0px;
-        background-color: #292929;
-        color: white;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
         border-radius: 10px;
         margin-top: 32px;
     }
@@ -1268,8 +1227,6 @@ span.arrow {
 }
 
 
-
-
 @media screen and (min-width: 320px)and (max-width: 359px) {
 
 
@@ -1282,15 +1239,12 @@ span.arrow {
         position: relative
     }
 
-
     .bar::before {
         transform: translateY(-12px);
-
     }
 
     .bar::after {
         transform: translateY(12px);
-
     }
 
     .nav {
@@ -1299,8 +1253,6 @@ span.arrow {
         padding-left: 15px;
         padding-top: 8px;
     }
-
-
 
     .liens-nav {
         margin-top: 0px;
@@ -1355,7 +1307,6 @@ span.arrow {
     .logo img {
         width: 113px;
     }
-
 
     .liens-nav {
         margin-top: 0px;
@@ -1434,8 +1385,8 @@ span.arrow {
         width: 247px;
         height: 313px;
         margin-right: 0px;
-        background-color: #292929;
-        color: white;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
         border-radius: 10px;
         margin-top: 32px;
     }
@@ -1514,5 +1465,4 @@ span.arrow {
         bottom: 14px;
         padding: 5px 7px;
     }
-
 }
