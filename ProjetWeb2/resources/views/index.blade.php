@@ -91,7 +91,7 @@
                         </video>
                     </div>
                     <div class="overlay-image">
-                        <img class="image-quote" src="img/thumbnail_video.png" alt="">
+                        <img class="image-quote" src="img/thumbnail_video.png" alt="quote">
                     </div>
                 </div>
 
